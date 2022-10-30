@@ -1,0 +1,207 @@
+.wrapper{
+  background: linear-gradient(139.01deg, rgba(77, 68, 223, 0.5) -17.85%, rgba(0, 187, 255, 0.5) 111.28%);
+}
+.header_container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  .header_menu{
+    margin-left: 40px;
+    .menu_list{
+      display: flex;
+      align-items: center;
+      color:#181818;
+      .menu_item{
+        margin-right: 30px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .reg_menu{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    .registration{
+      color: #4466DF;
+      margin-right: 26px;
+    }
+    .enter_btn{
+      display: inline-block;
+      line-height: 30px;
+      padding: 0 38px;
+    }
+  }
+}
+
+
+//UNION ================
+
+.union{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  .content_column{
+    flex: 0 0 50%;
+    height: auto;
+    margin-right: 40px;
+    .union_content{
+      max-width: 470px;
+      .union_title{
+        font-weight: 500;
+        font-size: 48px;
+        margin-bottom: 12px;
+      }
+      .union_subtitle{
+        margin-bottom: 20px;
+      }
+      .union_input_wrapper{
+
+        padding-left: 20px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        display: inline-block;
+        .union_input{
+          background: transparent;
+        }
+        .union_btn{
+          display: inline-block;
+          height: 36px;
+          padding: 0 29px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .image_column{
+    width: 550px;
+    height: 550px;
+    position: relative;
+    margin-right: -40px;
+    .big_circular {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.6);
+      filter: blur(5px);
+      backdrop-filter: blur(5px);
+    }
+    .union_image_wrapper{
+      width: 500px;
+      height: 500px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      .union_img{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+//Advantages ====================
+
+
+.advantage{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .column_adv{
+    flex: 0 0 280px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    &:before{
+      content: '';
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-top-left-radius: 20px;
+      border-top: 3px solid rgba(77, 68, 223, 1);
+      border-left: 3px solid rgba(77, 68, 223, 1);
+    }
+    &:after{
+      content: '';
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-bottom-right-radius: 20px;
+      border-bottom: 3px solid rgba(0, 187, 255, 1);
+      border-right: 3px solid rgba(0, 187, 255, 1);
+    }
+    .adv_content{
+      min-height: 210px;
+      .adv_image{
+        width: 60px;
+        height: 58px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 16px;
+        top: 2px;
+        .adv_img{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: -2px;
+          left: 0;
+        }
+      }
+      .adv_title{
+        font-size: 20px;
+        line-height: 24px;
+        color: #060606;
+        margin-bottom: 10px;
+      }
+      .adv_subtitle{
+        font-weight: 400;
+        line-height: 19px;
+        color: #858585;
+      }
+    }
+  }
+}
+
+
+//Tariffs==========================
+
+.tariff{
+  .tariff_title{
+    margin-bottom: 12px;
+  }
+  .tariff_subtitle{
+    margin-bottom: 40px;
+  }
+  .tariffs_list{
+    display: flex;
+    justify-content: space-between;
+    .tariff_column{
+      flex: 0 0 330px;
+      .tariff_content{
+        min-height: 400px;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+      }
+    }
+
+  }
+}

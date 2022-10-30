@@ -1,0 +1,25 @@
+body{
+    font-family: "Roboto";
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn{
+    background: #4466DF;
+    border-radius: 20px;
+    color: white;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 40px;
+}
+.sub_title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #434343;
+}
