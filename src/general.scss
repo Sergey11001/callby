@@ -1,0 +1,59 @@
+body{
+    font-family: "Roboto";
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn{
+    background: #4466DF;
+    border-radius: 20px;
+    color: white;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 40px;
+}
+.sub_title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #434343;
+}
+.input_wrapper{
+    padding-left: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: inline-flex;
+    .mail_input{
+        background: transparent;
+        flex: 1 1 auto;
+    }
+    .input_btn{
+        display: inline-block;
+        height: 36px;
+        padding: 0 29px;
+        margin-left: 10px;
+    }
+}
+
+.section_title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    .tariff_title{
+        margin-bottom: 12px;
+    }
+    .tariff_subtitle{
+
+    }
+    .section_arrow{
+        width: 20px;
+        height: 12px;
+        margin-left: 10px;
+    }
+}
