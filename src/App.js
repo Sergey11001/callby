@@ -8,8 +8,8 @@ function App() {
       <div className="wrapper">
         <Header />
         <div className="container">
-          <Home />
-          {/*  <Tariffs />*/}
+          {/*<Home />*/}
+            <Tariffs />
         </div>
         <Footer />
       </div>

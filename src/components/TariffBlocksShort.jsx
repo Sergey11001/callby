@@ -9,7 +9,7 @@ const TariffBlocksShort=({short})=>{
     return(
         <>
             {tariff_blocks_list.map((block,i)=>
-                <BlockTariff key={i} {...block} />
+                <BlockTariff blue={i%2!==0} key={i} {...block} />
             )}
         </>
     )

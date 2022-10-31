@@ -72,3 +72,95 @@ body{
         margin-bottom: 40px;
     }
  }
+
+
+.tariff_column{
+    flex: 0 0 330px;
+    min-height: 340px;
+    .tariff_content{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        color: #060606;
+        &:hover{
+            box-shadow: 0 0 0 3px #EABA11;
+        }
+        .tariff_content_title{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 25px;
+        }
+        .tariff_subtitle{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #858585;
+            margin-bottom: 25px;
+        }
+        .tariff_advs{
+            flex: 1 1 auto;
+            .tariff_adv{
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 25px;
+                display: flex;
+                &:last-child{
+                    margin-bottom: 19px;
+                    .img_tariff,.item_adv{
+                        opacity: 0.6;
+                    }
+                }
+                .img_tariff{
+                    width: 14px;
+                    height: 14px;
+                    margin-right: 13px;
+                }
+            }
+            .no_last_opacity:last-child{
+                .img_tariff,.item_adv{
+                    opacity: 1;
+                }
+            }
+        }
+        .tariff_price{
+            margin-bottom: 16px;
+            .rub{
+                font-size: 20px;
+                line-height: 24px;
+                margin-right: 2px;
+            }
+            span{
+                font-size: 40px;
+                line-height: 49px;
+            }
+            .month{
+                font-size: 16px;
+                line-height: 19px;
+                color: #858585;
+            }
+        }
+        .tariff_btn{
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            &:hover{
+                box-shadow: 0 0 0 3px #EABA11;
+            }
+        }
+    }
+    .tariff_blue{
+        background: linear-gradient(139.01deg, rgba(77, 68, 223, 0.5) -17.85%, rgba(0, 187, 255, 0.5) 111.28%);
+        color: white;
+    }
+}
+.img_rotate{
+    transform: rotate(180deg);
+}

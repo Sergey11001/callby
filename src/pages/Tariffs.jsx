@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import TariffBlocksLong from "../components/TariffBlocksLong";
+import TariffConstructor from "../components/TariffConstructor";
 
 
 const Tariffs=()=>{
@@ -24,8 +25,8 @@ const Tariffs=()=>{
                         </div>
                     </div>
                 </div>
-                <div className="tariff_switched">
-                    <TariffBlocksLong />
+                <div className="switched">
+                    {active ? <TariffBlocksLong /> : <TariffConstructor />}
                 </div>
                 <div className="hard_decision bottom_claster">
                     <div className="title claster_title">

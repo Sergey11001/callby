@@ -11,7 +11,7 @@ const TariffBlocksLong=()=>{
         <>
             <div className="tariffs_list">
                 {tariff_blocks_list.map((block,i)=>
-                    <BlockTariff long={true} key={i} {...block} />
+                    <BlockTariff blue={i%2!==0} long={true} key={i} {...block} />
                 )}
             </div>
 

@@ -174,94 +174,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  .tariff_column{
-    flex: 0 0 330px;
-    min-height: 340px;
-    &:nth-child(even) .tariff_content{
-      background: linear-gradient(139.01deg, rgba(77, 68, 223, 0.5) -17.85%, rgba(0, 187, 255, 0.5) 111.28%);
-      color: white;
-    }
-    .tariff_content{
-      display: flex;
-      flex-direction: column;
-      padding: 30px;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.7);
-      box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
-      backdrop-filter: blur(5px);
-      border-radius: 20px;
-      color: #060606;
-      &:hover{
-        box-shadow: 0 0 0 3px #EABA11;
-      }
-      .tariff_content_title{
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
-        margin-bottom: 25px;
-      }
-      .tariff_subtitle{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #858585;
-        margin-bottom: 25px;
-      }
-      .tariff_advs{
-        flex: 1 1 auto;
-        .tariff_adv{
-          font-size: 16px;
-          line-height: 19px;
-          margin-bottom: 25px;
-          display: flex;
-          &:last-child{
-            margin-bottom: 19px;
-            .img_tariff,.item_adv{
-              opacity: 0.6;
-            }
-          }
-          .img_tariff{
-            width: 14px;
-            height: 14px;
-            margin-right: 13px;
-          }
-        }
-        .no_last_opacity:last-child{
-          .img_tariff,.item_adv{
-            opacity: 1;
-          }
-        }
-      }
-      .tariff_price{
-        margin-bottom: 16px;
-        .rub{
-          font-size: 20px;
-          line-height: 24px;
-          margin-right: 2px;
-        }
-        span{
-          font-size: 40px;
-          line-height: 49px;
-        }
-        .month{
-          font-size: 16px;
-          line-height: 19px;
-          color: #858585;
-        }
-      }
-      .tariff_btn{
-        font-weight: 500;
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        &:hover{
-          box-shadow: 0 0 0 3px #EABA11;
-        }
-      }
-    }
-  }
 }
+
 
 
 //Team====================
@@ -408,11 +322,11 @@
       justify-content: space-between;
       position: relative;
       width: 250px;
-      padding: 10px 0;
       background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(5px);
       border-radius: 20px;
       margin-bottom: 40px;
+      border: none;
       &:before{
         content: '';
         display: block;
@@ -429,6 +343,7 @@
       .constructor,  .list_tariffs{
         cursor: pointer;
         flex: 0 0 50%;
+        height: 40px;
         color: #4466DF;
         display: flex;
         justify-content: center;
@@ -445,7 +360,7 @@
       right: 0;
     }
   }
-  .tariff_switched {
+  .switched {
     margin-bottom: 80px;
   }
   .support_btn{
@@ -455,3 +370,132 @@
   }
 }
 
+//Constructor=======================
+.constructor_switched{
+  display: flex;
+  justify-content: space-between;
+  color: #181818;
+  .generation_sub_column{
+    flex: 0 0 730px;
+    .generation_sub{
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      .constructor_title{
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 6px;
+      }
+      .generation_descript{
+        font-size: 16px;
+        color: #434343;
+        margin-bottom: 30px;
+      }
+      .rules{
+        margin-top: 17px;
+        div{
+          font-weight: 500;
+          font-size: 20px;
+          color: #060606;
+          margin-bottom: 16px;
+        }
+        .roles_list{
+          list-style-type: decimal;
+          margin-left: 15px;
+          .role_item{
+            margin-bottom: 12px;
+            padding-left: 10px;
+            span{
+              color: #4466DF;
+            }
+          }
+        }
+      }
+    }
+  }
+  .own_tariff_column{
+    flex: 0 0 330px;
+    .inactive_tariff{
+      pointer-events: none;
+    }
+  }
+}
+
+
+//Selector================================
+.selector_wrapper{
+  color: #060606;
+  font-size: 14px;
+  .selector_header{
+    margin-bottom: 8px;
+    width: 465px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    .selector_title{
+      margin-left: 20px;
+      line-height: 17px;
+    }
+    .selector_btn{
+      margin-left: auto;
+      width: 80px;
+      height: 36px;
+      background: #4466DF;
+      border-radius: 20px;
+      .selector_img{
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .selector_body_wrapper{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+  }
+  .selector_body_wrapper_active{
+    max-height: 250px;
+  }
+  .selector_body{
+    margin-top: 8px;
+    width: 465px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    .selector_items{
+      .selector_item{
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        .selector_name, .select_circle{
+          cursor: pointer;
+        }
+        .select_circle{
+          width: 16px;
+          height: 16px;
+          border:1px solid #4466DF;
+          border-radius: 50%;
+        }
+        .selected{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          background: #4466DF;
+          .selected_img{
+            width: 8px;
+            height: 8px;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
