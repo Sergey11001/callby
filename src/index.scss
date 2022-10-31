@@ -100,6 +100,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 25px;
   .column_adv{
     flex: 0 0 280px;
     background: rgba(255, 255, 255, 0.7);
@@ -168,82 +169,95 @@
 .tariff{
   margin-top: 60px;
   margin-bottom: 60px;
-  .tariffs_list{
-    display: flex;
-    justify-content: space-between;
-    .tariff_column{
-      flex: 0 0 330px;
-      min-height: 340px;
-      .tariff_content{
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.7);
-        box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
-        backdrop-filter: blur(5px);
-        border-radius: 20px;
-        color: #060606;
-        .tariff_content_title{
-          font-weight: 500;
-          font-size: 24px;
-          line-height: 29px;
+}
+.tariffs_list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .tariff_column{
+    flex: 0 0 330px;
+    min-height: 340px;
+    &:nth-child(even) .tariff_content{
+      background: linear-gradient(139.01deg, rgba(77, 68, 223, 0.5) -17.85%, rgba(0, 187, 255, 0.5) 111.28%);
+      color: white;
+    }
+    .tariff_content{
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      color: #060606;
+      &:hover{
+        box-shadow: 0 0 0 3px #EABA11;
+      }
+      .tariff_content_title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 25px;
+      }
+      .tariff_subtitle{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #858585;
+        margin-bottom: 25px;
+      }
+      .tariff_advs{
+        flex: 1 1 auto;
+        .tariff_adv{
+          font-size: 16px;
+          line-height: 19px;
           margin-bottom: 25px;
-        }
-        .tariff_subtitle{
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 17px;
-          color: #858585;
-          margin-bottom: 25px;
-        }
-        .tariff_advs{
-          flex: 1 1 auto;
-          .tariff_adv{
-            font-size: 16px;
-            line-height: 19px;
-            margin-bottom: 25px;
-            display: flex;
-            &:last-child{
-              margin-bottom: 19px;
-              .img_tariff,.item_adv{
-                opacity: 0.6;
-              }
-            }
-            .img_tariff{
-              width: 14px;
-              height: 14px;
-              margin-right: 13px;
+          display: flex;
+          &:last-child{
+            margin-bottom: 19px;
+            .img_tariff,.item_adv{
+              opacity: 0.6;
             }
           }
-        }
-        .tariff_price{
-          margin-bottom: 16px;
-          .rub{
-            font-size: 20px;
-            line-height: 24px;
-            margin-right: 2px;
-          }
-          span{
-            font-size: 40px;
-            line-height: 49px;
-          }
-          .month{
-            font-size: 16px;
-            line-height: 19px;
-            color: #858585;
+          .img_tariff{
+            width: 14px;
+            height: 14px;
+            margin-right: 13px;
           }
         }
-        .tariff_btn{
-          display: block;
-          width: 100%;
-          text-align: center;
-          padding: 10px 0;
+        .no_last_opacity:last-child{
+          .img_tariff,.item_adv{
+            opacity: 1;
+          }
         }
       }
-      .student{
-        background: linear-gradient(139.01deg, rgba(77, 68, 223, 0.5) -17.85%, rgba(0, 187, 255, 0.5) 111.28%);
-        color: white;
+      .tariff_price{
+        margin-bottom: 16px;
+        .rub{
+          font-size: 20px;
+          line-height: 24px;
+          margin-right: 2px;
+        }
+        span{
+          font-size: 40px;
+          line-height: 49px;
+        }
+        .month{
+          font-size: 16px;
+          line-height: 19px;
+          color: #858585;
+        }
+      }
+      .tariff_btn{
+        font-weight: 500;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        &:hover{
+          box-shadow: 0 0 0 3px #EABA11;
+        }
       }
     }
   }
@@ -325,8 +339,15 @@
           font-weight: 400;
           font-size: 14px;
           margin-bottom: 16px;
+          display: flex;
+          align-items: center;
           &:last-child{
             margin-bottom: 0;
+          }
+          .footer_link_img{
+            width: 17px;
+            height: 17px;
+            margin-right: 10px;
           }
         }
       }
@@ -365,6 +386,72 @@
         }
       }
     }
+  }
+}
+//Page Tariffs ============================
+
+
+.tariff_page{
+  .tariff_page_title{
+    margin-top: 70px;
+  }
+  .title_page{
+    text-align: center;
+    .tariff_title{
+      margin-bottom: 10px;
+    }
+    .tariff_subtitle{
+      margin-bottom: 30px;
+    }
+    .tariff_switch{
+      display: inline-flex;
+      justify-content: space-between;
+      position: relative;
+      width: 250px;
+      padding: 10px 0;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      margin-bottom: 40px;
+      &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 50%;
+        background: #4466DF;
+        border-radius: 20px;
+        height: 100%;
+        z-index: 0;
+        transition: all 0.2s ease-out;
+      }
+      .constructor,  .list_tariffs{
+        cursor: pointer;
+        flex: 0 0 50%;
+        color: #4466DF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: color 0.2s ease-out;
+      }
+      .active_toggle{
+        color: white;
+      }
+    }
+    .tariff_switch_active:before{
+      left: 50%;
+      right: 0;
+    }
+  }
+  .tariff_switched {
+    margin-bottom: 80px;
+  }
+  .support_btn{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 11px 42px;
   }
 }
 
