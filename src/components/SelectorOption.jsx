@@ -20,7 +20,7 @@ const SelectorOption=({id,title,price})=>{
         <li className="selector_item">
             <div className="selector_name" onClick={()=>ToggleCheckedItem()}>{title}</div>
             <div className={checked ? "select_circle selected": "select_circle"} onClick={()=>ToggleCheckedItem()}>
-                {checked && <img src="/img/check_white.svg" alt="" className="selected_img"/>}
+                {checked && <img src="/img/small_img/check_white.svg" alt="" className="selected_img"/>}
             </div>
         </li>
     )

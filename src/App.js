@@ -5,6 +5,7 @@ import Tariffs from "./pages/Tariffs";
 import Contacts from "./pages/Contacts";
 
 import {Routes,Route} from "react-router-dom";
+import OurTeam from "./pages/OurTeam";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/tariffs" element={<Tariffs/>}/>
                 <Route path="/contacts" element={<Contacts/>}/>
+                <Route path="/team" element={<OurTeam/>}/>
             </Routes>
         </div>
         <Footer />

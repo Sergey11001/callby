@@ -20,7 +20,7 @@ const Selector=()=>{
                         Приватные чаты и каналы
                     </div>
                     <button className="btn selector_btn" onClick={()=>setActivePopup(a=>!a)}>
-                        <img src="/img/arr_down.svg" alt="" className={activePopup ? "selector_img img_rotate":"selector_img"}/>
+                        <img src="/img/small_img/arr_down.svg" alt="" className={activePopup ? "selector_img img_rotate":"selector_img"}/>
                     </button>
                 </div>
                 <div className={activePopup ? "selector_body_wrapper_active selector_body_wrapper" :"selector_body_wrapper"}>

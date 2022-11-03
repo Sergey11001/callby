@@ -1,8 +1,19 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import AdvantagesBlocks from "../components/AdvantagesBlocks";
 import TariffBlocksShort from "../components/TariffBlocksShort";
+import PersonPortret from "../components/PersonPortret";
+import {Link} from "react-router-dom";
 
+
+const arr_person=[
+    {imgUrl:"/img/profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
+    {imgUrl:"/img/profile_photo/2.png",name:"Евгения",surname:"Житов",job:"Founder/CVO"},
+    {imgUrl:"/img/profile_photo/3.png",name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
+    {imgUrl:"/img/profile_photo/4.png",name:"Владимир",surname:"Житов",job:"Founder/ Art-director"},
+    {imgUrl:"/img/profile_photo/5.png",name:"Мария",surname:"Захарова",job:"Graphic Designer"}
+]
 const Home=()=>{
+    const [activePerson,setActivePerson]=useState(0)
 
     return(
         <>
@@ -15,10 +26,13 @@ const Home=()=>{
                         <div className="subtitle union_subtitle">
                             Присоединяйся и ощути абсолютно новые эмоции от общения!
                         </div>
-                        <div className="union_input_wrapper input_wrapper">
+                        <div className="wrapper_input">
                             <input type="email" className="union_input mail_input" placeholder='example@mail.ru'/>
-                            <button className="union_btn input_btn btn">Начать!</button>
+                            <div className="btn_wrapper btn_wrapper_mail">
+                                <button className="union_btn input_btn  btn">Начать!</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div className="image_column">
@@ -74,27 +88,25 @@ const Home=()=>{
                             </div>
                             <div className="tool_data">
                                 <div className="tool_data_image">
-                                    <img src="/img/chat.svg" alt="" className="tool_data_img"/>
+                                    <img src="/img/small_img/chat.svg" alt="" className="tool_data_img"/>
                                 </div>
                                 <div className="data_col">15</div>
                             </div>
                             <div className="tool_data">
                             <div className="tool_data_image">
-                                <img src="/img/clip.svg" alt="" className="tool_data_img"/>
+                                <img src="/img/small_img/clip.svg" alt="" className="tool_data_img"/>
                             </div>
                             <div className="data_col">3</div>
                         </div>
 
                         </div>
                     </div>
-
-
                     <div className="big_circular">
 
                     </div>
                     <div className="union_image_wrapper">
                         <div className="union_image">
-                            <img src="/img/hands.png" alt="hands" className="union_img"/>
+                            <img src="/img/small_img/hands.png" alt="hands" className="union_img"/>
                         </div>
                     </div>
                 </div>
@@ -114,7 +126,7 @@ const Home=()=>{
                     </div>
                     <a href="#">
                         Подробнее
-                        <img src="/img/arrow.svg" alt="" className="section_arrow"/>
+                        <img src="/img/small_img/arrow.svg" alt="" className="section_arrow"/>
                     </a>
                 </div>
                 <div className="tariffs_list">
@@ -131,12 +143,18 @@ const Home=()=>{
                             Мы создаем для вас уникальный продукт!
                         </div>
                     </div>
-                    <a href="#">
+                    <Link to="/team">
                         Подробнее
-                        <img src="/img/arrow.svg" alt="" className="section_arrow"/>
-                    </a>
+                        <img src="/img/small_img/arrow.svg" alt="" className="section_arrow"/>
+                    </Link>
+                </div>
+                <div className="team_list">
+                    {arr_person.map((item,i)=>
+                         <PersonPortret key={i} {...item} setActivePerson={setActivePerson} activePerson={activePerson} index={i} />
+                    )}
                 </div>
             </section>
+
             <section className="join">
                 <div className="title join_title">
                     Присоединяйтесь!
@@ -144,9 +162,11 @@ const Home=()=>{
                 <div className="subtitle join_subtitle">
                     Откройте для себя новое рабочее пространство!
                 </div>
-                <div className="join_input_wrapper input_wrapper">
+                <div className="wrapper_input join_input_wrapper">
                     <input type="email" className="join_input mail_input" placeholder='example@mail.ru'/>
-                    <button className="join_btn input_btn btn">Начать!</button>
+                    <div className="btn_wrapper btn_wrapper_mail">
+                        <button className="join_btn input_btn  btn">Начать!</button>
+                    </div>
                 </div>
             </section>
         </>

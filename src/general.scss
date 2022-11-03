@@ -5,17 +5,33 @@ body{
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 10px;
+    @media (max-width: 1140px) {
+        max-width: 992px;
+    }
+    @media (max-width: 992px) {
+        max-width: 768px;
+    }
+    @media (max-width: 768px) {
+        max-width: 576px;
+    }
 }
 
 .btn{
     background: #4466DF;
     border-radius: 20px;
     color: white;
+    cursor: pointer;
+}
+
+.title_page{
+    margin-top: 70px;
+    text-align: center;
 }
 
 .title{
     font-weight: 500;
     font-size: 40px;
+    margin-bottom: 10px;
 }
 .sub_title{
     font-weight: 400;
@@ -23,21 +39,27 @@ body{
     line-height: 24px;
     color: #434343;
 }
-.input_wrapper{
-    padding-left: 20px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 20px;
-    display: inline-flex;
     .mail_input{
-        background: transparent;
-        flex: 1 1 auto;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        border: 1px solid transparent;
+        width: 100%;
+        padding: 10px 125px 10px 20px ;
     }
     .input_btn{
         display: inline-block;
         height: 36px;
         padding: 0 29px;
-        margin-left: 10px;
+
     }
+.wrapper_input{
+  position: relative;
+}
+.btn_wrapper_mail{
+    position: absolute;
+    right: 0;
+    top: 0;
+
 }
 
 .section_title{
@@ -72,7 +94,25 @@ body{
         margin-bottom: 40px;
     }
  }
+input{
+    border:1px solid transparent;
+}
 
+input:focus, textarea:focus{
+    border: 1px solid #EABA11;
+}
+.btn_wrapper{
+    padding: 1px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+.btn_wrapper:hover{
+    border: 1px solid #EABA11;
+}
 
 .tariff_column{
     flex: 0 0 330px;

@@ -29,7 +29,9 @@ const Contacts=()=>{
                             <div className="inputs_block_wrapper">
                                 <textarea className="textarea_contact" placeholder="Сообщение"></textarea>
                             </div>
-                            <button className="contact_btn btn">Отправить</button>
+                            <div className="btn_wrapper btn_wrapper_contacts">
+                                <button className="contact_btn btn">Отправить</button>
+                            </div>
                         </form>
                     </div>
                     <div className="contact_inf_block">

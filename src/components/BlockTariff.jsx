@@ -17,7 +17,7 @@ const BlockTariff=({title,description_list,price,long=false,blue,own_tarif})=>{
                 <ul className="tariff_advs">
                     {description_list.map((item,i)=>
                         <li key={i} className={long ? "tariff_adv no_last_opacity":"tariff_adv"}>
-                            <img src={blue ? "/img/check_white.svg":"/img/check.svg"} alt="" className="img_tariff"/>
+                            <img src={blue ? "/img/small_img/check_white.svg":"/img/small_img/check.svg"} alt="" className="img_tariff"/>
                             <div className="item_adv">
                                 {item}
                             </div>
