@@ -16,7 +16,6 @@ const PersonPortret=({index,surname,activePerson,setActivePerson,imgUrl,name,job
                     arr[i].classList.remove('first_row_person')
                 }
                 lastElement=arr[i];
-                console.log(...arr[i].classList)
             }
         }
         FindLastFirst()

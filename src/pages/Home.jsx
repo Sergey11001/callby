@@ -20,7 +20,7 @@ const Home=()=>{
             <section className="union">
                 <div className="content_column">
                     <div className="union_content">
-                        <div className="union_title">
+                        <div className="union_title title">
                             Соединяем миры и пространство
                         </div>
                         <div className="subtitle union_subtitle">
@@ -60,6 +60,35 @@ const Home=()=>{
                         </div>
                         <div className="person_image empty_blue_block">
                             +2
+                        </div>
+                    </div>
+                    <div className="music_block">
+                        <div className="music_blue_block">
+
+                        </div>
+                        <div className="music_name">
+                            Музыка
+                        </div>
+                        <div className="music_artist">
+                            Исполнитель
+                        </div>
+                        <div className="music_line">
+                            <div className="blue_part">
+
+                            </div>
+                        </div>
+                        <div className="music_timer">
+                            <div className="from">
+                                1:23
+                            </div>
+                            <div className="to">
+                                3:45
+                            </div>
+                        </div>
+                        <div className="music_play">
+                            <div className="play_image">
+                                <img src="/img/small_img/play.svg" alt="" className="music_play_img"/>
+                            </div>
                         </div>
                     </div>
 
@@ -124,7 +153,7 @@ const Home=()=>{
                             Выберете правильный план для вашей работы!
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="#" className="more">
                         Подробнее
                         <img src="/img/small_img/arrow.svg" alt="" className="section_arrow"/>
                     </a>
@@ -143,7 +172,7 @@ const Home=()=>{
                             Мы создаем для вас уникальный продукт!
                         </div>
                     </div>
-                    <Link to="/team">
+                    <Link to="/team" className="more">
                         Подробнее
                         <img src="/img/small_img/arrow.svg" alt="" className="section_arrow"/>
                     </Link>
@@ -155,11 +184,11 @@ const Home=()=>{
                 </div>
             </section>
 
-            <section className="join">
-                <div className="title join_title">
+            <section className="join bottom_claster">
+                <div className="title claster_title">
                     Присоединяйтесь!
                 </div>
-                <div className="subtitle join_subtitle">
+                <div className="subtitle claster_subtitle">
                     Откройте для себя новое рабочее пространство!
                 </div>
                 <div className="wrapper_input join_input_wrapper">

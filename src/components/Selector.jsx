@@ -15,7 +15,7 @@ const Selector=()=>{
     return(
         <>
             <div className="selector_wrapper">
-                <div className="selector_header">
+                <div  className={activePopup ? "selector_header border_yellow":"selector_header"}>
                     <div className="selector_title">
                         Приватные чаты и каналы
                     </div>

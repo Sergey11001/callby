@@ -2,8 +2,6 @@ import SelectorContacts from "../components/SelectorContacts";
 
 
 const Contacts=()=>{
-
-
     return(
         <>
             <div className="contacts_page">

@@ -1,8 +1,31 @@
 
-import React from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {Link,NavLink} from "react-router-dom";
 
 const Header=()=>{
+    const [activeBurger,setActiveBurger]=useState(false)
+    const burger=useRef()
+    const menu=useRef()
+
+    useEffect(()=>{
+        const handleClickOutMenu=(e)=>{
+            if(!e.composedPath().includes(menu.current) && !e.composedPath().includes(burger.current)){
+                setActiveBurger(false)
+            }
+        }
+        document.body.addEventListener("click",handleClickOutMenu)
+        return ()=>document.body.removeEventListener("click",handleClickOutMenu)
+    },[])
+
+    useEffect(()=>{
+        if(activeBurger){
+            document.body.style.overflow="hidden"
+        }
+        else {
+            document.body.style.overflow="auto"
+        }
+    },[activeBurger])
+
     return(
         <header className="header">
             <div className="header_container">
@@ -11,22 +34,22 @@ const Header=()=>{
                         <img src="/img/header/logo.png" alt="" className="logo_img"/>
                     </div>
                 </NavLink>
-                <div className="burger">
+                <div ref={burger} className={activeBurger ? "burger active_burger" : "burger "} onClick={()=>setActiveBurger(a=>!a)}>
                     <span></span>
                 </div>
-                <nav className="header_menu">
+                <nav ref={menu} className={activeBurger ? "header_menu active_menu":"header_menu"}>
                     <ul className="menu_list">
                         <li className="menu_item">
-                            <NavLink to="/tariffs" className="menu_link">Тарифы</NavLink>
+                            <NavLink to="/tariffs" className="menu_link" onClick={()=>setActiveBurger(false)}>Тарифы</NavLink>
                         </li>
                         <li className="menu_item">
-                            <NavLink to="/learning" className="menu_link">Обучение</NavLink>
+                            <NavLink to="/learning" className="menu_link" onClick={()=>setActiveBurger(false)}>Обучение</NavLink>
                         </li>
                         <li className="menu_item">
-                            <NavLink to="/shop" className="menu_link">Магазин</NavLink>
+                            <NavLink to="/shop" className="menu_link" onClick={()=>setActiveBurger(false)}>Магазин</NavLink>
                         </li>
                         <li className="menu_item">
-                            <NavLink to="/contacts" className="menu_link">Контакты</NavLink>
+                            <NavLink to="/contacts" className="menu_link" onClick={()=>setActiveBurger(false)}>Контакты</NavLink>
                         </li>
                     </ul>
                 </nav>
