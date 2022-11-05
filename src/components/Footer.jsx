@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 
 const Footer=()=>{
@@ -13,16 +14,16 @@ const Footer=()=>{
                             Меню
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">Тарифы</a>
+                            <Link to="/tariffs" className="footer_link">Тарифы</Link>
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">Обучение</a>
+                            <Link to="/study" className="footer_link">Обучение</Link>
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">Магазин</a>
+                            <Link to="/shop" className="footer_link">Магазин</Link>
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">Контакты</a>
+                            <Link to="/contacts" className="footer_link">Контакты</Link>
                         </li>
                     </ul>
                     <ul className="footer_column">
@@ -43,29 +44,29 @@ const Footer=()=>{
                             Компания
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">О нас</a>
+                            <Link to="/about" className="footer_link">О нас</Link>
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">Вакансии</a>
+                            <Link to="/vacations" className="footer_link">Вакансии</Link>
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">Команда</a>
+                            <Link to="/team" className="footer_link">Команда</Link>
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">Протокол</a>
+                            <Link to="/protocol" className="footer_link">Протокол</Link>
                         </li>
                         <li className="footer_item">
-                            <a href="#" className="footer_link">Служба поддержки</a>
+                            <Link to="/contacts/support" className="footer_link">Служба поддержки</Link>
                         </li>
                     </ul>
                     <ul className="footer_column social_column">
-                        <a href="#" className="social_item">
+                        <a href="#" className="social_item common_background">
                             <img src="/img/social/telegram.svg" alt="" className="social_img"/>
                         </a>
-                        <a href="#" className="social_item">
+                        <a href="#" className="social_item common_background">
                             <img src="/img/social/facebook.svg" alt="" className="social_img"/>
                         </a>
-                        <a href="#" className="social_item">
+                        <a href="#" className="social_item common_background">
                             <img src="/img/social/twitter.svg" alt="" className="social_img"/>
                         </a>
                     </ul>

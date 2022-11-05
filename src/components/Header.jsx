@@ -54,8 +54,10 @@ const Header=()=>{
                     </ul>
                 </nav>
                 <div className="reg_menu">
-                    <a href="#" className="registration">Регистрация</a>
-                    <button className="enter_btn btn">Вход</button>
+                    <NavLink to="/registration" className="registration">Регистрация</NavLink>
+                    <div className="btn_wrapper">
+                        <button className="enter_btn btn">Вход</button>
+                    </div>
                 </div>
             </div>
         </header>

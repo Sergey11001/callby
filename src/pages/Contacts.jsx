@@ -1,4 +1,5 @@
 import SelectorContacts from "../components/SelectorContacts";
+import {Link} from "react-router-dom";
 
 
 const Contacts=()=>{
@@ -17,15 +18,15 @@ const Contacts=()=>{
                     <div className="form_block">
                         <form action="#" className="contact_form">
                             <div className="inputs_block_wrapper">
-                                <input type="text" className="contact_input" placeholder="Полное имя"/>
-                                <input type="text" className="contact_input" placeholder="E-mail"/>
+                                <input type="text" className="contact_input common_background" placeholder="Имя"/>
+                                <input type="text" className="contact_input common_background" placeholder="E-mail"/>
                             </div>
                             <div className="inputs_block_wrapper">
                                 <SelectorContacts />
-                                <input type="text" className="contact_input" placeholder="Номер телефона"/>
+                                <input type="text" className="contact_input common_background" placeholder="Номер телефона"/>
                             </div>
                             <div className="inputs_block_wrapper">
-                                <textarea className="textarea_contact" placeholder="Сообщение"></textarea>
+                                <textarea className="textarea_contact common_background" placeholder="Сообщение"></textarea>
                             </div>
                             <div className="btn_wrapper btn_wrapper_contacts">
                                 <button className="contact_btn btn">Отправить</button>
@@ -77,7 +78,7 @@ const Contacts=()=>{
                                 <div className="inform_description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
                                 </div>
-                                <a href="#" className="contact_information">
+                                <Link to="support" className="contact_information">
                                     <div className="contact_inf_image_column">
                                         <div className="inf_image_wrapper">
                                             <img src="/img/contacts/3.svg" alt="" className="inf_img"/>
@@ -86,7 +87,7 @@ const Contacts=()=>{
                                     <div className="contact_contacts">
                                         Начать чат
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

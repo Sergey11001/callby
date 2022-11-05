@@ -2,7 +2,6 @@ import React from "react";
 
 
 const BlockTariff=({title,description_list,price,long=false,blue,own_tarif})=>{
-
     return(
         <div className="tariff_column">
             <div className={blue ? "tariff_content tariff_blue": "tariff_content"}>
@@ -29,7 +28,9 @@ const BlockTariff=({title,description_list,price,long=false,blue,own_tarif})=>{
                     <span>{price}</span>
                     <span className="month">/мес</span>
                 </div>
-                <button className="tariff_btn btn">Выбрать</button>
+                <div className="btn_wrapper_bold">
+                    <button className="tariff_btn btn">Выбрать</button>
+                </div>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {addSelected,removeSelected} from "../redux/slices/selectedSlice";
 import {useDispatch, useSelector} from "react-redux";
 
-const SelectorOption=({id,title,price})=>{
+const SelectorOptionTariff=({id,title,price})=>{
     const {selectedItems}=useSelector(state => state.selected)
     const [checked,setChecked]=useState(selectedItems.find(item=>item.id===id)!==undefined)
     const dispatch=useDispatch()
@@ -25,4 +25,4 @@ const SelectorOption=({id,title,price})=>{
         </li>
     )
 }
-export default SelectorOption
+export default SelectorOptionTariff

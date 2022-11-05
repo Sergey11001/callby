@@ -1,6 +1,5 @@
-import {useState} from "react";
 import BlockTariff from "./BlockTariff";
-import Selector from "./Selector";
+import Selector from "./SelectorTariffs";
 import {useSelector} from "react-redux";
 
 
@@ -11,7 +10,7 @@ const TariffConstructor=()=>{
         <>
             <div className="constructor_switched">
                 <div className="generation_sub_column">
-                    <div className="generation_sub">
+                    <div className="generation_sub common_background">
                         <div className="constructor_title generation_title">
                             Собери свою подписку 🎓
                         </div>

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import TariffBlocksLong from "../components/TariffBlocksLong";
 import TariffConstructor from "../components/TariffConstructor";
+import {Link} from "react-router-dom";
 
 
 const Tariffs=()=>{
@@ -16,7 +17,7 @@ const Tariffs=()=>{
                     <div className="subtitle tariff_subtitle">
                         Выберете правильный план для вашей работы!
                     </div>
-                    <div className={active ? "tariff_switch tariff_switch_active":"tariff_switch"}>
+                    <div className={active ? "tariff_switch common_background  tariff_switch_active":"tariff_switch common_background"}>
                         <div onClick={()=>setActive(false)} className={active ? "constructor":"constructor active_toggle"}>
                             Конструктор
                         </div>
@@ -35,7 +36,7 @@ const Tariffs=()=>{
                     <div className="subtitle claster_subtitle">
                         Задайте нам вопрос в чат поддержки
                     </div>
-                    <button className="support_btn btn">Поддержка</button>
+                    <Link to="/contacts/support" className="support_btn btn ">Поддержка</Link>
                 </div>
             </div>
 

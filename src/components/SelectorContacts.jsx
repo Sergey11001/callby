@@ -22,8 +22,8 @@ const SelectorContacts=()=>{
 
     return(
         <div className="contact_selector" ref={popup_contacts}>
-            <div className={activeSelector ? "selector_contacts_header become_white border_yellow" : activeIndex!==-1 ? "selector_contacts_header become_white":"selector_contacts_header"} onClick={()=>setActiveSelector(a=>!a)}>
-                <div className={activeIndex!==-1 ? "selector_placeholder active_placeholder":"selector_placeholder"}>{activeIndex!==-1 ? contact_options[activeIndex]:"Причина"}</div>
+            <div className={activeSelector ? "selector_contacts_header become_white border_yellow" : activeIndex!==-1 ? "selector_contacts_header become_white":"selector_contacts_header common_background"} onClick={()=>setActiveSelector(a=>!a)}>
+                <div className={activeIndex!==-1 ? "selector_placeholder active_placeholder":"selector_placeholder"}>{activeSelector ? "":activeIndex!==-1 ? contact_options[activeIndex]:"Причина"}</div>
                 <div className="selector_img">
                     <img src="/img/small_img/arr_down_blue.svg" alt="arrow" className={activeSelector ? "container_selector_img img_rotate":"container_selector_img"}/>
                 </div>

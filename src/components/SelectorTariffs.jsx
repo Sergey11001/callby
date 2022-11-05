@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import SelectorOption from "./SelectorOption";
+import SelectorOptionTariff from "./SelectorOptionTariff";
 
 const selection_options=[
     {id:1,price:35,title:"Совместное редактирование (расширенная версия);"},
@@ -10,7 +10,7 @@ const selection_options=[
 ]
 
 
-const Selector=()=>{
+const SelectorTariffs=()=>{
     const [activePopup,setActivePopup]=useState(false)
     return(
         <>
@@ -24,10 +24,10 @@ const Selector=()=>{
                     </button>
                 </div>
                 <div className={activePopup ? "selector_body_wrapper_active selector_body_wrapper" :"selector_body_wrapper"}>
-                    <div className="selector_body">
+                    <div className="selector_body common_background">
                         <ul className="selector_items">
                             {selection_options.map((item,i)=>
-                                <SelectorOption key={i} {...item} />
+                                <SelectorOptionTariff key={i} {...item} />
                             )}
                         </ul>
                     </div>
@@ -37,4 +37,4 @@ const Selector=()=>{
     )
 }
 
-export default Selector
+export default SelectorTariffs
