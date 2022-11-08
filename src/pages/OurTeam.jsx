@@ -2,7 +2,7 @@ import PersonPortret from "../components/PersonPortret";
 import React, {useState} from "react";
 
 
-const arr_person_full=[
+const arrPersonFull=[
     {imgUrl:"/img/profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
     {imgUrl:"/img/profile_photo/2.png",name:"Евгения",surname:"Житов",job:"Founder/CVO"},
     {imgUrl:"/img/profile_photo/3.png",name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
