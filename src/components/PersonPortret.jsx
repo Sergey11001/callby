@@ -1,9 +1,9 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect} from "react";
 
-const PersonPortret=({index,surname,activePerson,setActivePerson,imgUrl,name,job})=>{
+const PersonPortret=({index , surname , activePerson , setActivePerson , imgUrl , name , job})=>{
 
-    useEffect(()=>{
-        const FindLastFirst=()=>{
+    useEffect(() => {
+        const findLastFirst = () => {
             let lastElement=false;
             let arr = document.querySelector('.team_list').children
             for (let i = 0; i < arr.length; i++) {
@@ -18,15 +18,15 @@ const PersonPortret=({index,surname,activePerson,setActivePerson,imgUrl,name,job
                 lastElement=arr[i];
             }
         }
-        FindLastFirst()
-        const windowWidthChange=()=>{
-            FindLastFirst()
+        findLastFirst()
+        const windowWidthChange = () => {
+            findLastFirst()
         }
         window.addEventListener('resize',windowWidthChange)
-        return ()=>window.removeEventListener('resize',windowWidthChange)
+        return () => window.removeEventListener('resize',windowWidthChange)
     },[activePerson])
     return(
-        <div onClick={()=>setActivePerson(index)} className={index===activePerson ? "team_person_wrapper active_person" : index-1===activePerson ?"team_person_wrapper person_right":index+1===activePerson ? "team_person_wrapper person_left" : "team_person_wrapper"}>
+        <div onClick={() => setActivePerson(index)} className={index===activePerson ? "team_person_wrapper active_person" : index-1===activePerson ?"team_person_wrapper person_right":index+1===activePerson ? "team_person_wrapper person_left" : "team_person_wrapper"}>
             <div className="team_person_block">
                 <div className="person_image">
                     <img src={imgUrl} alt="" className="person_img"/>

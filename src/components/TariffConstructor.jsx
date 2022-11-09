@@ -1,11 +1,12 @@
 import BlockTariff from "./BlockTariff";
 import Selector from "./SelectorTariffs";
 import {useSelector} from "react-redux";
+import {useMemo} from "react";
 
 
 const TariffConstructor=()=>{
     const {selectedItems}=useSelector(state => state.selected)
-    const price=selectedItems.reduce((sum,cur)=>sum+cur.price,0)
+    const price=useMemo(() => selectedItems.reduce((sum,cur)=>sum+cur.price,0),[selectedItems] )
     return(
         <>
             <div className="constructor_switched">
@@ -33,8 +34,8 @@ const TariffConstructor=()=>{
                     </div>
                 </div>
                 <div className="own_tariff_column">
-                    <div className={selectedItems.length===0 ? "own_tariff inactive_tariff": "own_tariff"}>
-                        <BlockTariff blue price={price} title={'Ваш личный тариф'} description_list={selectedItems.length===0 ? ["Выберете правильный план для вашей работы!"]:selectedItems.map(item=>item.title)} long={selectedItems.length!==0} own_tarif/>
+                    <div className={selectedItems.length ? "own_tariff inactive_tariff": "own_tariff"}>
+                        <BlockTariff blue price={price} title={'Ваш личный тариф'} descriptionList={!selectedItems.length ? ["Выберете правильный план для вашей работы!"]:selectedItems.map(item=>item.title)} long={selectedItems.length!==0} ownTariff/>
                     </div>
                 </div>
             </div>

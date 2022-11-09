@@ -9,13 +9,8 @@ import MusicPlay from "../styleComponents/MusicPlay";
 import Tools from "../styleComponents/Tools";
 
 
-const arr_person=[
-    {imgUrl:"/img/profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
-    {imgUrl:"/img/profile_photo/2.png",name:"Евгения",surname:"Житов",job:"Founder/CVO"},
-    {imgUrl:"/img/profile_photo/3.png",name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
-    {imgUrl:"/img/profile_photo/4.png",name:"Владимир",surname:"Житов",job:"Founder/ Art-director"},
-    {imgUrl:"/img/profile_photo/5.png",name:"Мария",surname:"Захарова",job:"Graphic Designer"}
-]
+import {listPersonHomePage} from "../constants";
+
 const Home=()=>{
     const [activePerson,setActivePerson]=useState(0)
 
@@ -93,17 +88,17 @@ const Home=()=>{
                     </Link>
                 </div>
                 <div className="team_list">
-                    {arr_person.map((item,i)=>
+                    {listPersonHomePage.map((item,i)=>
                          <PersonPortret key={i} {...item} setActivePerson={setActivePerson} activePerson={activePerson} index={i} />
                     )}
                 </div>
             </section>
 
-            <section className="join bottom_claster">
-                <div className="title claster_title">
+            <section className="join bottom_cluster">
+                <div className="title cluster_title">
                     Присоединяйтесь!
                 </div>
-                <div className="subtitle claster_subtitle">
+                <div className="subtitle cluster_subtitle">
                     Откройте для себя новое рабочее пространство!
                 </div>
                 <div className="wrapper_input join_input_wrapper">

@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 
-const AccordionItem=({titleHead,titleItem,itemOptionsList})=>{
+const AccordionItem=({titleHead , titleItem , itemOptionsList})=>{
     const [accordionOpen,setAccordionOpen]=useState(false)
     return(
         <>

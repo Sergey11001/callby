@@ -113,7 +113,7 @@ body{
         }
     }
 }
-.bottom_claster{
+.bottom_cluster{
      background: rgba(255, 255, 255, 0.4);
      box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
      backdrop-filter: blur(5px);
@@ -124,10 +124,10 @@ body{
     @media (max-width: 768px) {
         padding: 36px;
     }
-    .claster_title{
+    .cluster_title{
         margin-bottom: 6px;
     }
-    .claster_subtitle{
+    .cluster_subtitle{
         margin-bottom: 40px;
         @media (max-width: 576px) {
             margin-bottom: 20px;

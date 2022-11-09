@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const BlockAdvantage=({img,title,description})=>{
+const BlockAdvantage=({img , title , description})=>{
     return(
         <div className="column_adv common_background">
             <div className="adv_content">

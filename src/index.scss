@@ -296,8 +296,8 @@
       .person_image{
         position: relative;
         margin-left: -18px;
-        min-width: 36px;
-        min-height: 36px;
+        width: 36px;
+        height: 36px;
         overflow: hidden;
         z-index: 2;
         &:first-child{

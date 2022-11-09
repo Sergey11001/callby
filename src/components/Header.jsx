@@ -1,11 +1,11 @@
 
 import React, {useEffect, useRef, useState} from "react";
-import {Link,NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const Header=()=>{
     const [activeBurger,setActiveBurger]=useState(false)
-    const burger=useRef()
-    const menu=useRef()
+    const burger=useRef(null)
+    const menu=useRef(null)
 
     useEffect(()=>{
         const handleClickOutMenu=(e)=>{
@@ -34,7 +34,7 @@ const Header=()=>{
                         <img src="/img/header/logo.png" alt="" className="logo_img"/>
                     </div>
                 </NavLink>
-                <div ref={burger} className={activeBurger ? "burger active_burger" : "burger "} onClick={()=>setActiveBurger(a=>!a)}>
+                <div ref={burger} className={activeBurger ? "burger active_burger" : "burger "} onClick={()=>setActiveBurger(!activeBurger)}>
                     <span></span>
                 </div>
                 <nav ref={menu} className={activeBurger ? "header_menu active_menu":"header_menu"}>
