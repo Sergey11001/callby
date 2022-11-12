@@ -1,12 +1,15 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import TariffBlocksLong from "../components/TariffBlocksLong";
 import TariffConstructor from "../components/TariffConstructor";
 import {Link} from "react-router-dom";
 
 
-const Tariffs=()=>{
+const Tariffs = () => {
     const [active,setActive]=useState(false)
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    },[])
     return(
         <>
             <div className="tariff_page">
@@ -29,11 +32,11 @@ const Tariffs=()=>{
                 <div className="switched">
                     {active ? <TariffBlocksLong /> : <TariffConstructor />}
                 </div>
-                <div className="hard_decision bottom_claster">
-                    <div className="title claster_title">
+                <div className="hard_decision bottom_cluster">
+                    <div className="title cluster_title">
                         Трудно принять решение?
                     </div>
-                    <div className="subtitle claster_subtitle">
+                    <div className="subtitle cluster_subtitle">
                         Задайте нам вопрос в чат поддержки
                     </div>
                     <Link to="/contacts/support" className="support_btn btn ">Поддержка</Link>

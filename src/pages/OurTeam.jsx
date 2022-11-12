@@ -1,10 +1,14 @@
 import PersonPortret from "../components/PersonPortret";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {listPersonOurTeam} from "../constants";
 
 
 const OurTeam=()=>{
     const [activePersonTeam,setActivePersonTeam]=useState(0)
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    },[])
     return(
         <>
             <div className="our_team_page">

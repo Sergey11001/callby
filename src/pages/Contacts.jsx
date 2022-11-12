@@ -1,8 +1,22 @@
 import SelectorContacts from "../components/SelectorContacts";
 import {Link} from "react-router-dom";
+import {useEffect} from "react";
 
 
 const Contacts=()=>{
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    },[])
+
+    const blurFromInput = (e) =>{
+        if(e.target.value.trim()!==""){
+            e.target.classList.add("filled_input")
+        }
+        else{
+            e.target.classList.remove("filled_input")
+        }
+    }
     return(
         <>
             <div className="contacts_page">
@@ -18,15 +32,15 @@ const Contacts=()=>{
                     <div className="form_block">
                         <form action="#" className="contact_form">
                             <div className="inputs_block_wrapper">
-                                <input type="text" className="contact_input common_background" placeholder="Имя"/>
-                                <input type="text" className="contact_input common_background" placeholder="E-mail"/>
+                                <input type="text" className="contact_input common_background" placeholder="Имя" onBlur={(e)=>blurFromInput(e)}/>
+                                <input type="text" className="contact_input common_background" placeholder="E-mail" onBlur={(e)=>blurFromInput(e)}/>
                             </div>
                             <div className="inputs_block_wrapper">
                                 <SelectorContacts />
-                                <input type="text" className="contact_input common_background" placeholder="Номер телефона"/>
+                                <input type="text" className="contact_input common_background" placeholder="Номер телефона" onBlur={(e)=>blurFromInput(e)}/>
                             </div>
                             <div className="inputs_block_wrapper">
-                                <textarea className="textarea_contact common_background" placeholder="Сообщение"></textarea>
+                                <textarea className="textarea_contact common_background" placeholder="Сообщение" onBlur={(e)=>blurFromInput(e)}></textarea>
                             </div>
                             <div className="btn_wrapper btn_wrapper_contacts">
                                 <button className="contact_btn btn">Отправить</button>

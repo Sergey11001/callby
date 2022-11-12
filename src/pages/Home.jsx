@@ -63,10 +63,10 @@ const Home=()=>{
                             Выберете правильный план для вашей работы!
                         </div>
                     </div>
-                    <a href="#" className="more">
+                    <Link to="/tariffs" className="more">
                         Подробнее
                         <img src="/img/small_img/arrow.svg" alt="" className="section_arrow"/>
-                    </a>
+                    </Link>
                 </div>
                 <div className="tariffs_list">
                     <TariffBlocksShort />

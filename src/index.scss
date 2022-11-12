@@ -1,5 +1,5 @@
 .wrapper{
-  background: linear-gradient(139.01deg, rgba(77, 68, 223, 0.5) -17.85%, rgba(0, 187, 255, 0.5) 111.28%);
+  background: url("../public/img/bg.png")center / cover no-repeat;
 }
 //NavLink
 .active{
@@ -8,6 +8,8 @@
     border-bottom: 2px solid white;
   }
 }
+
+a:active, a:focus { outline: none; }
 
 .header_container{
   max-width: 1140px;

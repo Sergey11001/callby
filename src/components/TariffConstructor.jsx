@@ -34,7 +34,7 @@ const TariffConstructor=()=>{
                     </div>
                 </div>
                 <div className="own_tariff_column">
-                    <div className={selectedItems.length ? "own_tariff inactive_tariff": "own_tariff"}>
+                    <div className={selectedItems.length ? "own_tariff": "own_tariff inactive_tariff"}>
                         <BlockTariff blue price={price} title={'Ваш личный тариф'} descriptionList={!selectedItems.length ? ["Выберете правильный план для вашей работы!"]:selectedItems.map(item=>item.title)} long={selectedItems.length!==0} ownTariff/>
                     </div>
                 </div>
