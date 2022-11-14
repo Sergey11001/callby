@@ -7,6 +7,7 @@ import Contacts from "./pages/Contacts";
 import {Routes,Route} from "react-router-dom";
 import OurTeam from "./pages/OurTeam";
 import Support from "./pages/Support";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/tariffs" element={<Tariffs/>}/>
                 <Route path="/contacts" element={<Contacts/>}/>
                 <Route path="/team" element={<OurTeam/>}/>
+                <Route path="/about" element={<AboutUs/>}/>
                 <Route path="/contacts/support" element={<Support/>}/>
             </Routes>
         </div>

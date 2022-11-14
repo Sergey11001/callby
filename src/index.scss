@@ -151,6 +151,9 @@ a:active, a:focus { outline: none; }
       @media (max-width: 415px) {
         margin-right: 10px;
       }
+      &.active{
+        border-bottom: 2px solid #4466DF;
+      }
     }
     .enter_btn{
       display: inline-block;
@@ -889,6 +892,7 @@ a:active, a:focus { outline: none; }
     .sub_footer{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       .company_name{
         font-weight: 500;
         text-transform: uppercase;
@@ -1675,4 +1679,246 @@ a:active, a:focus { outline: none; }
   }
 }
 
-//Accordion===============
+
+
+//AboutUs======================
+
+.about_page{
+  .about_title_page{
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  .about_sub_title{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .about_page_content{
+    .about_carousel_wrapper{
+      margin-bottom: 60px;
+      position: relative;
+      &.first_scrolled:before, &.last_scrolled:after {
+        content: "";
+        width: 12px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 4;
+      }
+      &.first_scrolled:before {
+        left: -2px;
+        background: linear-gradient(90deg, rgb(200,219,255) 0%, transparent 100%);
+      }
+      &.last_scrolled:after{
+        right: -2px;
+        background: linear-gradient(90deg,transparent 0% , rgb(170,187,250) 100%);
+      }
+
+    }
+    .about_carousel{
+      display: flex;
+      padding: 2px;
+      width: 100%;
+      align-items: center;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel_item{
+        flex: 0 0 300px;
+        background: #4466DF;
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        color: #FFFFFF;
+        margin-right: 16px;
+        cursor: pointer;
+        &:last-child{
+          margin-right: 0;
+        }
+        &:hover{
+          box-shadow: 0 0 0 2px #EABA11 !important;
+        }
+        .carousel_item_body{
+          padding: 20px 32px;
+          display: flex;
+          align-items: center;
+          .carousel_item_image{
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-right: 12px;
+            .item_img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .carousel_item_inf{
+            flex: 1 1 auto;
+            .item_title{
+              font-weight: 500;
+              font-size: 20px;
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about_story{
+    padding: 60px;
+    position: relative;
+    margin-bottom: 40px;
+    @media (max-width: 992px) {
+      padding: 40px;
+    }
+    @media (max-width: 576px) {
+      padding: 20px;
+    }
+    &:before, &:after{
+      content: "";
+      display: block;
+      width: 260px;
+      height: 110px;
+      position: absolute;
+      border-top-left-radius: 20px;
+      @media (max-width: 576px) {
+        width: 200px;
+        height: 90px;
+      }
+    }
+    &:before{
+      top: 0;
+      left: 0;
+      border-top: 3px solid #4D44DF;
+      border-left: 3px solid #4D44DF;
+    }
+    &:after{
+      bottom: 0;
+      right: 0;
+      border-bottom: 3px solid #00BBFF;
+      border-right: 3px solid #00BBFF;
+    }
+    .story_body{
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      @media (max-width: 1140px) {
+        display: block;
+      }
+      @media (max-width: 992px) {
+        padding: 20px;
+      }
+      &:before, &:after{
+        content: "";
+        display: block;
+        width: 40px;
+        background: #000000;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        @media (max-width: 576px) {
+          display: none;
+        }
+      }
+      &:before{
+        top: 0;
+        height: 2px;
+      }
+      &:after{
+        bottom: 0;
+        height: 2px;
+      }
+      .story_column{
+        flex: 0 0 430px;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 24px;
+        @media (max-width: 1140px) {
+          margin-bottom: 30px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .about_photos{
+    padding: 30px;
+    margin-bottom: 60px;
+    .about_photos_title{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+    .about_photos_carousel{
+      width: 100%;
+      position: relative;
+      &.first_scrolled:before, &.last_scrolled:after {
+        content: "";
+        width: 20px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 4;
+        @media (max-width: 576px) {
+          width: 14px;
+        }
+      }
+      &.first_scrolled:before {
+        left: -2px;
+        background: linear-gradient(90deg, rgb(238,241,255) 0%, transparent 100%);
+      }
+      &.last_scrolled:after{
+        right: -2px;
+        background: linear-gradient(90deg,transparent 0% , rgb(238,241,255) 100%);
+      }
+      .photos_carousel_wrapper{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .photo_item{
+          flex: 0 0 250px;
+          margin-right: 40px;
+          &:last-child{
+            margin-right: 0;
+          }
+          @media (max-width: 576px) {
+            flex: 0 0 200px;
+          }
+          .photo_item_wrapper{
+            width: 100%;
+            position: relative;
+            height: 270px;
+            overflow: hidden;
+            border-radius: 20px;
+            @media (max-width: 576px) {
+              height: 210px;
+            }
+            .photo_img{
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
