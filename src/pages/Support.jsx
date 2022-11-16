@@ -1,7 +1,12 @@
 import Accordion from "../components/Accordion";
+import {useEffect} from "react";
 
 
 const Support=()=>{
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    },[])
     return(
         <>
             <div className="support_page">

@@ -46,7 +46,7 @@ const Header=()=>{
                             <NavLink to="/learning" className="menu_link" onClick={()=>setActiveBurger(false)}>Обучение</NavLink>
                         </li>
                         <li className="menu_item">
-                            <NavLink to="/shop" className="menu_link" onClick={()=>setActiveBurger(false)}>Магазин</NavLink>
+                            <NavLink to="/new_collection" className="menu_link" onClick={()=>setActiveBurger(false)}>Магазин</NavLink>
                         </li>
                         <li className="menu_item">
                             <NavLink to="/contacts" className="menu_link" onClick={()=>setActiveBurger(false)}>Контакты</NavLink>

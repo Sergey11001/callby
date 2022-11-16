@@ -968,22 +968,6 @@ a:active, a:focus { outline: none; }
       margin-bottom: 30px;
     }
   }
-  .support_btn{
-    font-weight: 500;
-    font-size: 20px;
-    padding: 10px 41px;
-    border: 1px solid #4466DF;
-    transition: all 0.1s ease;
-    @media (max-width: 576px) {
-      font-size: 18px;
-    }
-    &:hover{
-      color: #4466DF;
-      background: rgba(255, 255, 255, 0.4);
-      box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
-      backdrop-filter: blur(5px);
-    }
-  }
 }
 
 //Constructor=======================
@@ -1591,7 +1575,7 @@ a:active, a:focus { outline: none; }
 //OurTeam=========================
 .our_team_page{
   .our_team_page_title{
-
+    text-align: center;
   }
   .our_team_subtitle{
     margin-bottom: 40px;
@@ -1698,17 +1682,11 @@ a:active, a:focus { outline: none; }
       margin-bottom: 60px;
       position: relative;
       &.first_scrolled:before, &.last_scrolled:after {
-        content: "";
         width: 12px;
-        height: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        z-index: 4;
       }
       &.first_scrolled:before {
         left: -2px;
-        background: linear-gradient(90deg, rgb(200,219,255) 0%, transparent 100%);
+        background: linear-gradient(90deg, rgb(202,208,255) 0%, transparent 100%);
       }
       &.last_scrolled:after{
         right: -2px;
@@ -1785,7 +1763,7 @@ a:active, a:focus { outline: none; }
       width: 260px;
       height: 110px;
       position: absolute;
-      border-top-left-radius: 20px;
+
       @media (max-width: 576px) {
         width: 200px;
         height: 90px;
@@ -1796,12 +1774,14 @@ a:active, a:focus { outline: none; }
       left: 0;
       border-top: 3px solid #4D44DF;
       border-left: 3px solid #4D44DF;
+      border-top-left-radius: 20px;
     }
     &:after{
       bottom: 0;
       right: 0;
       border-bottom: 3px solid #00BBFF;
       border-right: 3px solid #00BBFF;
+      border-bottom-right-radius: 20px;
     }
     .story_body{
       padding: 40px;
@@ -1859,21 +1839,9 @@ a:active, a:focus { outline: none; }
       color: #000000;
       margin-bottom: 30px;
     }
-    .about_photos_carousel{
+    .photos_carousel_wrapper{
       width: 100%;
       position: relative;
-      &.first_scrolled:before, &.last_scrolled:after {
-        content: "";
-        width: 20px;
-        height: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        z-index: 4;
-        @media (max-width: 576px) {
-          width: 14px;
-        }
-      }
       &.first_scrolled:before {
         left: -2px;
         background: linear-gradient(90deg, rgb(238,241,255) 0%, transparent 100%);
@@ -1882,7 +1850,7 @@ a:active, a:focus { outline: none; }
         right: -2px;
         background: linear-gradient(90deg,transparent 0% , rgb(238,241,255) 100%);
       }
-      .photos_carousel_wrapper{
+      .photos_carousel{
         overflow-x: scroll;
         overflow-y: hidden;
         display: flex;
@@ -1922,3 +1890,158 @@ a:active, a:focus { outline: none; }
     }
   }
 }
+
+
+//Study==========
+
+.study_page{
+  .study_title_page{
+    margin-bottom: 30px;
+  }
+  .video_wrapper{
+    height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    .video{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .video_list_wrapper{
+    position: relative;
+    margin-bottom: 60px;
+    &.first_scrolled:before, &.last_scrolled:after {
+      width: 12px;
+    }
+    &.first_scrolled:before {
+      left: 0;
+      background: linear-gradient(90deg, rgb(195,203,255) 0%, transparent 100%);
+    }
+    &.last_scrolled:after{
+      right: 0;
+      background: linear-gradient(90deg,transparent 0% , rgb(202,216,254) 100%);
+    }
+  }
+  .video_name_list{
+    display: flex;
+    overflow-x: auto ;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .video_name_item{
+      flex: 0 0 236px;
+      display: block;
+      background: #4466DF;
+      border-radius: 20px;
+      padding: 10px 20px;
+      color: white;
+      margin-right: 20px;
+      cursor: pointer;
+      &:last-child{
+        margin-right: 0;
+      }
+      .number_lesson{
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 2px;
+      }
+    }
+    .active_video{
+      padding: 7px 17px;
+      border: 3px solid #EABA11;
+    }
+  }
+}
+
+
+//NewCollection=============
+.new_collection{
+  padding: 10px;
+  position: relative;
+  height: 400px;
+  margin-bottom: 70px;
+  margin-top: 40px;
+
+  .new_collection_wrapper{
+    padding: 50px 0 40px 30px;
+    height: 100%;
+    background: linear-gradient(180deg, #E8E6E7 0%, #E5E3E4 100%);
+    box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+  }
+  .new_collection_content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 488px;
+    .collection_title{
+      font-weight: 500;
+      font-size: 40px;
+      flex: 1 1 auto;
+    }
+    .collection_click{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #434343;
+      margin-bottom: 20px;
+      width: 427px;
+    }
+    .collection_buttons{
+      display: flex;
+      .collection_btn{
+        display: block;
+        background: #4466DF;
+        border-radius: 20px;
+        margin-right: 20px;
+        padding: 14px 16px;
+        font-weight: 500;
+        font-size: 15px;
+        color: white;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .human_image{
+    flex: 0 0 515px;
+    height: 100%;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    .new_collection_img{
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+.dots{
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  .dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #4466DF;
+    background: transparent;
+    margin-bottom: 6px;
+    transition: background 0.3s ease-in-out;
+  }
+  .active_dot{
+    background: #4466DF;
+  }
+}
+

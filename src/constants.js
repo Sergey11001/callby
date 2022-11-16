@@ -75,4 +75,21 @@ const listPersonOurTeam=[
     {imgUrl:"/img/profile_photo/9.png",name:"Мария",surname:"Захарова",job:"Middle Frontend Rust Developer"},
 ]
 
-export {accordionItems,advantagesBlocksList,contactOptions,selectionOptions,tariffBlocksLongList,tariffBlocksShortList,listPersonHomePage,listPersonOurTeam}
+const rememberList=[
+    {sub_title:"Взлеты и падения", id:1,imgUrl:"/img/carousel/1.jpg"},
+    {sub_title:"Тот день, когда...", id:2,imgUrl:"/img/carousel/2.jpg"},
+    {sub_title:"Общий сбор", id:3,imgUrl:"/img/carousel/3.jpg"},
+    {sub_title:"День Х", id:4,imgUrl:"/img/carousel/4.jpg"},
+    {sub_title:"Взлеты и падения", id:5,imgUrl:"/img/carousel/2.jpg"}
+]
+
+const videoList = [
+    {id:1, videoUrl:"ECTIE39k-_0", videoName:"Основы приложения 👶🏼"},
+    {id:2, videoUrl:"ECTIE39k-_0", videoName:"Познаем глубины 👩🏻‍💻"},
+    {id:3, videoUrl:"GW5PwlzXBDc", videoName:"Что полезного? 👩🏽‍🏫"},
+    {id:4, videoUrl:"ECTIE39k-_0", videoName:"Ищем ответы 🕵🏻‍♂️"},
+    {id:5, videoUrl:"https://youtu.be/ECTIE39k-_0", videoName:"Работа по-другому 💁🏼"},
+
+]
+
+export {accordionItems,advantagesBlocksList,contactOptions,selectionOptions,tariffBlocksLongList,tariffBlocksShortList,listPersonHomePage,listPersonOurTeam,rememberList,videoList}

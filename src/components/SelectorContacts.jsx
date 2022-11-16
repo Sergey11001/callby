@@ -33,7 +33,7 @@ const SelectorContacts=()=>{
                 <div className="contacts_selector_body">
                     <ul className="contacts_selector_options">
                         {contactOptions.map((item,i)=>
-                            <li className="contacts_selector_option" onClick={()=>chooseOption(i)}>{item}</li>
+                            <li key={i} className="contacts_selector_option" onClick={()=>chooseOption(i)}>{item}</li>
                         )}
                     </ul>
                 </div>

@@ -17,7 +17,7 @@ const Footer=()=>{
                             <Link to="/tariffs" className="footer_link">Тарифы</Link>
                         </li>
                         <li className="footer_item">
-                            <Link to="/study" className="footer_link">Обучение</Link>
+                            <Link to="/learning" className="footer_link">Обучение</Link>
                         </li>
                         <li className="footer_item">
                             <Link to="/shop" className="footer_link">Магазин</Link>

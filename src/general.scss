@@ -36,10 +36,25 @@ body{
     color: white;
     cursor: pointer;
 }
+.support_btn{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 41px;
+    border: 1px solid #4466DF;
+    transition: all 0.1s ease;
+    @media (max-width: 576px) {
+        font-size: 18px;
+    }
+    &:hover{
+        color: #4466DF;
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 1px 35px rgba(68, 102, 223, 0.1);
+        backdrop-filter: blur(5px);
+    }
+}
 
 .title_page{
     margin-top: 70px;
-    text-align: center;
     @media (max-width: 992px) {
         margin-top: 40px;
     }
@@ -273,4 +288,18 @@ input:focus, textarea:focus{
 }
 .border_yellow{
     box-shadow: 0 0 0 1px #EABA11 !important;
+}
+
+
+.first_scrolled:before, .last_scrolled:after {
+    content: "";
+    width: 20px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+    @media (max-width: 576px) {
+        width: 14px;
+    }
 }

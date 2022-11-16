@@ -5,10 +5,6 @@ import {useEffect} from "react";
 
 const Contacts=()=>{
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    },[])
-
     const blurFromInput = (e) =>{
         if(e.target.value.trim()!==""){
             e.target.classList.add("filled_input")
@@ -17,6 +13,10 @@ const Contacts=()=>{
             e.target.classList.remove("filled_input")
         }
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    },[])
     return(
         <>
             <div className="contacts_page">
