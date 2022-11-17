@@ -1,11 +1,9 @@
-import PersonPortret from "../components/PersonPortret";
 import React, {useEffect, useState} from "react";
 import {listPersonOurTeam} from "../constants";
+import TeamList from "../components/TeamList";
 
 
-const OurTeam=()=>{
-    const [activePersonTeam,setActivePersonTeam]=useState(0)
-
+const OurTeam = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     },[])
@@ -20,12 +18,7 @@ const OurTeam=()=>{
                         Мы создаем для вас уникальный продукт!
                     </div>
                 </div>
-                <div className="team_list">
-                    {listPersonOurTeam.map((item,i)=>
-                        <PersonPortret key={i} index={i}  {...item} activePerson={activePersonTeam} setActivePerson={setActivePersonTeam}/>
-                    )}
-                </div>
-
+                <TeamList listPeople={listPersonOurTeam} />
             </div>
         </>
     )

@@ -2,7 +2,7 @@ import {useEffect, useRef, useState} from "react";
 
 import {contactOptions} from "../constants";
 
-const SelectorContacts=()=>{
+const SelectorContacts = () => {
     const [activeSelector,setActiveSelector]=useState(false)
     const [activeIndex,setActiveIndex]=useState(-1)
     const popupContacts=useRef(null)

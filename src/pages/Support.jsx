@@ -2,7 +2,7 @@ import Accordion from "../components/Accordion";
 import {useEffect} from "react";
 
 
-const Support=()=>{
+const Support = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);

@@ -1,19 +1,16 @@
 import React, {useRef, useState} from "react";
 import AdvantagesBlocks from "../components/AdvantagesBlocks";
 import TariffBlocksShort from "../components/TariffBlocksShort";
-import PersonPortret from "../components/PersonPortret";
 import {Link} from "react-router-dom";
 import PhoneRing from "../styleComponents/PhoneRing";
 import PersonListOverlay from "../styleComponents/PersonListOverlay";
 import MusicPlay from "../styleComponents/MusicPlay";
 import Tools from "../styleComponents/Tools";
 
-
 import {listPersonHomePage} from "../constants";
+import TeamList from "../components/TeamList";
 
-const Home=()=>{
-    const [activePerson,setActivePerson]=useState(0)
-
+const Home = () => {
     return(
         <>
             <section className="union">
@@ -39,7 +36,6 @@ const Home=()=>{
                     <PersonListOverlay />
                     <MusicPlay />
                     <Tools />
-
                     <div className="big_circular">
 
                     </div>
@@ -87,13 +83,8 @@ const Home=()=>{
                         <img src="/img/small_img/arrow.svg" alt="" className="section_arrow"/>
                     </Link>
                 </div>
-                <div className="team_list">
-                    {listPersonHomePage.map((item,i)=>
-                         <PersonPortret key={i} {...item} setActivePerson={setActivePerson} activePerson={activePerson} index={i} />
-                    )}
-                </div>
+                <TeamList listPeople={listPersonHomePage} />
             </section>
-
             <section className="join bottom_cluster">
                 <div className="title cluster_title">
                     Присоединяйтесь!

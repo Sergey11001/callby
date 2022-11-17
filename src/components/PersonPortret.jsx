@@ -1,21 +1,21 @@
 import React, {useEffect} from "react";
 
-const PersonPortret=({index , surname , activePerson , setActivePerson , imgUrl , name , job})=>{
+const PersonPortret = ({index , surname , activePerson , setActivePerson , imgUrl , name , job}) => {
 
     useEffect(() => {
         const findLastFirst = () => {
             let lastElement=false;
-            let arr = document.querySelector('.team_list').children
-            for (let i = 0; i < arr.length; i++) {
-                if(lastElement && lastElement.offsetLeft>arr[i].offsetLeft){
+            let teamItems = document.querySelector('.team_list').children
+            for (let item of teamItems) {
+                if(lastElement && lastElement.offsetLeft>item.offsetLeft){
                     lastElement.classList.add("last_row_person")
-                    arr[i].classList.add("first_row_person")
+                    item.classList.add("first_row_person")
                 }
                 else if(lastElement){
                     lastElement.classList.remove('last_row_person')
-                    arr[i].classList.remove('first_row_person')
+                    item.classList.remove('first_row_person')
                 }
-                lastElement=arr[i];
+                lastElement=item;
             }
         }
         findLastFirst()

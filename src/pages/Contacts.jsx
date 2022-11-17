@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {useEffect} from "react";
 
 
-const Contacts=()=>{
+const Contacts = () => {
 
     const blurFromInput = (e) =>{
         if(e.target.value.trim()!==""){
