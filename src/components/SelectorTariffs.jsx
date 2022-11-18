@@ -2,17 +2,17 @@ import React, {useState} from "react";
 import SelectorOptionTariff from "./SelectorOptionTariff";
 
 import {selectionOptions} from "../constants";
+import {useSelector} from "react-redux";
 
 
 const SelectorTariffs=()=>{
     const [activePopup,setActivePopup]=useState(false)
+    const {selectedItems} = useSelector((state) =>state.selected)
     return(
         <>
             <div className="selector_wrapper">
                 <div  className={activePopup ? "selector_header border_yellow":"selector_header"}>
-                    <div className="selector_title">
-                        Приватные чаты и каналы
-                    </div>
+                    <input disabled={true} value={selectedItems.length ?  selectedItems.map(item=>item.title).join(", ") : "Выберите тарифные опции"} className={selectedItems.length ? "selector_title option_chose" : "selector_title"} />
                     <button className="btn selector_btn" onClick={()=>setActivePopup(!activePopup)}>
                         <img src="/img/small_img/arr_down.svg" alt="" className={activePopup ? "selector_img img_rotate":"selector_img"}/>
                     </button>

@@ -24,7 +24,7 @@ const VideoChoose = () => {
                 <div className="video_list_wrapper last_scrolled" ref={carouselWrapper}>
                     <ul className="video_name_list" ref={carouselVideo}>
                         {videoList.map((item,i)=>
-                            <li key={i} className={activeVideo===i ? "video_name_item active_video" : "video_name_item"} onClick={()=>setActiveVideo(i)}>
+                            <li key={i} className={activeVideo===i ? "active_video" : "video_name_item"} onClick={()=>setActiveVideo(i)}>
                                 <div className="number_lesson">
                                     {i + 1} урок
                                 </div>

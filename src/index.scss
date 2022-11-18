@@ -1051,10 +1051,16 @@ a:active, a:focus { outline: none; }
     .selector_title{
       margin-left: 20px;
       line-height: 17px;
+      flex: 1 1 auto;
+      margin-right: 20px;
+      color: #858585;
+    }
+    .option_chose{
+      color: #060606;
     }
     .selector_btn{
       margin-left: auto;
-      width: 80px;
+      flex: 0 0 80px;
       height: 36px;
       background: #4466DF;
       border-radius: 20px;
@@ -1930,7 +1936,7 @@ a:active, a:focus { outline: none; }
     &::-webkit-scrollbar {
       display: none;
     }
-    .video_name_item{
+    .video_name_item, .active_video{
       flex: 0 0 236px;
       display: block;
       background: #4466DF;
@@ -1939,18 +1945,27 @@ a:active, a:focus { outline: none; }
       color: white;
       margin-right: 20px;
       cursor: pointer;
-      &:last-child{
-        margin-right: 0;
-      }
       .number_lesson{
         font-weight: 500;
         font-size: 20px;
         margin-bottom: 2px;
       }
     }
+    .video_name_item{
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover{
+        padding: 7px 17px;
+        border: 3px solid #EABA11;
+      }
+    }
     .active_video{
       padding: 7px 17px;
-      border: 3px solid #EABA11;
+      border: 3px solid red;
+      &:last-child{
+        margin-right: 0;
+      }
     }
   }
 }
