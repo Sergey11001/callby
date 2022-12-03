@@ -18,12 +18,7 @@ const Header=()=>{
     },[])
 
     useEffect(()=>{
-        if(activeBurger){
-            document.body.style.overflow="hidden"
-        }
-        else {
-            document.body.style.overflow="auto"
-        }
+        activeBurger ? document.body.classList.add('noscroll') :document.body.classList.remove("noscroll")
     },[activeBurger])
 
     return(
