@@ -18,7 +18,6 @@ function App() {
         <div className="container">
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/callby" element={<Navigate to='/' />}/>
                 <Route path="/tariffs" element={<Tariffs/>}/>
                 <Route path="/contacts" element={<Contacts/>}/>
                 <Route path="/team" element={<OurTeam/>}/>
