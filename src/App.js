@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Tariffs from "./pages/Tariffs";
 import Contacts from "./pages/Contacts";
 
-import {Routes,Route} from "react-router-dom";
+import {Routes, Route, Navigate} from "react-router-dom";
 import OurTeam from "./pages/OurTeam";
 import Support from "./pages/Support";
 import AboutUs from "./pages/AboutUs";
@@ -18,6 +18,7 @@ function App() {
         <div className="container">
             <Routes>
                 <Route path="/" element={<Home/>}/>
+                <Route path="/callby" element={<Navigate to='/' />}/>
                 <Route path="/tariffs" element={<Tariffs/>}/>
                 <Route path="/contacts" element={<Contacts/>}/>
                 <Route path="/team" element={<OurTeam/>}/>

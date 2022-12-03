@@ -56,31 +56,31 @@ const tariffBlocksShortList=[
 ]
 
 const listPersonHomePage=[
-    {imgUrl:'profile_photo/1.png',name:`Владимир`,surname:"Житов",job:"CЕO"},
-    {imgUrl:'profile_photo/2.png',name:"Евгения",surname:"Житов",job:"Founder/CVO"},
-    {imgUrl:'profile_photo/3.png',name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
-    {imgUrl:'profile_photo/4.png',name:"Владимир",surname:"Житов",job:"Founder/ Art-director"},
-    {imgUrl:'profile_photo/5.png',name:"Мария",surname:"Захарова",job:"Graphic Designer"}
+    {imgUrl:"profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
+    {imgUrl:"profile_photo/2.png",name:"Евгения",surname:"Маслова",job:"Founder/CVO"},
+    {imgUrl:"profile_photo/3.png",name:"Анастасия",surname:"Осипова",job:"Founder/CMO"},
+    {imgUrl:"profile_photo/4.png",name:"Алиса",surname:"Литвинова",job:"Founder/ Art-director"},
+    {imgUrl:"profile_photo/5.png",name:"Владимир",surname:"Родионов",job:"Graphic Designer"}
 ]
 
 const listPersonOurTeam=[
     {imgUrl:"profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
-    {imgUrl:"profile_photo/2.png",name:"Евгения",surname:"Житов",job:"Founder/CVO"},
-    {imgUrl:"profile_photo/3.png",name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
-    {imgUrl:"profile_photo/4.png",name:"Владимир",surname:"Житов",job:"Founder/ Art-director"},
-    {imgUrl:"profile_photo/5.png",name:"Мария",surname:"Отставная",job:"Graphic Designer"},
-    {imgUrl:"profile_photo/6.png",name:"Мария",surname:"Житов",job:"HR архитектор"},
-    {imgUrl:"profile_photo/10.png",name:"Мария",surname:"Отставная",job:"HR-менеджер"},
-    {imgUrl:"profile_photo/8.png",name:"Мария",surname:"Захарова",job:"Middle Backend Rust Developer"},
-    {imgUrl:"profile_photo/9.png",name:"Мария",surname:"Захарова",job:"Middle Frontend Rust Developer"},
+    {imgUrl:"profile_photo/2.png",name:"Евгения",surname:"Маслова",job:"Founder/CVO"},
+    {imgUrl:"profile_photo/3.png",name:"Анастасия",surname:"Осипова",job:"Founder/CMO"},
+    {imgUrl:"profile_photo/4.png",name:"Алиса",surname:"Литвинова",job:"Founder/ Art-director"},
+    {imgUrl:"profile_photo/5.png",name:"Владимир",surname:"Родионов",job:"Graphic Designer"},
+    {imgUrl:"profile_photo/6.png",name:"Марк",surname:"Горбунов",job:"HR архитектор"},
+    {imgUrl:"profile_photo/10.png",name:"Артемий",surname:"Кудрявцев",job:"HR-менеджер"},
+    {imgUrl:"profile_photo/8.png",name:"Денис",surname:"Котов",job:"Middle Backend Rust Developer"},
+    {imgUrl:"profile_photo/9.png",name:"Максим",surname:"Петров",job:"Middle Frontend Rust Developer"},
 ]
 
 const rememberList=[
-    {sub_title:"Взлеты и падения", id:1,imgUrl:"../assets/carousel/1.jpg"},
-    {sub_title:"Тот день, когда...", id:2,imgUrl:"/img/carousel/2.jpg"},
-    {sub_title:"Общий сбор", id:3,imgUrl:"/img/carousel/3.jpg"},
-    {sub_title:"День Х", id:4,imgUrl:"/img/carousel/4.jpg"},
-    {sub_title:"Взлеты и падения", id:5,imgUrl:"/img/carousel/2.jpg"}
+    {sub_title:"Взлеты и падения", id:1,imgUrl:"carousel/1.jpg"},
+    {sub_title:"Тот день, когда...", id:2,imgUrl:"carousel/2.jpg"},
+    {sub_title:"Общий сбор", id:3,imgUrl:"carousel/3.jpg"},
+    {sub_title:"День Х", id:4,imgUrl:"carousel/4.jpg"},
+    {sub_title:"Взлеты и падения", id:5,imgUrl:"carousel/2.jpg"}
 ]
 
 const videoList = [

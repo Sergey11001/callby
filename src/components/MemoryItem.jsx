@@ -7,7 +7,7 @@ const MemoryItem = ({imgUrl , id , sub_title}) =>{
         <div className="carousel_item">
             <div className="carousel_item_body">
                 <div className="carousel_item_image">
-                    <img src={imgUrl} alt="" className="item_img"/>
+                    <img src={require('../assets/' + imgUrl)} alt="" className="item_img"/>
                 </div>
                 <div className="carousel_item_inf">
                     <div className="item_title">
