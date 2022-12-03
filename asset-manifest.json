@@ -1,15 +1,45 @@
 {
   "files": {
-    "main.css": "/callby/static/css/main.f6cc773c.css",
-    "main.js": "/callby/static/js/main.12ca786e.js",
+    "main.css": "/callby/static/css/main.90577721.css",
+    "main.js": "/callby/static/js/main.92faa5ea.js",
     "static/media/bg.png": "/callby/static/media/bg.2495bd098ef914786640.png",
+    "static/media/6.png": "/callby/static/media/6.99307356f99efc0df8bb.png",
+    "static/media/4.png": "/callby/static/media/4.dbac74650904be86e325.png",
+    "static/media/9.png": "/callby/static/media/9.d70d35d3996535618939.png",
+    "static/media/8.png": "/callby/static/media/8.ca32717943caef8d9e7b.png",
+    "static/media/10.png": "/callby/static/media/10.fb6abf9d2a090c2656c5.png",
+    "static/media/3.png": "/callby/static/media/3.1e6e671cf47d46f6ddfc.png",
+    "static/media/5.png": "/callby/static/media/5.9fd1a9bb942fa93235cc.png",
+    "static/media/7.png": "/callby/static/media/7.678ee6be6ee0888efc7e.png",
+    "static/media/1.png": "/callby/static/media/1.355749fbe404972b623c.png",
+    "static/media/2.png": "/callby/static/media/2.08ed8987f2e6412070b1.png",
+    "static/media/hands.png": "/callby/static/media/hands.e6c578ee8451665c9186.png",
+    "static/media/1.jpg": "/callby/static/media/1.e5025977ec654378faa3.jpg",
+    "static/media/3.jpg": "/callby/static/media/3.66af610ae735e8bf0669.jpg",
+    "static/media/2.jpg": "/callby/static/media/2.bb0ca7bf8b2aacbddcaa.jpg",
+    "static/media/3.svg": "/callby/static/media/3.47ccc9ee2e4da5edf689827d79d84dfa.svg",
+    "static/media/2.svg": "/callby/static/media/2.bcb1b5244c76c26d0d67e0cdbd8e42a8.svg",
+    "static/media/1.svg": "/callby/static/media/1.0a0bede521442eec1e62c071575a84d5.svg",
+    "static/media/facebook.svg": "/callby/static/media/facebook.5cbaa6f916478eaab0a838cb9a8c0c96.svg",
+    "static/media/telegram.svg": "/callby/static/media/telegram.07686c2896b4672246a5ac9279c61077.svg",
+    "static/media/chat.svg": "/callby/static/media/chat.98b4dd4994b9c65a43aa98307101cec6.svg",
+    "static/media/clip.svg": "/callby/static/media/clip.19d5ddac77e1483f65b951fc194bc46c.svg",
     "static/media/two_arrow.svg": "/callby/static/media/two_arrow.8d8f42571d7358ee4a8a.svg",
+    "static/media/twitter.svg": "/callby/static/media/twitter.0e909f2dfedc21cc7cd9da1189f271ad.svg",
+    "static/media/check_white.svg": "/callby/static/media/check_white.b405f2956a32f936c915bdfddf560b24.svg",
+    "static/media/check.svg": "/callby/static/media/check.1ec3ef3b2c1cbe45b286d6ee39f63d51.svg",
+    "static/media/flag.svg": "/callby/static/media/flag.d6af645b4d564212a97326aa6aacb4e2.svg",
+    "static/media/arr_down_blue.svg": "/callby/static/media/arr_down_blue.17494b3cf9006d68d83492cedbfc5ffe.svg",
+    "static/media/arr_down.svg": "/callby/static/media/arr_down.63862526a944402b8e36ad1b678c4be2.svg",
+    "static/media/play.svg": "/callby/static/media/play.50c667fa95ae0e416e5b98ed3c496441.svg",
     "index.html": "/callby/index.html",
-    "main.f6cc773c.css.map": "/callby/static/css/main.f6cc773c.css.map",
-    "main.12ca786e.js.map": "/callby/static/js/main.12ca786e.js.map"
+    "static/media/arr.svg": "/callby/static/media/arr.85f98d46bb51fccaec79.svg",
+    "static/media/arrow.svg": "/callby/static/media/arrow.85f98d46bb51fccaec79bf70699a3d88.svg",
+    "main.90577721.css.map": "/callby/static/css/main.90577721.css.map",
+    "main.92faa5ea.js.map": "/callby/static/js/main.92faa5ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6cc773c.css",
-    "static/js/main.12ca786e.js"
+    "static/css/main.90577721.css",
+    "static/js/main.92faa5ea.js"
   ]
 }
