@@ -1,4 +1,8 @@
 import React from "react";
+import personImg1 from "../assets/phone1.png"
+import personImg2 from "../assets/phone3.png"
+import chat from "../assets/small_img/chat.svg"
+import clip from "../assets/small_img/clip.svg"
 
 
 const Tools=()=>{
@@ -20,21 +24,21 @@ const Tools=()=>{
             <div className="tool_footer">
                 <div className="tool_images">
                     <div className="tool_image">
-                        <img src="/img/phone1.png" alt="" className="tool_img"/>
+                        <img src={personImg1} alt="" className="tool_img"/>
                     </div>
                     <div className="tool_image">
-                        <img src="/img/phone3.png" alt="" className="tool_img"/>
+                        <img src={personImg2} alt="" className="tool_img"/>
                     </div>
                 </div>
                 <div className="tool_data">
                     <div className="tool_data_image">
-                        <img src="/img/small_img/chat.svg" alt="" className="tool_data_img"/>
+                        <img src={chat} alt="" className="tool_data_img"/>
                     </div>
                     <div className="data_col">15</div>
                 </div>
                 <div className="tool_data">
                     <div className="tool_data_image">
-                        <img src="/img/small_img/clip.svg" alt="" className="tool_data_img"/>
+                        <img src={clip} alt="" className="tool_data_img"/>
                     </div>
                     <div className="data_col">3</div>
                 </div>

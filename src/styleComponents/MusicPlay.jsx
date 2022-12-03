@@ -1,5 +1,6 @@
 import React from "react";
 
+import play from "../assets/small_img/play.svg"
 
 const MusicPlay=()=>{
     return(
@@ -28,7 +29,7 @@ const MusicPlay=()=>{
             </div>
             <div className="music_play">
                 <div className="play_image">
-                    <img src="/img/small_img/play.svg" alt="" className="music_play_img"/>
+                    <img src={play} alt="" className="music_play_img"/>
                 </div>
             </div>
         </div>

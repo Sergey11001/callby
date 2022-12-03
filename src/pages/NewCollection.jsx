@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 const arrImg=[
-    "/img/newCollection/1.png",
-    "/img/newCollection/1.png",
-    "/img/newCollection/1.png",
+    "newCollection/1.png",
+    "newCollection/1.png",
+    "newCollection/1.png",
 ]
 
 const NewCollection = () => {
@@ -37,7 +37,7 @@ const NewCollection = () => {
                         </div>
                     </div>
                     <div className="human_image">
-                        <img alt="" className="new_collection_img" src={arrImg[activeIndex]}/>
+                        <img alt="" className="new_collection_img" src={require('../assets/' + arrImg[activeIndex])}/>
                     </div>
                 </div>
 

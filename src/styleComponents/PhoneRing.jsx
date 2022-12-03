@@ -1,12 +1,13 @@
 import React from "react";
 
+import personImg from "../assets/phone1.png"
 
 const PhoneRing=()=>{
     return(
         <div className="phone_ring background_style_block">
             <div className="phone_img_wrapper">
                 <div className="phone_image">
-                    <img src="/img/phone1.png" alt="" className="phone_img"/>
+                    <img src={personImg} alt="" className="phone_img"/>
                 </div>
             </div>
             <div className="phone_name">

@@ -1,5 +1,7 @@
 import React from "react";
 
+import check from "../assets/small_img/check.svg"
+import whiteCheck from "../assets/small_img/check_white.svg"
 
 const BlockTariff=({title , descriptionList , price,blue , ownTariff , long=false}) => {
     return(
@@ -16,7 +18,7 @@ const BlockTariff=({title , descriptionList , price,blue , ownTariff , long=fals
                 <ul className="tariff_advs">
                     {descriptionList.map((item,i)=>
                         <li key={i} className={long ? "tariff_adv no_last_opacity":"tariff_adv"}>
-                            <img src={`/img/small_img/check${blue ? "_white" : ""}.svg`} alt="" className="img_tariff"/>
+                            <img src={blue ? whiteCheck : check} alt="" className="img_tariff"/>
                             <div className="item_adv">
                                 {item}
                             </div>

@@ -29,7 +29,7 @@ const PersonPortret = ({index , surname , activePerson , setActivePerson , imgUr
         <div onClick={() => setActivePerson(index)} className={index===activePerson ? "team_person_wrapper active_person" : index-1===activePerson ?"team_person_wrapper person_right":index+1===activePerson ? "team_person_wrapper person_left" : "team_person_wrapper"}>
             <div className="team_person_block">
                 <div className="person_image">
-                    <img src={imgUrl} alt="" className="person_img"/>
+                    <img src={require('../assets/'+ imgUrl)} alt="" className="person_img"/>
                 </div>
                 <div className="person_inf">
                     <div className="person_name">

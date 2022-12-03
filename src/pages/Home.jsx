@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React from "react";
 import AdvantagesBlocks from "../components/AdvantagesBlocks";
 import TariffBlocksShort from "../components/TariffBlocksShort";
 import {Link} from "react-router-dom";
@@ -7,8 +7,11 @@ import PersonListOverlay from "../styleComponents/PersonListOverlay";
 import MusicPlay from "../styleComponents/MusicPlay";
 import Tools from "../styleComponents/Tools";
 
-import {listPersonHomePage} from "../constants";
 import TeamList from "../components/TeamList";
+import {listPersonHomePage} from "../constants";
+
+import hands from "../assets/small_img/hands.png"
+import arrow from "../assets/small_img/arrow.svg"
 
 const Home = () => {
     return(
@@ -41,7 +44,7 @@ const Home = () => {
                     </div>
                     <div className="union_image_wrapper">
                         <div className="union_image">
-                            <img src="/img/small_img/hands.png" alt="hands" className="union_img"/>
+                            <img src={hands} alt="hands" className="union_img"/>
                         </div>
                     </div>
                 </div>
@@ -61,7 +64,7 @@ const Home = () => {
                     </div>
                     <Link to="/tariffs" className="more">
                         Подробнее
-                        <img src="/img/small_img/arrow.svg" alt="" className="section_arrow"/>
+                        <img src={arrow} alt="" className="section_arrow"/>
                     </Link>
                 </div>
                 <div className="tariffs_list">
@@ -80,7 +83,7 @@ const Home = () => {
                     </div>
                     <Link to="/team" className="more">
                         Подробнее
-                        <img src="/img/small_img/arrow.svg" alt="" className="section_arrow"/>
+                        <img src={arrow} alt="" className="section_arrow"/>
                     </Link>
                 </div>
                 <TeamList listPeople={listPersonHomePage} />

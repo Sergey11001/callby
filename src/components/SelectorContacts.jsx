@@ -1,6 +1,7 @@
 import {useEffect, useRef, useState} from "react";
 
 import {contactOptions} from "../constants";
+import blueArrow from "../assets/small_img/arr_down_blue.svg"
 
 const SelectorContacts = () => {
     const [activeSelector,setActiveSelector]=useState(false)
@@ -26,7 +27,7 @@ const SelectorContacts = () => {
             <div className={activeSelector ? "selector_contacts_header become_white border_yellow" : activeIndex!==-1 ? "selector_contacts_header become_white filled_input":"selector_contacts_header common_background"} onClick={()=>setActiveSelector(!activeSelector)}>
                 <div className={activeIndex!==-1 ? "selector_placeholder active_placeholder":"selector_placeholder"}>{activeSelector ? "":activeIndex!==-1 ? contactOptions[activeIndex]:"Причина"}</div>
                 <div className="selector_img">
-                    <img src="/img/small_img/arr_down_blue.svg" alt="arrow" className={activeSelector ? "container_selector_img img_rotate":"container_selector_img"}/>
+                    <img src={blueArrow} alt="arrow" className={activeSelector ? "container_selector_img img_rotate":"container_selector_img"}/>
                 </div>
             </div>
             <div className={activeSelector ? "contacts_selector_body_wrapper active_contact_selector":"contacts_selector_body_wrapper"}>

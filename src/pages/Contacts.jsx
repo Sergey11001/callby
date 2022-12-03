@@ -2,6 +2,9 @@ import SelectorContacts from "../components/SelectorContacts";
 import {Link} from "react-router-dom";
 import {useEffect} from "react";
 
+import contact1 from "../assets/contacts/1.svg"
+import contact2 from "../assets/contacts/2.svg"
+import contact3 from "../assets/contacts/3.svg"
 
 const Contacts = () => {
 
@@ -59,7 +62,7 @@ const Contacts = () => {
                                 <a href="#" className="contact_information">
                                     <div className="contact_inf_image_column">
                                         <div className="inf_image_wrapper">
-                                            <img src="/img/contacts/1.svg" alt="" className="inf_img"/>
+                                            <img src={contact1} alt="" className="inf_img"/>
                                         </div>
                                     </div>
                                     <div className="contact_contacts">
@@ -77,7 +80,7 @@ const Contacts = () => {
                                 <a href="#" className="contact_information">
                                     <div className="contact_inf_image_column">
                                         <div className="inf_image_wrapper">
-                                            <img src="/img/contacts/2.svg" alt="" className="inf_img"/>
+                                            <img src={contact2} alt="" className="inf_img"/>
                                         </div>
                                     </div>
                                     <div className="contact_contacts">
@@ -95,7 +98,7 @@ const Contacts = () => {
                                 <Link to="support" className="contact_information">
                                     <div className="contact_inf_image_column">
                                         <div className="inf_image_wrapper">
-                                            <img src="/img/contacts/3.svg" alt="" className="inf_img"/>
+                                            <img src={contact3} alt="" className="inf_img"/>
                                         </div>
                                     </div>
                                     <div className="contact_contacts">

@@ -1,5 +1,12 @@
 import {Link} from "react-router-dom";
 
+import footerImg from "../assets/footer/footer.png"
+import facebook from "../assets/social/facebook.svg"
+import telegram from "../assets/social/telegram.svg"
+import twitter from "../assets/social/twitter.svg"
+import flag from "../assets/footer/flag.svg"
+import menuImg1 from '../assets/footer/1.svg'
+import menuImg2 from '../assets/footer/2.svg'
 
 const Footer = () => {
     return(
@@ -7,7 +14,7 @@ const Footer = () => {
             <div className="footer_container">
                 <nav className="footer_nav">
                     <div className="footer_image">
-                        <img src="/img/footer/footer.png" alt="" className="footer_img"/>
+                        <img src={footerImg} alt="" className="footer_img"/>
                     </div>
                     <ul className="footer_column">
                         <li className="footer_column_title">
@@ -31,11 +38,11 @@ const Footer = () => {
                             Контакты
                         </li>
                         <li className="footer_item">
-                            <img src="/img/footer/1.svg" alt="" className="footer_link_img"/>
+                            <img src={menuImg1} alt="" className="footer_link_img"/>
                             <a href="#" className="footer_link">8 (999) 423-28-14</a>
                         </li>
                         <li className="footer_item">
-                            <img src="/img/footer/2.svg" alt="" className="footer_link_img"/>
+                            <img src={menuImg2} alt="" className="footer_link_img"/>
                             <a href="#" className="footer_link">efircalbe@gmail.com</a>
                         </li>
                     </ul>
@@ -61,13 +68,13 @@ const Footer = () => {
                     </ul>
                     <ul className="footer_column social_column">
                         <a href="#" className="social_item common_background">
-                            <img src="/img/social/telegram.svg" alt="" className="social_img"/>
+                            <img src={telegram} alt="" className="social_img"/>
                         </a>
                         <a href="#" className="social_item common_background">
-                            <img src="/img/social/facebook.svg" alt="" className="social_img"/>
+                            <img src={facebook} alt="" className="social_img"/>
                         </a>
                         <a href="#" className="social_item common_background">
-                            <img src="/img/social/twitter.svg" alt="" className="social_img"/>
+                            <img src={twitter} alt="" className="social_img"/>
                         </a>
                     </ul>
                 </nav>
@@ -76,7 +83,7 @@ const Footer = () => {
                         ООО “КОЛЛБИ”
                     </div>
                     <div className="country">
-                        <img src="/img/footer/flag.svg" alt="" className="flag_img"/>
+                        <img src={flag} alt="" className="flag_img"/>
                         Рус
                     </div>
                 </div>

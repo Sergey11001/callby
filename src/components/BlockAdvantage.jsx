@@ -6,7 +6,7 @@ const BlockAdvantage=({img , title , description})=>{
         <div className="column_adv common_background">
             <div className="adv_content">
                 <div className="adv_image">
-                    <img src={img} alt="" className="adv_img"/>
+                    <img src={require(`../assets/${img}`)} alt="" className="adv_img"/>
                 </div>
                 <div className="adv_title">
                     {title}

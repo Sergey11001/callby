@@ -28,9 +28,9 @@ const accordionItems=[
 
 
 const advantagesBlocksList=[
-    {img:"/img/people_emogi/1.svg",title:"Вся работа в одном месте",description:"Благодаря расширенному функционалу приложения, вся работа происходит в одном месте, и вы больше не будете использовать сторонние программы"},
-    {img:"/img/people_emogi/2.svg",title:"Простой в использовани",description:"Интуитивное расположение кнопок через которые вы сможете с полным комфортом пользоваться приложением"},
-    {img:"/img/people_emogi/3.svg",title:"Тарифный план",description:"Используйте уже готовый набор функционала или собери свой индивидуально. Получите уникальный тарифный план!"},
+    {img:"people_emogi/1.svg",title:"Вся работа в одном месте",description:"Благодаря расширенному функционалу приложения, вся работа происходит в одном месте, и вы больше не будете использовать сторонние программы"},
+    {img:"people_emogi/2.svg",title:"Простой в использовани",description:"Интуитивное расположение кнопок через которые вы сможете с полным комфортом пользоваться приложением"},
+    {img:"people_emogi/3.svg",title:"Тарифный план",description:"Используйте уже готовый набор функционала или собери свой индивидуально. Получите уникальный тарифный план!"},
 ]
 
 const contactOptions=["Обращение","Жалоба","Благодарность"]
@@ -56,27 +56,27 @@ const tariffBlocksShortList=[
 ]
 
 const listPersonHomePage=[
-    {imgUrl:"/img/profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
-    {imgUrl:"/img/profile_photo/2.png",name:"Евгения",surname:"Житов",job:"Founder/CVO"},
-    {imgUrl:"/img/profile_photo/3.png",name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
-    {imgUrl:"/img/profile_photo/4.png",name:"Владимир",surname:"Житов",job:"Founder/ Art-director"},
-    {imgUrl:"/img/profile_photo/5.png",name:"Мария",surname:"Захарова",job:"Graphic Designer"}
+    {imgUrl:'profile_photo/1.png',name:`Владимир`,surname:"Житов",job:"CЕO"},
+    {imgUrl:'profile_photo/2.png',name:"Евгения",surname:"Житов",job:"Founder/CVO"},
+    {imgUrl:'profile_photo/3.png',name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
+    {imgUrl:'profile_photo/4.png',name:"Владимир",surname:"Житов",job:"Founder/ Art-director"},
+    {imgUrl:'profile_photo/5.png',name:"Мария",surname:"Захарова",job:"Graphic Designer"}
 ]
 
 const listPersonOurTeam=[
-    {imgUrl:"/img/profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
-    {imgUrl:"/img/profile_photo/2.png",name:"Евгения",surname:"Житов",job:"Founder/CVO"},
-    {imgUrl:"/img/profile_photo/3.png",name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
-    {imgUrl:"/img/profile_photo/4.png",name:"Владимир",surname:"Житов",job:"Founder/ Art-director"},
-    {imgUrl:"/img/profile_photo/5.png",name:"Мария",surname:"Отставная",job:"Graphic Designer"},
-    {imgUrl:"/img/profile_photo/6.png",name:"Мария",surname:"Житов",job:"HR архитектор"},
-    {imgUrl:"/img/profile_photo/10.png",name:"Мария",surname:"Отставная",job:"HR-менеджер"},
-    {imgUrl:"/img/profile_photo/8.png",name:"Мария",surname:"Захарова",job:"Middle Backend Rust Developer"},
-    {imgUrl:"/img/profile_photo/9.png",name:"Мария",surname:"Захарова",job:"Middle Frontend Rust Developer"},
+    {imgUrl:"profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
+    {imgUrl:"profile_photo/2.png",name:"Евгения",surname:"Житов",job:"Founder/CVO"},
+    {imgUrl:"profile_photo/3.png",name:"Владимир",surname:"Отставная",job:"Founder/CMO"},
+    {imgUrl:"profile_photo/4.png",name:"Владимир",surname:"Житов",job:"Founder/ Art-director"},
+    {imgUrl:"profile_photo/5.png",name:"Мария",surname:"Отставная",job:"Graphic Designer"},
+    {imgUrl:"profile_photo/6.png",name:"Мария",surname:"Житов",job:"HR архитектор"},
+    {imgUrl:"profile_photo/10.png",name:"Мария",surname:"Отставная",job:"HR-менеджер"},
+    {imgUrl:"profile_photo/8.png",name:"Мария",surname:"Захарова",job:"Middle Backend Rust Developer"},
+    {imgUrl:"profile_photo/9.png",name:"Мария",surname:"Захарова",job:"Middle Frontend Rust Developer"},
 ]
 
 const rememberList=[
-    {sub_title:"Взлеты и падения", id:1,imgUrl:"/img/carousel/1.jpg"},
+    {sub_title:"Взлеты и падения", id:1,imgUrl:"../assets/carousel/1.jpg"},
     {sub_title:"Тот день, когда...", id:2,imgUrl:"/img/carousel/2.jpg"},
     {sub_title:"Общий сбор", id:3,imgUrl:"/img/carousel/3.jpg"},
     {sub_title:"День Х", id:4,imgUrl:"/img/carousel/4.jpg"},

@@ -2,6 +2,8 @@
 import React, {useEffect, useRef, useState} from "react";
 import {NavLink} from "react-router-dom";
 
+import logo from "../assets/header/logo.png"
+
 const Header=()=>{
     const [activeBurger,setActiveBurger]=useState(false)
     const burger=useRef(null)
@@ -26,7 +28,7 @@ const Header=()=>{
             <div className="header_container">
                 <NavLink to="/" className="logo">
                     <div className="header_image">
-                        <img src="/img/header/logo.png" alt="" className="logo_img"/>
+                        <img src={logo} alt="" className="logo_img"/>
                     </div>
                 </NavLink>
                 <div ref={burger} className={activeBurger ? "burger active_burger" : "burger "} onClick={()=>setActiveBurger(!activeBurger)}>
