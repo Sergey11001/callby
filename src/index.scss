@@ -117,8 +117,7 @@ a:active, a:focus { outline: none; }
       margin-left: 0;
       max-width: 100%;
       transition: all 0.2s ease;
-      position: fixed;
-      top: 80px;
+      top: 90px;
       left: -100%;
       right: 0;
       bottom: 0;
@@ -1076,6 +1075,9 @@ a:active, a:focus { outline: none; }
       margin-right: 20px;
       color: #858585;
       background: transparent;
+      @media (max-width: 768px) {
+        color: #858585;
+      }
     }
     .option_chose{
       color: #060606;
@@ -1700,6 +1702,7 @@ a:active, a:focus { outline: none; }
     font-weight: 500;
     font-size: 40px;
     margin-bottom: 10px;
+    text-align: center;
   }
   .about_sub_title{
     text-align: center;
