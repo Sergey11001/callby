@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/callby/static/css/main.90577721.css",
+    "main.css": "/callby/static/css/main.0a38e3b3.css",
     "main.js": "/callby/static/js/main.614dc912.js",
     "static/media/bg.png": "/callby/static/media/bg.2495bd098ef914786640.png",
     "static/media/6.png": "/callby/static/media/6.99307356f99efc0df8bb.png",
@@ -35,11 +35,11 @@
     "index.html": "/callby/index.html",
     "static/media/arr.svg": "/callby/static/media/arr.85f98d46bb51fccaec79.svg",
     "static/media/arrow.svg": "/callby/static/media/arrow.85f98d46bb51fccaec79bf70699a3d88.svg",
-    "main.90577721.css.map": "/callby/static/css/main.90577721.css.map",
+    "main.0a38e3b3.css.map": "/callby/static/css/main.0a38e3b3.css.map",
     "main.614dc912.js.map": "/callby/static/js/main.614dc912.js.map"
   },
   "entrypoints": [
-    "static/css/main.90577721.css",
+    "static/css/main.0a38e3b3.css",
     "static/js/main.614dc912.js"
   ]
 }
