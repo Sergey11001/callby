@@ -4,7 +4,7 @@ import loveWhite from "../../assets/small_img/love_white.svg";
 
 const ShopListItem = ({id, imgUrl, title, price}) => {
     return (
-        <li className="shop--list__product list--product">
+        <li className="list--product">
             <div className="add--love">
                 <img src={loveWhite} alt=""/>
             </div>

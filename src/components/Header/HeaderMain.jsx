@@ -3,8 +3,8 @@ import logo from "../../assets/header/logo.png";
 import React, {useEffect, useRef, useState} from "react";
 
 
-const HeaderMain = () => {
-    const [activeBurger,setActiveBurger]=useState(false)
+const HeaderMain = ({activeBurger, setActiveBurger}) => {
+
     const burger=useRef(null)
     const menu=useRef(null)
     useEffect(()=>{
@@ -18,7 +18,8 @@ const HeaderMain = () => {
     },[])
 
     useEffect(()=>{
-        activeBurger ? document.body.classList.add('noscroll') :document.body.classList.remove("noscroll")
+        activeBurger ? document.body.classList.add('noscroll') : document.body.classList.remove("noscroll")
+        return () => document.body.classList.remove("noscroll")
     },[activeBurger])
 
     return(
