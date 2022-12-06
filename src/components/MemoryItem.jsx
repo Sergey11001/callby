@@ -1,10 +1,8 @@
-import {Link} from "react-router-dom";
 
-
-const MemoryItem = ({imgUrl , id , sub_title}) =>{
+const MemoryItem = ({imgUrl , id , sub_title, activeMemoryId, setActiveMemoryId}) =>{
 
     return(
-        <div className="carousel_item">
+        <div className={activeMemoryId===id ? "carousel_item carousel_item_active" : "carousel_item"} onClick={()=> setActiveMemoryId(id)}>
             <div className="carousel_item_body">
                 <div className="carousel_item_image">
                     <img src={require('../assets/' + imgUrl)} alt="" className="item_img"/>

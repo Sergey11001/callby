@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Tariffs from "./pages/Tariffs";
@@ -8,8 +7,9 @@ import {Routes, Route} from "react-router-dom";
 import OurTeam from "./pages/OurTeam";
 import Support from "./pages/Support";
 import AboutUs from "./pages/AboutUs";
-import NewCollection from "./pages/NewCollection";
 import Study from "./pages/Study";
+import Shop from "./pages/Shop";
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
                 <Route path="/team" element={<OurTeam/>}/>
                 <Route path="/about" element={<AboutUs/>}/>
                 <Route path="/learning" element={<Study/>}/>
-                <Route path="/new_collection" element={<NewCollection/>}/>
+                <Route path="/shop" element={<Shop/>}/>
                 <Route path="/contacts/support" element={<Support/>}/>
             </Routes>
         </div>

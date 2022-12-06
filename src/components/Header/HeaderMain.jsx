@@ -1,14 +1,12 @@
-
-import React, {useEffect, useRef, useState} from "react";
 import {NavLink} from "react-router-dom";
+import logo from "../../assets/header/logo.png";
+import React, {useEffect, useRef, useState} from "react";
 
-import logo from "../assets/header/logo.png"
 
-const Header=()=>{
+const HeaderMain = () => {
     const [activeBurger,setActiveBurger]=useState(false)
     const burger=useRef(null)
     const menu=useRef(null)
-
     useEffect(()=>{
         const handleClickOutMenu=(e)=>{
             if(!e.composedPath().includes(menu.current) && !e.composedPath().includes(burger.current)){
@@ -43,7 +41,7 @@ const Header=()=>{
                             <NavLink to="/learning" className="menu_link" onClick={()=>setActiveBurger(false)}>Обучение</NavLink>
                         </li>
                         <li className="menu_item">
-                            <NavLink to="/new_collection" className="menu_link" onClick={()=>setActiveBurger(false)}>Магазин</NavLink>
+                            <NavLink to="/shop" className="menu_link" onClick={()=>setActiveBurger(false)}>Магазин</NavLink>
                         </li>
                         <li className="menu_item">
                             <NavLink to="/contacts" className="menu_link" onClick={()=>setActiveBurger(false)}>Контакты</NavLink>
@@ -60,5 +58,4 @@ const Header=()=>{
         </header>
     )
 }
-
-export default Header
+export default HeaderMain
