@@ -1,6 +1,6 @@
-import useHorizontalScroll from "../hooks/ScrollCarusel";
+import useHorizontalScroll from "../../hooks/ScrollCarusel";
 import PhotoCarouselItem from "./PhotoCarouselItem";
-import useBlurSideCarousel from "../hooks/BlurSideCarousel";
+import useBlurSideCarousel from "../../hooks/BlurSideCarousel";
 
 const photosCarousel=["photo_carousel/2.jpg", "photo_carousel/1.jpg", "photo_carousel/3.jpg", "photo_carousel/2.jpg"]
 

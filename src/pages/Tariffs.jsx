@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import TariffBlocksLong from "../components/TariffBlocksLong";
-import TariffConstructor from "../components/TariffConstructor";
+import TariffBlocksLong from "../components/Tariffs/TariffBlocksLong";
+import TariffConstructor from "../components/Tariffs/TariffConstructor";
 import {Link} from "react-router-dom";
 
 

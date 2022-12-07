@@ -14,7 +14,7 @@ const shopList = [
     {id:5, imgUrl:"products/1.png", title:"Стикеры “Limited Edition”", price:500}
 ]
 
-const ShopMainCategory = () => {
+const ShopMainCategory = ({setActiveCategoryId}) => {
     return (
         <>
             <div className="shop--list__main">
@@ -26,10 +26,10 @@ const ShopMainCategory = () => {
                                     Новинки
                                 </div>
                             </div>
-                            <Link to="/tariffs" className="more">
+                            <div className="more" onClick={()=>setActiveCategoryId(5)}>
                                 Смотреть больше
                                 <img src={arrow} alt="" className="section_arrow"/>
-                            </Link>
+                            </div>
                         </div>
                         <ul className="shop--list__preview--block--list">
                             {
@@ -46,10 +46,10 @@ const ShopMainCategory = () => {
                                     Стикеры
                                 </div>
                             </div>
-                            <Link to="/tariffs" className="more">
+                            <div className="more" onClick={()=>setActiveCategoryId(2)}>
                                 Смотреть больше
                                 <img src={arrow} alt="" className="section_arrow"/>
-                            </Link>
+                            </div>
                         </div>
                         <ul className="shop--list__preview--block--list">
                             {
@@ -66,10 +66,10 @@ const ShopMainCategory = () => {
                                     Темы
                                 </div>
                             </div>
-                            <Link to="/tariffs" className="more">
+                            <div className="more" onClick={()=>setActiveCategoryId(3)}>
                                 Смотреть больше
                                 <img src={arrow} alt="" className="section_arrow"/>
-                            </Link>
+                            </div>
                         </div>
                         <ul className="shop--list__preview--block--list">
                             {

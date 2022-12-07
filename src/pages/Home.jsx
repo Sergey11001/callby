@@ -1,6 +1,6 @@
 import React from "react";
 import AdvantagesBlocks from "../components/AdvantagesBlocks";
-import TariffBlocksShort from "../components/TariffBlocksShort";
+import TariffBlocksShort from "../components/Tariffs/TariffBlocksShort";
 import {Link} from "react-router-dom";
 import PhoneRing from "../styleComponents/PhoneRing";
 import PersonListOverlay from "../styleComponents/PersonListOverlay";

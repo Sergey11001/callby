@@ -1,6 +1,5 @@
 body{
     color: #181818;
-    font-family: "Roboto";
     font-size: 16px;
     font-weight: 400;
 }
@@ -83,6 +82,9 @@ body{
     border-radius: 20px;
     width: 100%;
     padding: 10px 125px 10px 20px ;
+    font-weight: 400;
+    font-size: 14px;
+    color: #858585
 }
 .input_btn{
     display: inline-block;
@@ -116,7 +118,8 @@ body{
         }
     }
     .tariff_subtitle{
-
+        font-size: 20px;
+        font-weight: 400;
     }
     .more{
         flex: 0 0 113px;
@@ -144,6 +147,9 @@ body{
     }
     .cluster_title{
         margin-bottom: 6px;
+        @media (max-width: 420px) {
+            font-size: 30px;
+        }
     }
     .cluster_subtitle{
         margin-bottom: 40px;
@@ -230,10 +236,13 @@ input:focus, textarea:focus{
         }
         .tariff_advs{
             flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
             .tariff_adv{
                 font-size: 16px;
                 line-height: 19px;
                 margin-bottom: 25px;
+                flex: 1;
                 display: flex;
                 &:last-child{
                     margin-bottom: 19px;
@@ -281,6 +290,9 @@ input:focus, textarea:focus{
     .tariff_blue{
         background: linear-gradient(139.01deg, rgba(77, 68, 223, 0.5) -17.85%, rgba(0, 187, 255, 0.5) 111.28%);
         color: white;
+        .month{
+            color: #EDEDED !important;
+        }
     }
 }
 .img_rotate{

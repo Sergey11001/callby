@@ -1,6 +1,6 @@
-import PersonPortret from "./PersonPortret";
 import React, {useState} from "react";
 
+import PersonPortret from "./PersonPortret";
 
 const TeamList = ({listPeople}) => {
     const [activePerson,setActivePerson]=useState(0)

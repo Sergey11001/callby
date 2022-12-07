@@ -1,7 +1,7 @@
 import React from "react";
 
-import check from "../assets/small_img/check.svg"
-import whiteCheck from "../assets/small_img/check_white.svg"
+import check from "../../assets/small_img/check.svg"
+import whiteCheck from "../../assets/small_img/check_white.svg"
 
 const BlockTariff=({title , descriptionList , price,blue , ownTariff , long=false}) => {
     return(

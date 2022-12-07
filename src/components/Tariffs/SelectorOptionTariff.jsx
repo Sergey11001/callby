@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {addSelected,removeSelected} from "../redux/slices/selectedSlice";
+import {addSelected,removeSelected} from "../../redux/slices/selectedSlice";
 import {useDispatch, useSelector} from "react-redux";
 
-import check from "../assets/small_img/check_white.svg"
+import check from "../../assets/small_img/check_white.svg"
 
 const SelectorOptionTariff=({id , title , price})=>{
     const {selectedItems}=useSelector(state => state.selected)

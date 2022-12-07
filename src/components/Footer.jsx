@@ -27,6 +27,9 @@ const Footer = () => {
                             <Link to="/learning" className="footer_link">Обучение</Link>
                         </li>
                         <li className="footer_item">
+                            <Link to="/team" className="footer_link">Наша команда</Link>
+                        </li>
+                        <li className="footer_item">
                             <Link to="/shop" className="footer_link">Магазин</Link>
                         </li>
                         <li className="footer_item">
@@ -55,9 +58,6 @@ const Footer = () => {
                         </li>
                         <li className="footer_item">
                             <Link to="/vacations" className="footer_link">Вакансии</Link>
-                        </li>
-                        <li className="footer_item">
-                            <Link to="/team" className="footer_link">Команда</Link>
                         </li>
                         <li className="footer_item">
                             <Link to="/protocol" className="footer_link">Протокол</Link>

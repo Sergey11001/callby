@@ -1,7 +1,7 @@
 import BlockTariff from "./BlockTariff";
 
 
-import {tariffBlocksLongList} from "../constants";
+import {tariffBlocksLongList} from "../../constants";
 
 const TariffBlocksLong=()=>{
     return(

@@ -1,6 +1,6 @@
 import {useEffect} from "react";
-import Memories from "../components/Memories";
-import PhotosCarousel from "../components/PhotosCarousel";
+import Memories from "../components/AboutUs/Memories";
+import PhotosCarousel from "../components/AboutUs/PhotosCarousel";
 
 const AboutUs = () => {
 

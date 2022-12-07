@@ -1,6 +1,7 @@
 import Accordion from "../components/Accordion";
 import {useEffect} from "react";
 
+import chat from "../assets/supportBlock.png"
 
 const Support = () => {
 
@@ -26,7 +27,9 @@ const Support = () => {
                             </div>
                             <Accordion />
                         </div>
-
+                    </div>
+                    <div className="support__chat">
+                        <img src={chat} alt=""/>
                     </div>
                 </div>
             </div>

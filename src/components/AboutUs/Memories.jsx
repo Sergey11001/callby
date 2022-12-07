@@ -1,7 +1,7 @@
-import useHorizontalScroll from "../hooks/ScrollCarusel";
+import useHorizontalScroll from "../../hooks/ScrollCarusel";
 import MemoryItem from "./MemoryItem";
-import useBlurSideCarousel from "../hooks/BlurSideCarousel";
-import {rememberList} from "../constants";
+import useBlurSideCarousel from "../../hooks/BlurSideCarousel";
+import {rememberList} from "../../constants";
 import {useState} from "react";
 
 

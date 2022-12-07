@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import SelectorOptionTariff from "./SelectorOptionTariff";
 
-import {selectionOptions} from "../constants";
+import {selectionOptions} from "../../constants";
 import {useSelector} from "react-redux";
 
-import arrow from "../assets/small_img/arr_down.svg"
+import arrow from "../../assets/small_img/arr_down.svg"
 
 const SelectorTariffs=()=>{
     const [activePopup,setActivePopup]=useState(false)
