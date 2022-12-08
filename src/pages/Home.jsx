@@ -98,7 +98,7 @@ const Home = () => {
                 <div className="wrapper_input join_input_wrapper">
                     <input type="email" className="join_input mail_input" placeholder='example@mail.ru'/>
                     <div className="btn_wrapper btn_wrapper_mail">
-                        <button className="join_btn input_btn  btn">Начать!</button>
+                        <button className="join_btn input_btn  btn">Отправить</button>
                     </div>
                 </div>
             </section>
