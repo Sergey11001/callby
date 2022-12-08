@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/callby/static/css/main.bb6cba29.css",
-    "main.js": "/callby/static/js/main.7ccee65e.js",
+    "main.css": "/callby/static/css/main.663abe3d.css",
+    "main.js": "/callby/static/js/main.e7726aeb.js",
     "static/media/bg.png": "/callby/static/media/bg.2495bd098ef914786640.png",
     "static/media/6.png": "/callby/static/media/6.99307356f99efc0df8bb.png",
-    "static/media/4.png": "/callby/static/media/4.dbac74650904be86e325.png",
+    "static/media/4.png": "/callby/static/media/4.ecfd548e4ba6a0dde9f5.png",
     "static/media/9.png": "/callby/static/media/9.d70d35d3996535618939.png",
     "static/media/8.png": "/callby/static/media/8.ca32717943caef8d9e7b.png",
     "static/media/10.png": "/callby/static/media/10.fb6abf9d2a090c2656c5.png",
-    "static/media/3.png": "/callby/static/media/3.a4a18251df2601b05d58.png",
-    "static/media/5.png": "/callby/static/media/5.9fd1a9bb942fa93235cc.png",
-    "static/media/7.png": "/callby/static/media/7.678ee6be6ee0888efc7e.png",
-    "static/media/1.png": "/callby/static/media/1.84c1ebf6dabc00e3ef47.png",
+    "static/media/3.png": "/callby/static/media/3.c94f1101c89333f78d09.png",
+    "static/media/5.png": "/callby/static/media/5.6a91c46663fd6d6e447f.png",
+    "static/media/7.png": "/callby/static/media/7.9d85e881e61e80e7af1d.png",
+    "static/media/1.png": "/callby/static/media/1.c996f7b58c6400d0dc29.png",
     "static/media/2.png": "/callby/static/media/2.c81594f8fe56e6686602.png",
     "static/media/11.png": "/callby/static/media/11.596099ea6e30cd366549.png",
     "static/media/hands.png": "/callby/static/media/hands.e6c578ee8451665c9186.png",
@@ -50,11 +50,11 @@
     "static/media/search.svg": "/callby/static/media/search.b1a3e6d790d7a9dde4c2f81ab12ff35b.svg",
     "static/media/arr.svg": "/callby/static/media/arr.85f98d46bb51fccaec79.svg",
     "static/media/arrow.svg": "/callby/static/media/arrow.85f98d46bb51fccaec79bf70699a3d88.svg",
-    "main.bb6cba29.css.map": "/callby/static/css/main.bb6cba29.css.map",
-    "main.7ccee65e.js.map": "/callby/static/js/main.7ccee65e.js.map"
+    "main.663abe3d.css.map": "/callby/static/css/main.663abe3d.css.map",
+    "main.e7726aeb.js.map": "/callby/static/js/main.e7726aeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb6cba29.css",
-    "static/js/main.7ccee65e.js"
+    "static/css/main.663abe3d.css",
+    "static/js/main.e7726aeb.js"
   ]
 }
