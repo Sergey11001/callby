@@ -14,7 +14,7 @@ const Study= () => {
                     <div className="title study_title">
                         Обучение!
                     </div>
-                    <div className="sub_title study_subtitle">
+                    <div className="subtitle study_subtitle">
                         Мы поготовили для Вас несколько видео уроков и инструкцию
                     </div>
                 </div>

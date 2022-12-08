@@ -14,7 +14,7 @@ const AboutUs = () => {
                 <div className="title_page about_title_page">
                     Что на счет нас?
                 </div>
-                <div className="sub_title about_sub_title">
+                <div className="subtitle about_sub_title">
                     Нажмите на воспоминание, чтобы активировать его
                 </div>
                 <div className="about_page_content">

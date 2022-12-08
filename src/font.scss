@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Syne:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/font/HelveticaNeueCyr-Medium.eot');
+  src: local('HelveticaNeueCyr-Medium'),
+  url('./assets/font/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./assets/font/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+  url('./assets/font/HelveticaNeueCyr-Medium.woff') format('woff'),
+  url('./assets/font/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/font/HelveticaNeueCyr-Roman.eot');
+  src: local('HelveticaNeueCyr-Roman'),
+  url('./assets/font/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+  url('./assets/font/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+  url('./assets/font/HelveticaNeueCyr-Roman.woff') format('woff'),
+  url('./assets/font/HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
