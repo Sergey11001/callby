@@ -23,9 +23,8 @@ const Billboard = () => {
                         slidesPerView="1"
                         mousewheel={false}
                         direction="vertical"
-                        pagination={{ clickable: true }}
+                        pagination={{ clickable: false }}
                         height={380}
-                        scrollbar={{ draggable: false }}
                         loop={true}
                         noSwiping={true}
                         noSwipingClass={'swiper-slide'}

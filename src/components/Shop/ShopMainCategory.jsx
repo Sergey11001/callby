@@ -6,14 +6,21 @@ import ShopListItem from "./ShopListItem";
 import arrow from "../../assets/small_img/arrow.svg";
 import profile from "../../assets/shop/1.png"
 
-const shopList = [
-    {id:1, imgUrl:"products/1.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:2, imgUrl:"products/2.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:3, imgUrl:"products/3.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:4, imgUrl:"products/4.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:5, imgUrl:"products/5.png", title:"Стикеры “Limited Edition”", price:500}
+const shopListStickers = [
+    {id:1, imgUrl:"products/sticker/1.png", title:"Стикеры “Limited Edition”", price:500},
+    {id:2, imgUrl:"products/sticker/2.png", title:"Стикеры “Limited Edition”", price:500},
+    {id:3, imgUrl:"products/sticker/3.png", title:"Стикеры “Limited Edition”", price:500},
+    {id:4, imgUrl:"products/sticker/4.png", title:"Стикеры “Limited Edition”", price:500},
+    {id:5, imgUrl:"products/sticker/5.png", title:"Стикеры “Limited Edition”", price:500}
 ]
 
+const shopListThemes = [
+    {id:1, imgUrl:"products/theme/1.png", title:"Стикеры “Limited Edition”", price:500},
+    {id:2, imgUrl:"products/theme/2.png", title:"Стикеры “Limited Edition”", price:500},
+    {id:3, imgUrl:"products/theme/5.png", title:"Стикеры “Limited Edition”", price:500},
+    {id:4, imgUrl:"products/theme/3.png", title:"Стикеры “Limited Edition”", price:500},
+    {id:5, imgUrl:"products/theme/4.png", title:"Стикеры “Limited Edition”", price:500}
+]
 const ShopMainCategory = ({setActiveCategoryId}) => {
     return (
         <>
@@ -33,7 +40,7 @@ const ShopMainCategory = ({setActiveCategoryId}) => {
                         </div>
                         <ul className="shop--list__preview--block--list">
                             {
-                                shopList.map((item, i) => (
+                                shopListStickers.map((item, i) => (
                                     <ShopListItem key={item.id} {...item} />
                                 ))
                             }
@@ -53,7 +60,7 @@ const ShopMainCategory = ({setActiveCategoryId}) => {
                         </div>
                         <ul className="shop--list__preview--block--list">
                             {
-                                shopList.map((item, i) => (
+                                shopListStickers.map((item, i) => (
                                     <ShopListItem key={item.id} {...item} />
                                 ))
                             }
@@ -73,8 +80,8 @@ const ShopMainCategory = ({setActiveCategoryId}) => {
                         </div>
                         <ul className="shop--list__preview--block--list">
                             {
-                                shopList.map((item, i) => (
-                                    <ShopListItem key={item.id} {...item} />
+                                shopListThemes.map((item, i) => (
+                                    <ShopListItem key={item.id} {...item} theme={true}/>
                                 ))
                             }
                         </ul>
