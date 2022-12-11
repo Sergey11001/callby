@@ -4,7 +4,8 @@ import CategoriesShop from "../components/Shop/CategoriesShop";
 import FilterShop from "../components/Shop/FilterShop";
 import ShopList from "../components/Shop/ShopList";
 import ShopMainCategory from "../components/Shop/ShopMainCategory";
-import Billboard from "../components/Shop/Billboard";
+import Billboard from "../components/Billboard/Billboard";
+
 
 const categoryList =[
     {id:1, title:"Главная", titleImg:"✨"},
@@ -19,7 +20,7 @@ const Shop = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    },[])
+    },[activeCategoryId])
     return(
         <>
             <div className="shop__page">
