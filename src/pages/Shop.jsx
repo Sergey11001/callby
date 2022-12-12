@@ -43,7 +43,7 @@ const Shop = () => {
                                 </button>
                             </>
                     }
-                    <div className="hard_decision bottom_cluster">
+                    <div className="bottom_cluster_support bottom_cluster">
                         <div className="title cluster_title">
                             Не смогли найти товар?
                         </div>

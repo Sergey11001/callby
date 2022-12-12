@@ -76,14 +76,6 @@ const listPersonOurTeam=[
     {imgUrl:"profile_photo/11.png",name:"Сергей",surname:"Кононенко",job:"Junior Frontend Rust Developer "},
 ]
 
-const rememberList=[
-    {sub_title:"Взлеты и падения", id:1,imgUrl:"carousel/1.svg"},
-    {sub_title:"Тот день, когда...", id:2,imgUrl:"carousel/2.svg"},
-    {sub_title:"Общий сбор", id:3,imgUrl:"carousel/3.svg"},
-    {sub_title:"День Х", id:4,imgUrl:"carousel/4.svg"},
-    {sub_title:"Взлеты и падения", id:5,imgUrl:"carousel/2.svg"}
-]
-
 const videoList = [
     {id:1, videoUrl:"ECTIE39k-_0", videoName:"Основы приложения 👶🏼"},
     {id:2, videoUrl:"ECTIE39k-_0", videoName:"Познаем глубины 👩🏻‍💻"},
@@ -93,4 +85,4 @@ const videoList = [
 
 ]
 
-export {accordionItems,advantagesBlocksList,contactOptions,selectionOptions,tariffBlocksLongList,tariffBlocksShortList,listPersonHomePage,listPersonOurTeam,rememberList,videoList}
+export {accordionItems,advantagesBlocksList,contactOptions,selectionOptions,tariffBlocksLongList,tariffBlocksShortList,listPersonHomePage,listPersonOurTeam,videoList}
