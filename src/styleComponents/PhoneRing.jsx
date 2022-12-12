@@ -1,6 +1,6 @@
 import React from "react";
 
-import personImg from "../assets/phone1.png"
+import personImg from "../assets/phone3.svg"
 
 const PhoneRing=()=>{
     return(

@@ -1,6 +1,6 @@
 import React from "react";
-import personImg1 from "../assets/phone1.png"
-import personImg2 from "../assets/phone3.png"
+import personImg1 from "../assets/phone2.svg"
+import personImg2 from "../assets/phone3.svg"
 import chat from "../assets/small_img/chat.svg"
 import clip from "../assets/small_img/clip.svg"
 

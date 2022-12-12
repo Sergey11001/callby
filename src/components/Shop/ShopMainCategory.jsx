@@ -7,19 +7,19 @@ import arrow from "../../assets/small_img/arrow.svg";
 import profile from "../../assets/shop/1.png"
 
 const shopListStickers = [
-    {id:1, imgUrl:"products/sticker/1.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:2, imgUrl:"products/sticker/2.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:3, imgUrl:"products/sticker/3.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:4, imgUrl:"products/sticker/4.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:5, imgUrl:"products/sticker/5.png", title:"Стикеры “Limited Edition”", price:500}
+    {id:1, imgUrl:"products/sticker/1.svg", title:"Стикеры “Limited Edition”", price:500},
+    {id:2, imgUrl:"products/sticker/2.svg", title:"Стикеры “Limited Edition”", price:500},
+    {id:3, imgUrl:"products/sticker/5.svg", title:"Стикеры “Limited Edition”", price:500},
+    {id:4, imgUrl:"products/sticker/4.svg", title:"Стикеры “Limited Edition”", price:500},
+    {id:5, imgUrl:"products/sticker/3.svg", title:"Стикеры “Limited Edition”", price:500}
 ]
 
 const shopListThemes = [
-    {id:1, imgUrl:"products/theme/1.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:2, imgUrl:"products/theme/2.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:3, imgUrl:"products/theme/5.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:4, imgUrl:"products/theme/3.png", title:"Стикеры “Limited Edition”", price:500},
-    {id:5, imgUrl:"products/theme/4.png", title:"Стикеры “Limited Edition”", price:500}
+    {id:1, imgUrl:"products/theme/1.svg", title:"Стикеры “Limited Edition”", price:500},
+    {id:2, imgUrl:"products/theme/2.svg", title:"Стикеры “Limited Edition”", price:500},
+    {id:3, imgUrl:"products/theme/5.svg", title:"Стикеры “Limited Edition”", price:500},
+    {id:4, imgUrl:"products/theme/3.svg", title:"Стикеры “Limited Edition”", price:500},
+    {id:5, imgUrl:"products/theme/4.svg", title:"Стикеры “Limited Edition”", price:500}
 ]
 const ShopMainCategory = ({setActiveCategoryId}) => {
     return (

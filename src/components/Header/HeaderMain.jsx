@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import logo from "../../assets/header/logo.png";
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef} from "react";
 
 
 const HeaderMain = ({activeBurger, setActiveBurger}) => {

@@ -56,7 +56,7 @@ const tariffBlocksShortList=[
 ]
 
 const listPersonHomePage=[
-    {imgUrl:"profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
+    {imgUrl:"profile_photo/7.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
     {imgUrl:"profile_photo/4.png",name:"Анна",surname:"Вакуленко",job:"Founder/CVO"},
     {imgUrl:"profile_photo/6.png",name:"Александр",surname:"Хисамутдинов",job:"Founder/CMO"},
     {imgUrl:"profile_photo/3.png",name:"Марина",surname:"Марейчева",job:"Founder/ Art-director"},
@@ -64,7 +64,7 @@ const listPersonHomePage=[
 ]
 
 const listPersonOurTeam=[
-    {imgUrl:"profile_photo/1.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
+    {imgUrl:"profile_photo/7.png",name:`Владимир`,surname:"Житов",job:"CЕO"},
     {imgUrl:"profile_photo/4.png",name:"Анна",surname:"Вакуленко",job:"Founder/CVO"},
     {imgUrl:"profile_photo/6.png",name:"Александр",surname:"Хисамутдинов",job:"Founder/CMO"},
     {imgUrl:"profile_photo/3.png",name:"Марина",surname:"Марейчева",job:"Founder/ Art-director"},
@@ -77,11 +77,11 @@ const listPersonOurTeam=[
 ]
 
 const rememberList=[
-    {sub_title:"Взлеты и падения", id:1,imgUrl:"carousel/1.jpg"},
-    {sub_title:"Тот день, когда...", id:2,imgUrl:"carousel/2.jpg"},
-    {sub_title:"Общий сбор", id:3,imgUrl:"carousel/3.jpg"},
-    {sub_title:"День Х", id:4,imgUrl:"carousel/4.jpg"},
-    {sub_title:"Взлеты и падения", id:5,imgUrl:"carousel/2.jpg"}
+    {sub_title:"Взлеты и падения", id:1,imgUrl:"carousel/1.svg"},
+    {sub_title:"Тот день, когда...", id:2,imgUrl:"carousel/2.svg"},
+    {sub_title:"Общий сбор", id:3,imgUrl:"carousel/3.svg"},
+    {sub_title:"День Х", id:4,imgUrl:"carousel/4.svg"},
+    {sub_title:"Взлеты и падения", id:5,imgUrl:"carousel/2.svg"}
 ]
 
 const videoList = [

@@ -1,8 +1,8 @@
 import React from "react";
 
-import phone1 from  "../assets/phone1.png"
-import phone2 from  "../assets/phone2.png"
-import phone3 from  "../assets/phone3.png"
+import phone1 from  "../assets/phone1.svg"
+import phone2 from  "../assets/phone2.svg"
+import phone3 from  "../assets/phone3.svg"
 const PersonListOverlay=()=>{
     return(
         <div className="person_list background_style_block">

@@ -10,7 +10,7 @@ import Tools from "../styleComponents/Tools";
 import TeamList from "../components/TeamList";
 import {listPersonHomePage} from "../constants";
 
-import hands from "../assets/small_img/hands.png"
+import hands from "../assets/small_img/hands.svg"
 import arrow from "../assets/small_img/arrow.svg"
 
 const Home = () => {

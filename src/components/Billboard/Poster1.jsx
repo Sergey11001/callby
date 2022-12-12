@@ -1,10 +1,10 @@
-import sticker1 from "../../assets/billbordbg/1.png";
-import sticker2 from "../../assets/billbordbg/2.png";
-import sticker3 from "../../assets/billbordbg/3.png";
-import sticker4 from "../../assets/billbordbg/4.png";
-import sticker5 from "../../assets/billbordbg/5.png";
-import sticker6 from "../../assets/billbordbg/6.png";
-import sticker7 from "../../assets/billbordbg/7.png";
+import sticker1 from "../../assets/billbordbg/1.svg";
+import sticker2 from "../../assets/billbordbg/2.svg";
+import sticker3 from "../../assets/billbordbg/3.svg";
+import sticker4 from "../../assets/billbordbg/4.svg";
+import sticker5 from "../../assets/billbordbg/5.svg";
+import sticker6 from "../../assets/billbordbg/6.svg";
+import sticker7 from "../../assets/billbordbg/7.svg";
 
 
 const Poster1 = () => {

@@ -378,6 +378,9 @@ input:focus, textarea:focus{
             }
             &_theme{
                 padding: 0;
+                img{
+                    object-fit: cover;
+                }
             }
         }
         .product--title{
