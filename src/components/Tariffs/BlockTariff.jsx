@@ -3,7 +3,7 @@ import React from "react";
 import check from "../../assets/small_img/check.svg"
 import whiteCheck from "../../assets/small_img/check_white.svg"
 
-const BlockTariff=({title , descriptionList , price,blue , ownTariff , long=false}) => {
+const BlockTariff=({title , descriptionList , price , blue , ownTariff , long=false}) => {
     return(
         <div className="tariff_column">
             <div className={blue ? "tariff_content tariff_blue": "tariff_content"}>
@@ -17,7 +17,7 @@ const BlockTariff=({title , descriptionList , price,blue , ownTariff , long=fals
                 }
                 <ul className="tariff_advs">
                     {descriptionList.map((item,i)=>
-                        <li key={i} className={long ? "tariff_adv no_last_opacity":"tariff_adv"}>
+                        <li key={i} className={long ? "tariff_adv no_last_opacity": i===1 ? "tariff_adv tariff_adv_small--opacity" : "tariff_adv"}>
                             <img src={blue ? whiteCheck : check} alt="" className="img_tariff"/>
                             <div className="item_adv">
                                 {item}
