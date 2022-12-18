@@ -59,7 +59,7 @@ const Home = () => {
                             Тарифный план
                         </div>
                         <div className="subtitle tariff_subtitle">
-                            Выберете правильный план для вашей работы!
+                            Выберите правильный план для вашей работы!
                         </div>
                     </div>
                     <Link to="/tariffs" className="more">

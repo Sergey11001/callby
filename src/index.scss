@@ -1128,7 +1128,7 @@ a:active, a:focus { outline: none; }
     transition: max-height 0.4s ease-in-out;
   }
   .selector_body_wrapper_active{
-    max-height: 250px;
+    max-height: 460px;
   }
   .selector_body{
     margin-top: 8px;
@@ -1464,6 +1464,8 @@ a:active, a:focus { outline: none; }
       height: 100%;
       width:100%;
       position: relative;
+      overflow: hidden;
+      border-radius: 10px;
       &:after{
         content: '';
         width: 53px;
@@ -1480,7 +1482,6 @@ a:active, a:focus { outline: none; }
         height: 100%;
         overflow: hidden;
         position: relative;
-        border-radius: 10px;
         .person_img{
           display: block;
           position: absolute;
@@ -1493,22 +1494,24 @@ a:active, a:focus { outline: none; }
       }
       .person_inf{
         position: absolute;
-        width: 160px;
-        bottom: 50px;
-        left: 30px;
+        width: 220px;
+        height: 58px;
+        bottom: 25px;
+        left: 40px;
         z-index: 2;
         transform-origin: left;
         transform: rotate(-90deg);
         .person_name{
           font-weight: 500;
-          font-size: 30px;
+          font-size: 24px;
           color: #FFFFFF;
           margin-bottom: 6px;
           display: none;
         }
         .job_name{
-          font-size: 20px;
+          font-size: 24px;
           color: #FFFFFF;
+          line-height: 29px;
         }
       }
     }
@@ -1531,13 +1534,23 @@ a:active, a:focus { outline: none; }
       .person_inf{
         transform: rotate(0deg);
         padding-right: 30px;
-        width: 100%;
+        width: calc(100% - 40px );
+        bottom: 30px;
+        height: auto;
+        left: 30px;
         .person_name{
           display: block;
+          line-height: 26px;
         }
-        .job_name{
-          padding-right: 30px;
-        }
+      }
+      .shadow--block{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 150px;
+        background: linear-gradient(transparent,rgba(0,0,0,0.2) 20% , rgba(0,0,0,0.65));
+
       }
     }
 

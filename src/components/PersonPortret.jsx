@@ -39,6 +39,9 @@ const PersonPortret = ({index , surname , activePerson , setActivePerson , imgUr
                         {job}
                     </div>
                 </div>
+                <div className="shadow--block">
+
+                </div>
             </div>
         </div>
     )

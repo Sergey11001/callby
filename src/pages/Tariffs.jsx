@@ -18,7 +18,7 @@ const Tariffs = () => {
                         Тарифный план
                     </div>
                     <div className="subtitle tariff_subtitle">
-                        Выберете правильный план для вашей работы!
+                        Выберите правильный план для вашей работы!
                     </div>
                     <div className={active ? "tariff_switch common_background  tariff_switch_active":"tariff_switch common_background"}>
                         <div onClick={()=>setActive(false)} className={active ? "constructor":"constructor active_toggle"}>
