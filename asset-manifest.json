@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/callby/static/css/main.1cd297bc.css",
-    "main.js": "/callby/static/js/main.5b876bd7.js",
+    "main.css": "/callby/static/css/main.89e2aa57.css",
+    "main.js": "/callby/static/js/main.28582a62.js",
     "static/media/phone3.svg": "/callby/static/media/phone3.79ff8785c26783dcf88b375c7e9ec128.svg",
     "static/media/bg.png": "/callby/static/media/bg.2495bd098ef914786640.png",
     "static/media/6.png": "/callby/static/media/6.99307356f99efc0df8bb.png",
@@ -26,12 +26,14 @@
     "static/media/2.png": "/callby/static/media/2.08ed8987f2e6412070b1.png",
     "static/media/11.png": "/callby/static/media/11.596099ea6e30cd366549.png",
     "static/media/supportBlock.png": "/callby/static/media/supportBlock.08be525ed6ed7ced8cc5.png",
+    "static/media/logo.png": "/callby/static/media/logo.791d59631708c67cd918.png",
     "static/media/facebook.svg": "/callby/static/media/facebook.5cbaa6f916478eaab0a838cb9a8c0c96.svg",
     "static/media/HelveticaNeueCyr-Roman.eot": "/callby/static/media/HelveticaNeueCyr-Roman.9d7c3316bda88462d707.eot",
     "static/media/HelveticaNeueCyr-Roman.ttf": "/callby/static/media/HelveticaNeueCyr-Roman.0ca719c710b1fbd7e02f.ttf",
     "static/media/HelveticaNeueCyr-Medium.eot": "/callby/static/media/HelveticaNeueCyr-Medium.6053588ab977fb8f7880.eot",
     "static/media/HelveticaNeueCyr-Medium.ttf": "/callby/static/media/HelveticaNeueCyr-Medium.bfdbae3c80f7aa49c618.ttf",
     "static/media/telegram.svg": "/callby/static/media/telegram.07686c2896b4672246a5ac9279c61077.svg",
+    "static/media/footer.png": "/callby/static/media/footer.bf790ac61760a865b074.png",
     "static/media/HelveticaNeueCyr-Roman.woff": "/callby/static/media/HelveticaNeueCyr-Roman.0247694e510ebe67cce1.woff",
     "static/media/HelveticaNeueCyr-Medium.woff": "/callby/static/media/HelveticaNeueCyr-Medium.1c5a4d413294b14b36e0.woff",
     "static/media/HelveticaNeueCyr-Roman.woff2": "/callby/static/media/HelveticaNeueCyr-Roman.d59df5a538d671a54c79.woff2",
@@ -54,11 +56,11 @@
     "static/media/search.svg": "/callby/static/media/search.b1a3e6d790d7a9dde4c2f81ab12ff35b.svg",
     "static/media/arr.svg": "/callby/static/media/arr.85f98d46bb51fccaec79.svg",
     "static/media/arrow.svg": "/callby/static/media/arrow.85f98d46bb51fccaec79bf70699a3d88.svg",
-    "main.1cd297bc.css.map": "/callby/static/css/main.1cd297bc.css.map",
-    "main.5b876bd7.js.map": "/callby/static/js/main.5b876bd7.js.map"
+    "main.89e2aa57.css.map": "/callby/static/css/main.89e2aa57.css.map",
+    "main.28582a62.js.map": "/callby/static/js/main.28582a62.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cd297bc.css",
-    "static/js/main.5b876bd7.js"
+    "static/css/main.89e2aa57.css",
+    "static/js/main.28582a62.js"
   ]
 }
