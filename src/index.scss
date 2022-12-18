@@ -1150,6 +1150,12 @@ a:active, a:focus { outline: none; }
         .selector_name, .select_circle{
           cursor: pointer;
         }
+        .selector_name{
+          opacity: 0.8;
+          &_selected{
+            opacity: 1;
+          }
+        }
         .select_circle{
           height: 16px;
           border:1px solid #4466DF;

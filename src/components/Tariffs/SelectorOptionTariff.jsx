@@ -23,7 +23,7 @@ const SelectorOptionTariff=({id , title , price})=>{
     }
     return(
         <li className="selector_item">
-            <div className="selector_name" onClick={toggleCheckedItem}>{title};</div>
+            <div className={checked ? "selector_name selector_name_selected":"selector_name"} onClick={toggleCheckedItem}>{title};</div>
             <div className={checked ? "select_circle selected": "select_circle"} onClick={toggleCheckedItem}>
                 {checked && <img src={check} alt="" className="selected_img"/>}
             </div>
