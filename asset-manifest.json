@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/callby/static/css/main.448faac1.css",
-    "main.js": "/callby/static/js/main.f1d00a4c.js",
+    "main.css": "/callby/static/css/main.f3e8d652.css",
+    "main.js": "/callby/static/js/main.5e6a2d1e.js",
     "static/media/phone3.svg": "/callby/static/media/phone3.79ff8785c26783dcf88b375c7e9ec128.svg",
     "static/media/bg.png": "/callby/static/media/bg.2495bd098ef914786640.png",
     "static/media/6.png": "/callby/static/media/6.99307356f99efc0df8bb.png",
@@ -56,11 +56,11 @@
     "static/media/search.svg": "/callby/static/media/search.b1a3e6d790d7a9dde4c2f81ab12ff35b.svg",
     "static/media/arr.svg": "/callby/static/media/arr.85f98d46bb51fccaec79.svg",
     "static/media/arrow.svg": "/callby/static/media/arrow.85f98d46bb51fccaec79bf70699a3d88.svg",
-    "main.448faac1.css.map": "/callby/static/css/main.448faac1.css.map",
-    "main.f1d00a4c.js.map": "/callby/static/js/main.f1d00a4c.js.map"
+    "main.f3e8d652.css.map": "/callby/static/css/main.f3e8d652.css.map",
+    "main.5e6a2d1e.js.map": "/callby/static/js/main.5e6a2d1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.448faac1.css",
-    "static/js/main.f1d00a4c.js"
+    "static/css/main.f3e8d652.css",
+    "static/js/main.5e6a2d1e.js"
   ]
 }
