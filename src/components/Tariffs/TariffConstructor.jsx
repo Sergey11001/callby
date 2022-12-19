@@ -3,6 +3,7 @@ import Selector from "./SelectorTariffs";
 import {useSelector} from "react-redux";
 import {useMemo} from "react";
 
+import {motion} from "framer-motion";
 
 const TariffConstructor=()=>{
     const {selectedItems}=useSelector(state => state.selected)
@@ -10,7 +11,7 @@ const TariffConstructor=()=>{
     return(
         <>
             <div className="constructor_switched">
-                <div className="generation_sub_column">
+                <motion.div className="generation_sub_column" initial={{x:-100}} animate={{x:0}} transition={{ duration:0.3 }}>
                     <div className="generation_sub common_background">
                         <div className="constructor_title generation_title">
                             Собери свою подписку 🎓
@@ -32,11 +33,11 @@ const TariffConstructor=()=>{
                             </ol>
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 <div className="own_tariff_column">
-                    <div className={selectedItems.length ? "own_tariff": "own_tariff inactive_tariff"}>
+                    <motion.div className={selectedItems.length ? "own_tariff": "own_tariff inactive_tariff"} initial={{x:100}} animate={{x:0}} transition={{ duration:0.3 }} >
                         <BlockTariff blue price={price} title={'Ваш личный тариф'} descriptionList={!selectedItems.length ? ["Выберете правильный план для вашей работы!"]:selectedItems.map(item=>item.title)} long={selectedItems.length!==0} ownTariff/>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </>

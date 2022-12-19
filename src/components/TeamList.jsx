@@ -1,9 +1,12 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 import PersonPortret from "./PersonPortret";
 
 const TeamList = ({listPeople}) => {
-    const [activePerson,setActivePerson]=useState(0)
+    const [activePerson,setActivePerson]=useState(-1)
+    useEffect(()=>{
+        setTimeout(()=>setActivePerson(0),80)
+    },[])
     return (
         <div className="team_list">
             {listPeople.map((item,i)=>

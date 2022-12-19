@@ -1,6 +1,6 @@
 import {useEffect} from "react";
 import {Link} from "react-router-dom";
-
+import {motion} from "framer-motion";
 import teamPhoto1 from "../assets/aboutUs/1.png"
 import teamPhoto2 from "../assets/aboutUs/2.png"
 
@@ -12,7 +12,7 @@ const AboutUs = () => {
 
     return(
         <>
-            <div className="about_page">
+            <motion.div className="about_page" initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
                 <div className="title_page about_title_page">
                     Что на счет нас?
                 </div>
@@ -41,7 +41,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

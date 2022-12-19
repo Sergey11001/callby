@@ -1073,6 +1073,7 @@ a:active, a:focus { outline: none; }
   }
   .own_tariff_column{
     flex: 0 0 330px;
+    transition: height 0.2s ease;
     .inactive_tariff{
       pointer-events: none;
     }

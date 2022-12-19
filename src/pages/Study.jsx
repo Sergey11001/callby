@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {useEffect} from "react";
 import VideoChoose from "../components/VideoChoose";
-
+import {motion} from "framer-motion";
 
 const Study= () => {
     useEffect(() => {
@@ -9,7 +9,7 @@ const Study= () => {
     },[])
     return(
         <>
-            <div className="study_page">
+            <motion.div className="study_page" initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
                 <div className="title_page study_title_page">
                     <div className="title study_title">
                         Обучение!
@@ -31,7 +31,7 @@ const Study= () => {
                     <Link to="/contacts/support" className="support_btn btn ">Поддержка</Link>
                 </div>
 
-            </div>
+            </motion.div>
         </>
     )
 }

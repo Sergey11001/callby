@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
+import {motion} from "framer-motion";
+
 import TariffBlocksLong from "../components/Tariffs/TariffBlocksLong";
 import TariffConstructor from "../components/Tariffs/TariffConstructor";
-import {Link} from "react-router-dom";
 
 
 const Tariffs = () => {
@@ -12,14 +14,16 @@ const Tariffs = () => {
     },[])
     return(
         <>
-            <div className="tariff_page">
+            <motion.div className="tariff_page" initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
                 <div className="title_page tariff_page_title">
-                    <div className="title tariff_title">
-                        Тарифный план
-                    </div>
-                    <div className="subtitle tariff_subtitle">
-                        Выберите правильный план для вашей работы!
-                    </div>
+                    <motion.div initial={{y:-50}} animate={{y:0}} transition={{ duration:0.3 }}>
+                        <div className="title tariff_title">
+                            Тарифный план
+                        </div>
+                        <div className="subtitle tariff_subtitle">
+                            Выберите правильный план для вашей работы!
+                        </div>
+                    </motion.div>
                     <div className={active ? "tariff_switch common_background  tariff_switch_active":"tariff_switch common_background"}>
                         <div onClick={()=>setActive(false)} className={active ? "constructor":"constructor active_toggle"}>
                             Конструктор
@@ -41,7 +45,7 @@ const Tariffs = () => {
                     </div>
                     <Link to="/contacts/support" className="support_btn btn ">Поддержка</Link>
                 </div>
-            </div>
+            </motion.div>
 
         </>
 

@@ -1,6 +1,7 @@
 import SelectorContacts from "../components/SelectorContacts";
 import {Link} from "react-router-dom";
 import {useEffect} from "react";
+import {motion} from "framer-motion";
 
 import contact1 from "../assets/contacts/1.svg"
 import contact2 from "../assets/contacts/2.svg"
@@ -17,22 +18,39 @@ const Contacts = () => {
         }
     }
 
+    const container = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            x:0,
+            transition: {
+                staggerChildren: 0.2
+            }
+        }
+    }
+
+    const item = {
+        hidden: { opacity: 0, x:100 },
+        show: { opacity: 1, x:0 }
+    }
+
+
     useEffect(() => {
         window.scrollTo(0, 0);
     },[])
     return(
         <>
-            <div className="contacts_page">
-                <div className="title_page contacts_title_page">
+            <motion.div className="contacts_page" initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
+                <motion.div className="title_page contacts_title_page" initial={{x:-100}} animate={{x:0}} transition={{ duration:0.2 }}>
                     <div className="title contacts_title">
                         Свяжитесь с нами!
                     </div>
                     <div className="sub_title contacts_subtitle">
                         Отправьте нам свое письмо!
                     </div>
-                </div>
+                </motion.div>
                 <div className="contacts_wrapper">
-                    <div className="form_block">
+                    <motion.div className="form_block"  initial={{x:-100}} animate={{x:0}} transition={{ duration:0.6 }}>
                         <form action="#" className="contact_form">
                             <div className="inputs_block_wrapper">
                                 <input type="text" className="contact_input common_background" placeholder="Имя" onBlur={(e)=>blurFromInput(e)}/>
@@ -49,10 +67,14 @@ const Contacts = () => {
                                 <button className="contact_btn btn">Отправить</button>
                             </div>
                         </form>
-                    </div>
+                    </motion.div>
                     <div className="contact_inf_block">
-                        <div className="contact_inf_content">
-                            <div className="inform_block">
+                        <motion.div className="contact_inf_content"
+                                    variants={container}
+                                    initial="hidden"
+                                    animate="show"
+                        >
+                            <motion.div className="inform_block" variants={item} >
                                 <div className="inform_title">
                                     Позвоните нам
                                 </div>
@@ -69,8 +91,8 @@ const Contacts = () => {
                                         8 (999) 423-28-14
                                     </div>
                                 </a>
-                            </div>
-                            <div className="inform_block">
+                            </motion.div>
+                            <motion.div className="inform_block" variants={item}>
                                 <div className="inform_title">
                                     Посетите нас
                                 </div>
@@ -87,8 +109,8 @@ const Contacts = () => {
                                         г.Иркутск, ул.Павлова 133, офис 201
                                     </div>
                                 </a>
-                            </div>
-                            <div className="inform_block">
+                            </motion.div>
+                            <motion.div className="inform_block" variants={item}>
                                 <div className="inform_title">
                                     Live чат
                                 </div>
@@ -105,8 +127,8 @@ const Contacts = () => {
                                         Начать чат
                                     </div>
                                 </Link>
-                            </div>
-                        </div>
+                            </motion.div>
+                        </motion.div>
                     </div>
                 </div>
                 <div className="map">
@@ -115,7 +137,7 @@ const Contacts = () => {
                         allowFullScreen="" loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade" className="google_map"></iframe>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

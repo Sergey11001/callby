@@ -1,5 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {useEffect, useState} from "react";
+import {motion} from "framer-motion";
+
 import CategoriesShop from "../components/Shop/CategoriesShop";
 import FilterShop from "../components/Shop/FilterShop";
 import ShopList from "../components/Shop/ShopList";
@@ -23,7 +25,7 @@ const Shop = () => {
     },[activeCategoryId])
     return(
         <>
-            <div className="shop__page">
+            <motion.div className="shop__page" initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
                 <div className="shop--list">
                     {
                         activeCategoryId===1 ?
@@ -53,7 +55,7 @@ const Shop = () => {
                         <Link to="/contacts/support" className="support_btn btn ">Поддержка</Link>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

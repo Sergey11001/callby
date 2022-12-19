@@ -1,5 +1,6 @@
 import Accordion from "../components/Accordion";
 import {useEffect} from "react";
+import {motion} from "framer-motion";
 
 import chat from "../assets/supportBlock.png"
 
@@ -10,7 +11,7 @@ const Support = () => {
     },[])
     return(
         <>
-            <div className="support_page">
+            <motion.div className="support_page" initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
                 <div className="title_page support_title_page">
                     <div className="title support_title">
                         Служба поддержки
@@ -32,7 +33,7 @@ const Support = () => {
                         <img src={chat} alt=""/>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
