@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/callby/static/css/main.8bb97f81.css",
-    "main.js": "/callby/static/js/main.f0d5243b.js",
+    "main.css": "/callby/static/css/main.f3afebe3.css",
+    "main.js": "/callby/static/js/main.27532021.js",
     "static/media/phone3.svg": "/callby/static/media/phone3.79ff8785c26783dcf88b375c7e9ec128.svg",
     "static/media/bg.png": "/callby/static/media/bg.2495bd098ef914786640.png",
     "static/media/6.png": "/callby/static/media/6.99307356f99efc0df8bb.png",
@@ -26,8 +26,8 @@
     "static/media/2.png": "/callby/static/media/2.08ed8987f2e6412070b1.png",
     "static/media/11.png": "/callby/static/media/11.596099ea6e30cd366549.png",
     "static/media/supportBlock.png": "/callby/static/media/supportBlock.08be525ed6ed7ced8cc5.png",
+    "static/media/medium.svg": "/callby/static/media/medium.c5041f1332496d0ff050d4bfb466290f.svg",
     "static/media/logo.png": "/callby/static/media/logo.791d59631708c67cd918.png",
-    "static/media/facebook.svg": "/callby/static/media/facebook.5cbaa6f916478eaab0a838cb9a8c0c96.svg",
     "static/media/HelveticaNeueCyr-Roman.eot": "/callby/static/media/HelveticaNeueCyr-Roman.9d7c3316bda88462d707.eot",
     "static/media/HelveticaNeueCyr-Roman.ttf": "/callby/static/media/HelveticaNeueCyr-Roman.0ca719c710b1fbd7e02f.ttf",
     "static/media/HelveticaNeueCyr-Medium.eot": "/callby/static/media/HelveticaNeueCyr-Medium.6053588ab977fb8f7880.eot",
@@ -38,13 +38,14 @@
     "static/media/HelveticaNeueCyr-Medium.woff": "/callby/static/media/HelveticaNeueCyr-Medium.1c5a4d413294b14b36e0.woff",
     "static/media/HelveticaNeueCyr-Roman.woff2": "/callby/static/media/HelveticaNeueCyr-Roman.d59df5a538d671a54c79.woff2",
     "static/media/HelveticaNeueCyr-Medium.woff2": "/callby/static/media/HelveticaNeueCyr-Medium.751c19bd96c1fdbe6c88.woff2",
+    "static/media/vk.svg": "/callby/static/media/vk.e15d0aa2c963e71556810ef96a14f397.svg",
+    "static/media/youtube.svg": "/callby/static/media/youtube.84832034ac8a1331177ba8f2c21a9284.svg",
     "static/media/chat.svg": "/callby/static/media/chat.98b4dd4994b9c65a43aa98307101cec6.svg",
     "static/media/love.svg": "/callby/static/media/love.89ea3a37ae506247101c41348e864944.svg",
     "static/media/love_white.svg": "/callby/static/media/love_white.445e5b9f4a970c54e5740558c4a882fc.svg",
     "static/media/clip.svg": "/callby/static/media/clip.19d5ddac77e1483f65b951fc194bc46c.svg",
     "static/media/filter.svg": "/callby/static/media/filter.a1d3ee845507f7701cf4abc36ee9394f.svg",
     "static/media/two_arrow.svg": "/callby/static/media/two_arrow.8d8f42571d7358ee4a8a.svg",
-    "static/media/twitter.svg": "/callby/static/media/twitter.0e909f2dfedc21cc7cd9da1189f271ad.svg",
     "static/media/check_white.svg": "/callby/static/media/check_white.b405f2956a32f936c915bdfddf560b24.svg",
     "static/media/check.svg": "/callby/static/media/check.1ec3ef3b2c1cbe45b286d6ee39f63d51.svg",
     "static/media/flag.svg": "/callby/static/media/flag.d6af645b4d564212a97326aa6aacb4e2.svg",
@@ -56,11 +57,11 @@
     "static/media/search.svg": "/callby/static/media/search.b1a3e6d790d7a9dde4c2f81ab12ff35b.svg",
     "static/media/arr.svg": "/callby/static/media/arr.85f98d46bb51fccaec79.svg",
     "static/media/arrow.svg": "/callby/static/media/arrow.85f98d46bb51fccaec79bf70699a3d88.svg",
-    "main.8bb97f81.css.map": "/callby/static/css/main.8bb97f81.css.map",
-    "main.f0d5243b.js.map": "/callby/static/js/main.f0d5243b.js.map"
+    "main.f3afebe3.css.map": "/callby/static/css/main.f3afebe3.css.map",
+    "main.27532021.js.map": "/callby/static/js/main.27532021.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bb97f81.css",
-    "static/js/main.f0d5243b.js"
+    "static/css/main.f3afebe3.css",
+    "static/js/main.27532021.js"
   ]
 }
