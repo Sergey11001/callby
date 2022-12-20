@@ -1,16 +1,34 @@
-import React from "react";
+import React, {forwardRef} from "react";
 
+import {motion} from "framer-motion";
 import loveWhite from "../../assets/small_img/love_white.svg";
 
-const ShopListItem = ({id, imgUrl, title, price, theme=false}) => {
+const productUpAnimation = {
+    hidden:{
+        y:100,
+        opacity:0
+    },
+    visible:{
+        y:0,
+        opacity: 1,
+        transition:{duration:0.4}
+
+    }
+}
+
+export const ShopListItem = ({id, imgUrl, title, price, theme=false}) => {
     return (
-        <li className="list--product">
+        <motion.li className="list--product"
+                   initial="hidden"
+                   whileInView="visible"
+                   viewport={{amount:0.2, once:true}}
+        >
             <div className="add--love">
                 <img src={loveWhite} alt=""/>
             </div>
             <div className="product--body">
                 <div className={theme ? "product--img__wrapper product--img__wrapper_theme" : "product--img__wrapper"}>
-                    <img src={require("../../assets/" + imgUrl)} alt=""/>
+                    <motion.img variants={productUpAnimation} src={require("../../assets/" + imgUrl)} alt=""/>
                 </div>
                 <div className="product--title">
                     {title}
@@ -19,7 +37,6 @@ const ShopListItem = ({id, imgUrl, title, price, theme=false}) => {
                     {price} ₽
                 </div>
             </div>
-        </li>
+        </motion.li>
     )
 }
-export default ShopListItem

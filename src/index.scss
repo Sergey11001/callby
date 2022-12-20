@@ -260,6 +260,7 @@ a:active, a:focus { outline: none; }
       border-radius: 20px;
       padding: 13px 16px;
       width: 275px;
+      cursor: pointer;
       @media (max-width: 1140px) {
         top: 30px;
       }
@@ -295,6 +296,7 @@ a:active, a:focus { outline: none; }
           top: 0;
           left: 0;
           object-fit: contain;
+          pointer-events: none;
         }
       }
       .phone_name{
@@ -322,6 +324,7 @@ a:active, a:focus { outline: none; }
       padding: 8px 23px;
       display: flex;
       border-radius: 20px;
+      cursor: pointer;
       @media (max-width: 1140px) {
         left: 100px;
       }
@@ -342,6 +345,7 @@ a:active, a:focus { outline: none; }
           top: 0;
           left: 0;
           object-fit: contain;
+          pointer-events: none;
         }
       }
       .empty_blue_block{
@@ -358,17 +362,17 @@ a:active, a:focus { outline: none; }
     .music_block{
       display: flex;
       position: absolute;
-      top: 50%;
-      left: 85px;
-      transform: translateY(-50%);
       flex-direction: column;
       padding: 10px;
       width: 160px;
       height: 170px;
+      top: 30%;
+      left: 85px;
       border-radius: 10px;
       justify-content: center;
       align-items: center;
       z-index: 2;
+      cursor: pointer;
       @media (max-width: 1140px) {
         left: 45px;
       }
@@ -480,6 +484,7 @@ a:active, a:focus { outline: none; }
       z-index: 5;
       right: 0;
       bottom: 80px;
+      cursor: pointer;
       .tool_header{
         display: flex;
         margin-bottom: 16px;
@@ -564,6 +569,7 @@ a:active, a:focus { outline: none; }
               position: absolute;
               top: 0;
               left: 0;
+              pointer-events: none;
             }
             &:first-child {
               margin-left: 0;
@@ -590,6 +596,7 @@ a:active, a:focus { outline: none; }
               position: absolute;
               top: 0;
               left: 0;
+              pointer-events: none;
             }
           }
         }
@@ -648,6 +655,7 @@ a:active, a:focus { outline: none; }
         height: 100%;
         top: 0;
         left: 0;
+        pointer-events: none;
       }
     }
   }
@@ -2198,6 +2206,8 @@ a:active, a:focus { outline: none; }
       border-radius: 15px;
       padding: 23px 27px 23px 20px;
       cursor: pointer;
+      background: #FFFFFF;
+      transition: background-color 0.2s ease , color 0.2s ease;
       &:hover{
         border: 2px solid #EABA11;
         padding: 21px 25px 21px 18px;

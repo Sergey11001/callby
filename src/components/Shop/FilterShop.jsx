@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 import filter from "../../assets/small_img/filter.svg";
 

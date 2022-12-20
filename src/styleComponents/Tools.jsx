@@ -1,13 +1,19 @@
 import React from "react";
+import {motion} from "framer-motion";
+
 import personImg1 from "../assets/phone2.svg"
 import personImg2 from "../assets/phone3.svg"
 import chat from "../assets/small_img/chat.svg"
 import clip from "../assets/small_img/clip.svg"
 
 
-const Tools=()=>{
+const Tools=({parentRef})=>{
     return(
-        <div className="tool_block background_style_block">
+        <motion.div className="tool_block background_style_block"
+             drag
+             whileDrag={{scale:1.1}}
+             dragConstraints={parentRef}
+        >
             <div className="tool_header">
                 <div className="green_block"></div>
                 <div className="red_block"></div>
@@ -44,7 +50,7 @@ const Tools=()=>{
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 export default Tools

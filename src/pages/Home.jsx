@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 
@@ -34,12 +34,25 @@ const imgAnimation = {
     },
     visible: {
         x:0,
-        opacity: 1
+        opacity: 1,
+        transition:{duration: 0.4}
+    }
+}
+
+const btnAnimation = {
+    hidden:{
+        y:80,
+        opacity:0
+    },
+    visible: {
+        y:0,
+        opacity: 1,
+        transition: {duration:0.4}
     }
 }
 
 const Home = () => {
-
+    const refDraggable = useRef(null)
     return(
         <>
             <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
@@ -56,20 +69,20 @@ const Home = () => {
                             <motion.div custom={0.5} variants={leftSideAnimation} className="subtitle union_subtitle">
                                 Присоединяйся и ощути абсолютно новые эмоции от общения!
                             </motion.div>
-                            <div className="wrapper_input">
+                            <motion.div variants={btnAnimation}  className="wrapper_input">
                                 <input type="email" className="union_input mail_input" placeholder='example@mail.ru'/>
                                 <div className="btn_wrapper btn_wrapper_mail">
                                     <button className="union_btn input_btn  btn">Начать!</button>
                                 </div>
-                            </div>
+                            </motion.div>
 
                         </div>
                     </div>
-                    <motion.div variants={imgAnimation} className="image_column">
-                        <PhoneRing />
-                        <PersonListOverlay />
-                        <MusicPlay />
-                        <Tools />
+                    <motion.div variants={imgAnimation} className="image_column" ref={refDraggable}>
+                        <PhoneRing parentRef={refDraggable}/>
+                        <PersonListOverlay parentRef={refDraggable}/>
+                        <MusicPlay parentRef={refDraggable}/>
+                        <Tools parentRef={refDraggable}/>
                         <div className="big_circular">
 
                         </div>

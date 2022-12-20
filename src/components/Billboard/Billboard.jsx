@@ -1,6 +1,7 @@
 import Poster1 from "./Poster1";
 import {Swiper, SwiperSlide} from "swiper/react";
 import React from "react";
+import {motion} from "framer-motion";
 
 import SwiperCore, { Mousewheel, Autoplay,Scrollbar,Pagination } from "swiper";
 
@@ -13,7 +14,12 @@ const Billboard = () => {
 
      return (
         <>
-            <div className="board--body common_background">
+            <motion.div className="board--body common_background"
+                        initial={{opacity:0, y:-50}}
+                        whileInView={{opacity:1,y:0}}
+                        viewport={{amount:0.2, once:true}}
+                        transition={{duration:0.3}}
+            >
                 <div className="corner corner--top-left"></div>
                 <div className="corner corner--top-right"></div>
                 <div className="corner corner--bottom-left"></div>
@@ -51,7 +57,7 @@ const Billboard = () => {
                     </Swiper>
                 </div>
 
-            </div>
+            </motion.div>
         </>
     )
 }

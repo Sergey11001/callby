@@ -1,13 +1,13 @@
-import React from "react";
+import React, {forwardRef} from "react";
+import {motion} from "framer-motion";
 
-
-const CategoryShopItem = ({id, title, titleImg, activeCategoryId, setActiveCategoryId}) => {
+export const CategoryShopItem = forwardRef(({id, title, titleImg, activeCategoryId, setActiveCategoryId},ref) => {
     return (
-        <li className={activeCategoryId===id ? "shop--list__category list--category list--category_active " : "shop--list__category list--category common_background"} onClick={() => setActiveCategoryId(id)}>
+        <li ref={ref} className={activeCategoryId===id ? "shop--list__category list--category list--category_active " : "shop--list__category list--category common_background"} onClick={() => setActiveCategoryId(id)}>
             <div className="list--category__name">
                 <p>{title}</p> <span>{titleImg}</span>
             </div>
         </li>
     )
-}
-export default CategoryShopItem
+})
+export const MCategoryShopItem = motion(CategoryShopItem)

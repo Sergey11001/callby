@@ -371,6 +371,7 @@ input:focus, textarea:focus{
         justify-content: center;
         align-items:  center;
         cursor: pointer;
+        z-index: 5;
     }
     .product--body{
         color: #000000;
@@ -385,6 +386,8 @@ input:focus, textarea:focus{
             align-items: center;
             padding: 40px 13px;
             margin-bottom: 12px;
+            position: relative;
+            overflow: hidden;
 
             @media (max-width: 1140px) {
                 height: 240px;

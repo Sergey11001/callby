@@ -1,8 +1,7 @@
-import {Link} from "react-router-dom";
 import React from "react";
 
-import ShopListItem from "./ShopListItem";
-
+import {ShopListItem} from "./ShopListItem";
+import {motion} from "framer-motion";
 import arrow from "../../assets/small_img/arrow.svg";
 import profile from "../../assets/shop/1.png"
 
@@ -21,10 +20,35 @@ const shopListThemes = [
     {id:4, imgUrl:"products/theme/3.svg", title:"Стикеры “Limited Edition”", price:500},
     {id:5, imgUrl:"products/theme/4.svg", title:"Стикеры “Limited Edition”", price:500}
 ]
+
+const leftSlideAnimation = {
+    hidden:{
+        x:-100,
+        opacity:0
+    },
+    visible:{
+        x:0,
+        opacity: 1,
+        transition:{duration:0.3}
+    }
+}
+
+const rightSlideAnimation = {
+    hidden:{
+        x:100,
+        opacity:0
+    },
+    visible:{
+        x:0,
+        opacity: 1,
+        transition:{duration:0.3}
+    }
+}
+
 const ShopMainCategory = ({setActiveCategoryId}) => {
     return (
         <>
-            <div className="shop--list__main">
+            <motion.div className="shop--list__main" initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
                 <div className="shop--list__previews">
                     <div className="shop--list__preview--block">
                         <div className="section_title">
@@ -86,13 +110,19 @@ const ShopMainCategory = ({setActiveCategoryId}) => {
                             }
                         </ul>
                     </div>
-                    <div className="registration--block">
-                        <div className="registration--block__photo common_background">
+                    <motion.div className="registration--block"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{amount:0.45, once:true}}
+                    >
+                        <motion.div variants={leftSlideAnimation} className="registration--block__photo common_background"
+
+                        >
                             <div className="registration--block__photo--wrapper">
                                 <img src={profile} alt=""/>
                             </div>
-                        </div>
-                        <div className="registration--block__form common_background">
+                        </motion.div>
+                        <motion.div variants={rightSlideAnimation} className="registration--block__form common_background">
                             <div className="registration--block__top">
                                 <div className="registration--block__form--title">
                                     Скидка до 20%
@@ -111,10 +141,10 @@ const ShopMainCategory = ({setActiveCategoryId}) => {
                                 </div>
                                 <button className="registration--from__submit">Зарегистрироваться</button>
                             </form>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

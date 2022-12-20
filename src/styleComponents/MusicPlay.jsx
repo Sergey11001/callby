@@ -1,10 +1,15 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 import play from "../assets/small_img/play.svg"
 
-const MusicPlay=()=>{
+const MusicPlay=({parentRef})=>{
     return(
-        <div className="music_block background_style_block">
+        <motion.div className="music_block background_style_block"
+                    drag
+                    whileDrag={{scale:1.1}}
+                    dragConstraints={parentRef}
+        >
             <div className="music_blue_block">
 
             </div>
@@ -32,7 +37,7 @@ const MusicPlay=()=>{
                     <img src={play} alt="" className="music_play_img"/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

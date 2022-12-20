@@ -7,6 +7,7 @@ import FilterShop from "../components/Shop/FilterShop";
 import ShopList from "../components/Shop/ShopList";
 import ShopMainCategory from "../components/Shop/ShopMainCategory";
 import Billboard from "../components/Billboard/Billboard";
+import {ShopProductsCategory} from "../components/Shop/ShopProductsCategory";
 
 
 const categoryList =[
@@ -37,13 +38,7 @@ const Shop = () => {
                         activeCategoryId===1 ?
                             <ShopMainCategory setActiveCategoryId={setActiveCategoryId} />
                             :
-                            <>
-                                <FilterShop />
-                                <ShopList />
-                                <button className="shop--list__more--btn">
-                                    Смотреть больше
-                                </button>
-                            </>
+                            <ShopProductsCategory />
                     }
                     <div className="bottom_cluster_support bottom_cluster">
                         <div className="title cluster_title">

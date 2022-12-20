@@ -1,5 +1,6 @@
 import React from "react";
-import ShopListItem from "./ShopListItem";
+import {ShopListItem} from "./ShopListItem";
+import {motion} from "framer-motion";
 
 const shopList = [
     {id:1, imgUrl:"products/sticker/1.svg", title:"Стикеры “Limited Edition”", price:500},
@@ -23,6 +24,7 @@ const ShopList = () => {
                 ))
             }
         </ul>
+
     )
 }
 export default ShopList
