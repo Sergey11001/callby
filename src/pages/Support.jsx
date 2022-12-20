@@ -24,8 +24,7 @@ const Support = () => {
                                 Часто задаваемые вопросы
                             </div>
                             <div className="question_column_subtitle">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-                            </div>
+                                Здесь вы можете задать свои вопросы и предложить идеи по улучшению, мы ответим на каждое ваше письмо.                            </div>
                             <Accordion />
                         </div>
                     </div>

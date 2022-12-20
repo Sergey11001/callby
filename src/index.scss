@@ -1740,15 +1740,9 @@ a:active, a:focus { outline: none; }
             .item_title_body{
               margin-bottom: 18px;
             }
-            .accordion_item_options{
-              margin-left: 20px;
-              .item_accordion_option{
-                margin-bottom: 10px;
-              }
-            }
           }
           .accordion_item_body_active{
-            max-height: 500px;
+            max-height: 200px;
             margin-bottom: 32px;
           }
         }
@@ -2417,3 +2411,34 @@ a:active, a:focus { outline: none; }
     }
   }
 }
+
+//Presentation================
+.presentation--page{
+  margin-top: 70px;
+  .presentation--body{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    position: relative;
+    .swiper {
+      position: static !important;
+      &-pagination {
+        top: 50%;
+        right: 0;
+        left: auto;
+        transform: translateY(-50%);
+      }
+    }
+    .presentation--slide{
+      height: 600px;
+      width: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+

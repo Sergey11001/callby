@@ -67,10 +67,10 @@ const Footer = () => {
                             <Link to="/contacts/support" className="footer_link">Служба поддержки</Link>
                         </li>
                         <li className="footer_item">
-                            <Link to="/contacts/agree" className="footer_link">Пользовательские соглашения</Link>
+                            <Link to="/agree" className="footer_link">Пользовательские соглашения</Link>
                         </li>
                         <li className="footer_item">
-                            <Link to="/contacts/privacy" className="footer_link">Политика конфеденциальности</Link>
+                            <Link to="/privacy" className="footer_link">Политика конфеденциальности</Link>
                         </li>
                     </ul>
                     <ul className="footer_column social_column">

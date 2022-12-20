@@ -1,8 +1,8 @@
-import Poster1 from "./Poster1";
-import {Swiper, SwiperSlide} from "swiper/react";
 import React from "react";
-import {motion} from "framer-motion";
+import {Swiper, SwiperSlide} from "swiper/react";
 
+import {motion} from "framer-motion";
+import Poster1 from "./Poster1";
 import SwiperCore, { Mousewheel, Autoplay,Scrollbar,Pagination } from "swiper";
 
 import 'swiper/css/pagination';

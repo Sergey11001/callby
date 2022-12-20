@@ -1,28 +1,23 @@
 const accordionItems=[
     {
-        titleHead:"Lorem ipsum dolor sit amet?",
-        titleItem:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis:",
-        itemOptionsList:["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
+        titleHead:"Что такое эфир?",
+        titleItem: "Это видеовстречи с друзьями, собеседование с коллегами, это простой способ пообщаться с человеком. Уникальные функции помогут вам комфортно чувствовать себя в интернет-пространстве. В пару кликов вы сможете выйти на связь с людьми, которые в далеке от вас и так трепетно ждут встречи с вами."
     },
     {
-        titleHead:"Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        titleItem:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis:",
-        itemOptionsList:["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
+        titleHead:"Сколько участников может быть на видеоконференции?",
+        titleItem:"nubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis:",
     },
     {
-        titleHead:"Lorem ipsum dolor sit amet, consectetur elit?",
+        titleHead:"Какие функции мне доступны и почему?",
         titleItem:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis:",
-        itemOptionsList:["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
     },
     {
-        titleHead:"Lorem ipsum dolor sit amet, consectetur elit?",
+        titleHead:"Можно ли использовать Эфир в бизнес-целях?",
         titleItem:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis:",
-        itemOptionsList:["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
     },
     {
-        titleHead:"Lorem ipsum dolor",
+        titleHead:"Могу ли я передать подписку на тариф другому пользователю?",
         titleItem:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis:",
-        itemOptionsList:["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
     },
 ]
 

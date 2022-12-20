@@ -11,6 +11,7 @@ import AboutUs from "../pages/AboutUs";
 import Study from "../pages/Study";
 import Shop from "../pages/Shop";
 import Support from "../pages/Support";
+import Presentation from "./Presentation/Presentation";
 
 
 const AnimatedRoutes = () => {
@@ -25,6 +26,7 @@ const AnimatedRoutes = () => {
                 <Route path="/about" element={<AboutUs/>}/>
                 <Route path="/learning" element={<Study/>}/>
                 <Route path="/shop" element={<Shop/>}/>
+                <Route path="/privacy" element={<Presentation/>}/>
                 <Route path="/contacts/support" element={<Support/>}/>
             </Routes>
         </AnimatePresence>

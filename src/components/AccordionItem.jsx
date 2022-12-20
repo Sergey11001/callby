@@ -1,7 +1,7 @@
 import {useState} from "react";
 
 
-const AccordionItem=({titleHead , titleItem , itemOptionsList})=>{
+const AccordionItem=({titleHead , titleItem})=>{
     const [accordionOpen,setAccordionOpen]=useState(false)
     return(
         <>
@@ -18,11 +18,6 @@ const AccordionItem=({titleHead , titleItem , itemOptionsList})=>{
                     <div className="item_title_body">
                         {titleItem}
                     </div>
-                    <ol className="accordion_item_options">
-                        {itemOptionsList.map((item,i)=>
-                            <li key={i} className="item_accordion_option">{item}</li>
-                        )}
-                    </ol>
                 </div>
             </div>
         </>
