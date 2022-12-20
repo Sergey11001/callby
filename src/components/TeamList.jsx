@@ -5,7 +5,7 @@ import PersonPortret from "./PersonPortret";
 const TeamList = ({listPeople}) => {
     const [activePerson,setActivePerson]=useState(-1)
     useEffect(()=>{
-        setTimeout(()=>setActivePerson(0),80)
+        setTimeout(()=>setActivePerson(0),70)
     },[])
     return (
         <div className="team_list">

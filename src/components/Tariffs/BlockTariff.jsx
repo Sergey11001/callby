@@ -1,5 +1,4 @@
 import React from "react";
-import {motion} from "framer-motion";
 
 import check from "../../assets/small_img/check.svg"
 import whiteCheck from "../../assets/small_img/check_white.svg"

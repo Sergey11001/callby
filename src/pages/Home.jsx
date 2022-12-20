@@ -14,19 +14,48 @@ import {listPersonHomePage} from "../constants";
 import hands from "../assets/small_img/hands.svg"
 import arrow from "../assets/small_img/arrow.svg"
 
+const leftSideAnimation = {
+    hidden:{
+        x:-100,
+        opacity:0
+    },
+    visible: (custom=0) => ({
+            x:0,
+            opacity: 1,
+            transition:{delay:custom*0.1}
+        }
+    )
+}
+
+const imgAnimation = {
+    hidden:{
+        x:100,
+        opacity:0
+    },
+    visible: {
+        x:0,
+        opacity: 1
+    }
+}
+
 const Home = () => {
+
     return(
         <>
             <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{ duration:0.15 }}>
-                <section className="union">
+                <motion.section className="union"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{amount:0.2, once:true}}
+                >
                     <div className="content_column">
                         <div className="union_content">
-                            <div className="union_title title">
+                            <motion.div variants={leftSideAnimation} className="union_title title">
                                 Соединяем миры и пространство
-                            </div>
-                            <div className="subtitle union_subtitle">
+                            </motion.div>
+                            <motion.div custom={0.5} variants={leftSideAnimation} className="subtitle union_subtitle">
                                 Присоединяйся и ощути абсолютно новые эмоции от общения!
-                            </div>
+                            </motion.div>
                             <div className="wrapper_input">
                                 <input type="email" className="union_input mail_input" placeholder='example@mail.ru'/>
                                 <div className="btn_wrapper btn_wrapper_mail">
@@ -36,11 +65,7 @@ const Home = () => {
 
                         </div>
                     </div>
-                    <motion.div className="image_column"
-                                initial={{ x:100}}
-                                whileInView={{ x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration:0.3}}>
+                    <motion.div variants={imgAnimation} className="image_column">
                         <PhoneRing />
                         <PersonListOverlay />
                         <MusicPlay />
@@ -54,10 +79,8 @@ const Home = () => {
                             </div>
                         </div>
                     </motion.div>
-                </section>
-                <section className="advantage">
-                    <AdvantagesBlocks />
-                </section>
+                </motion.section>
+                <AdvantagesBlocks/>
                 <section className="tariff">
                     <div className="section_title">
                         <div>

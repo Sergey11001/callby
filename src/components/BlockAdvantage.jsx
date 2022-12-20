@@ -1,9 +1,9 @@
-import React from "react";
+import React, {forwardRef} from "react";
+import {motion} from "framer-motion";
 
-
-const BlockAdvantage=({img , title , description})=>{
+export const BlockAdvantage=forwardRef(({img , title , description, variants, custom},ref)=>{
     return(
-        <div className="column_adv common_background">
+        <motion.div custom={custom} variants={variants} className="column_adv common_background" ref={ref}>
             <div className="adv_content">
                 <div className="adv_image">
                     <img src={require(`../assets/${img}`)} alt="" className="adv_img"/>
@@ -15,7 +15,8 @@ const BlockAdvantage=({img , title , description})=>{
                     {description}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
-}
-export default BlockAdvantage
+})
+
+export const MBlockAdvantage = motion(BlockAdvantage)
