@@ -1,9 +1,13 @@
 import {Link} from "react-router-dom";
 
 import footerImg from "../assets/footer/footer.png"
-import facebook from "../assets/social/facebook.svg"
+
+import vk from "../assets/social/vk.svg"
 import telegram from "../assets/social/telegram.svg"
-import twitter from "../assets/social/twitter.svg"
+import youtube from "../assets/social/youtube.svg"
+import medium from "../assets/social/medium.svg"
+
+
 import flag from "../assets/footer/flag.svg"
 import menuImg1 from '../assets/footer/1.svg'
 import menuImg2 from '../assets/footer/2.svg'
@@ -60,21 +64,27 @@ const Footer = () => {
                             <Link to="/vacations" className="footer_link">Вакансии</Link>
                         </li>
                         <li className="footer_item">
-                            <Link to="/protocol" className="footer_link">Протокол</Link>
+                            <Link to="/contacts/support" className="footer_link">Служба поддержки</Link>
                         </li>
                         <li className="footer_item">
-                            <Link to="/contacts/support" className="footer_link">Служба поддержки</Link>
+                            <Link to="/contacts/agree" className="footer_link">Пользовательские соглашения</Link>
+                        </li>
+                        <li className="footer_item">
+                            <Link to="/contacts/privacy" className="footer_link">Политика конфеденциальности</Link>
                         </li>
                     </ul>
                     <ul className="footer_column social_column">
-                        <a href="#" className="social_item common_background">
+                        <a href="https://t.me/ef_ir1"  target="_blank" className="social_item common_background">
                             <img src={telegram} alt="" className="social_img"/>
                         </a>
-                        <a href="#" className="social_item common_background">
-                            <img src={facebook} alt="" className="social_img"/>
+                        <a href="https://youtube.com/@ef_ir1"  target="_blank" className="social_item common_background">
+                            <img src={youtube} alt="" className="social_img"/>
                         </a>
-                        <a href="#" className="social_item common_background">
-                            <img src={twitter} alt="" className="social_img"/>
+                        <a href="https://vk.com/club217847616"  target="_blank" className="social_item common_background">
+                            <img src={vk} alt="" className="social_img"/>
+                        </a>
+                        <a href="https://medium.com/@ef_ir1"  target="_blank" className="social_item common_background">
+                            <img src={medium} alt="" className="social_img"/>
                         </a>
                     </ul>
                 </nav>

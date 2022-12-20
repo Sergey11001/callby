@@ -838,9 +838,9 @@ a:active, a:focus { outline: none; }
         margin-bottom: 10px;
       }
       .footer_image{
-        margin-right: 100px;
-        width: 75px;
-        height: 75px;
+        margin-right: 80px;
+        flex: 0 0 70px;
+        height: 70px;
         position: relative;
         @media (max-width: 1140px) {
           margin-right: 70px;
@@ -862,9 +862,9 @@ a:active, a:focus { outline: none; }
       .footer_column{
         display: flex;
         flex-direction: column;
-        margin-right: 120px;
+        margin-right: 70px;
         &:last-child{
-          margin-right: 0;
+          margin-right: 90px;
         }
         @media (max-width: 1140px) {
           margin-right: 60px;
@@ -926,12 +926,17 @@ a:active, a:focus { outline: none; }
           align-items: center;
           box-shadow: none;
           border-radius: 50%;
-          margin-right: 28px;
+          margin-right: 20px;
           &:last-child{
             margin-right: 0;
           }
           @media (max-width: 768px) {
             margin-right: 15px;
+          }
+          img{
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
           }
         }
       }
