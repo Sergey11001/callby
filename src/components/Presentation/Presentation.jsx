@@ -41,13 +41,11 @@ const Presentation = () => {
                     <Swiper
                         slidesPerView="1"
                         direction="vertical"
-                        disableOnInteraction={false}
-                        pauseOnMouseEnter={false}
                         pagination={{ clickable: true }}
                         height={600}
                         loop={true}
                         modules={[Autoplay, Mousewheel,Scrollbar,Pagination]}
-                        autoplay={{ delay: 2000}}
+                        autoplay={{ delay: 5000, disableOnInteraction:false, pauseOnMouseEnter:false}}
                         spaceBetween={10}
                         speed={600}
                     >

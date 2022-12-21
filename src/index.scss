@@ -2415,17 +2415,20 @@ a:active, a:focus { outline: none; }
 //Presentation================
 .presentation--page{
   margin-top: 70px;
+  margin-bottom: 60px;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  position: relative;
   .presentation--body{
     width: 100%;
     height: 600px;
     overflow: hidden;
-    margin-bottom: 60px;
-    position: relative;
     .swiper {
       position: static !important;
       &-pagination {
         top: 50%;
-        right: 0;
+        right: 10px;
         left: auto;
         transform: translateY(-50%);
       }
