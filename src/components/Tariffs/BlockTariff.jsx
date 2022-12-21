@@ -2,6 +2,7 @@ import React from "react";
 
 import check from "../../assets/small_img/check.svg"
 import whiteCheck from "../../assets/small_img/check_white.svg"
+import {Link} from "react-router-dom";
 
 const BlockTariff=({title , descriptionList , price , blue , ownTariff , long=false}) => {
     return(
@@ -31,7 +32,13 @@ const BlockTariff=({title , descriptionList , price , blue , ownTariff , long=fa
                     <span className="month">/мес</span>
                 </div>
                 <div className="btn_wrapper_bold">
-                    <button className="tariff_btn btn">Выбрать</button>
+                    {
+                        long ?
+                            <button className="tariff_btn btn">Выбрать</button>
+                            :
+                            <Link to="/tariffs" className="tariff_btn btn">Подробнее</Link>
+                    }
+
                 </div>
             </div>
         </div>

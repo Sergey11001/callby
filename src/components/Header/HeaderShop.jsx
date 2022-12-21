@@ -1,5 +1,6 @@
 import {NavLink} from "react-router-dom";
 import React from "react";
+import {motion} from "framer-motion";
 
 import logo from "../../assets/header/logo.png";
 import love from "../../assets/small_img/love.svg"
@@ -15,10 +16,10 @@ const HeaderShop = () => {
                         <img src={logo} alt="" className="logo_img"/>
                     </div>
                 </NavLink>
-                <div className="header__search">
+                <motion.div className="header__search" initial={{opacity:0, y:-40}} animate={{opacity:1, y:0}} transition={{duration:0.3}}>
                     <input type="text" placeholder="Поиск" className="header__search--input"/>
                     <img src={search} alt="" className="header__search--img"/>
-                </div>
+                </motion.div>
                 <div className="header__inf">
                     <div className="header__inf--item">
                         <img src={love} alt="" className="love"/>

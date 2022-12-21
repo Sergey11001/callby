@@ -42,13 +42,16 @@ const HeaderMain = ({activeBurger, setActiveBurger}) => {
                             <NavLink to="/learning" className="menu_link" onClick={()=>setActiveBurger(false)}>Обучение</NavLink>
                         </li>
                         <li className="menu_item">
-                            <NavLink to="/team" className="menu_link" onClick={()=>setActiveBurger(false)}>Наша Команда</NavLink>
+                            <NavLink to="/team" className="menu_link" onClick={()=>setActiveBurger(false)}>Наша команда</NavLink>
                         </li>
                         <li className="menu_item">
                             <NavLink to="/shop" className="menu_link" onClick={()=>setActiveBurger(false)}>Магазин</NavLink>
                         </li>
                         <li className="menu_item">
                             <NavLink to="/contacts" className="menu_link" onClick={()=>setActiveBurger(false)}>Контакты</NavLink>
+                        </li>
+                        <li className="menu_item">
+                            <NavLink to="/presentation" className="menu_link" onClick={()=>setActiveBurger(false)}>Презентация проекта</NavLink>
                         </li>
                     </ul>
                 </nav>

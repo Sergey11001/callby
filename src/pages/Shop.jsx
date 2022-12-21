@@ -3,8 +3,6 @@ import React, {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 
 import CategoriesShop from "../components/Shop/CategoriesShop";
-import FilterShop from "../components/Shop/FilterShop";
-import ShopList from "../components/Shop/ShopList";
 import ShopMainCategory from "../components/Shop/ShopMainCategory";
 import Billboard from "../components/Billboard/Billboard";
 import {ShopProductsCategory} from "../components/Shop/ShopProductsCategory";

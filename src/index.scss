@@ -922,6 +922,7 @@ a:active, a:focus { outline: none; }
           width: 36px;
           height: 36px;
           display: flex;
+          overflow: hidden;
           justify-content: center;
           align-items: center;
           box-shadow: none;
@@ -937,6 +938,12 @@ a:active, a:focus { outline: none; }
             width: 25px;
             height: 25px;
             object-fit: contain;
+          }
+        }
+        .social_youtube{
+          img{
+            width: 30px;
+            height: 30px;
           }
         }
       }
@@ -1742,7 +1749,7 @@ a:active, a:focus { outline: none; }
             }
           }
           .accordion_item_body_active{
-            max-height: 200px;
+            max-height: 150px;
             margin-bottom: 32px;
           }
         }
@@ -2417,7 +2424,7 @@ a:active, a:focus { outline: none; }
   margin-top: 70px;
   margin-bottom: 60px;
   padding: 20px;
-  background: #FFFFFF;
+  background: #f0f0ff;
   border-radius: 20px;
   position: relative;
   .presentation--body{
@@ -2428,7 +2435,7 @@ a:active, a:focus { outline: none; }
       position: static !important;
       &-pagination {
         top: 50%;
-        right: 10px;
+        right: -15px;
         left: auto;
         transform: translateY(-50%);
       }

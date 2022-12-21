@@ -4,7 +4,7 @@ import footerImg from "../assets/footer/footer.png"
 
 import vk from "../assets/social/vk.svg"
 import telegram from "../assets/social/telegram.svg"
-import youtube from "../assets/social/youtube.svg"
+import youtube from "../assets/social/y.svg"
 import medium from "../assets/social/medium.svg"
 
 
@@ -77,7 +77,7 @@ const Footer = () => {
                         <a href="https://t.me/ef_ir1"  target="_blank" className="social_item common_background">
                             <img src={telegram} alt="" className="social_img"/>
                         </a>
-                        <a href="https://youtube.com/@ef_ir1"  target="_blank" className="social_item common_background">
+                        <a href="https://youtube.com/@ef_ir1"  target="_blank" className="social_item social_youtube common_background">
                             <img src={youtube} alt="" className="social_img"/>
                         </a>
                         <a href="https://vk.com/club217847616"  target="_blank" className="social_item common_background">

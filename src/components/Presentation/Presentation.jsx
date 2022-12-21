@@ -1,6 +1,7 @@
 import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import PresentationSlide from "./PresentationSlide";
+import {motion} from "framer-motion";
 
 import SwiperCore, { Mousewheel, Autoplay,Scrollbar,Pagination } from "swiper";
 
@@ -36,7 +37,7 @@ const presentationImg = [
 const Presentation = () => {
     return (
         <>
-            <div className="presentation--page">
+            <motion.div className="presentation--page" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.15}}>
                 <div className="presentation--body">
                     <Swiper
                         slidesPerView="1"
@@ -48,6 +49,7 @@ const Presentation = () => {
                         autoplay={{ delay: 5000, disableOnInteraction:false, pauseOnMouseEnter:false}}
                         spaceBetween={10}
                         speed={600}
+
                     >
                         {
                             presentationImg.map((item,i) => (
@@ -58,7 +60,7 @@ const Presentation = () => {
                         }
                     </Swiper>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }
