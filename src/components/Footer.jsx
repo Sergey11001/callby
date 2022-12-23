@@ -74,16 +74,16 @@ const Footer = () => {
                         </li>
                     </ul>
                     <ul className="footer_column social_column">
-                        <a href="https://t.me/ef_ir1"  target="_blank" className="social_item common_background">
+                        <a href="https://t.me/ef_ir1"  target="_blank" className="social_item">
                             <img src={telegram} alt="" className="social_img"/>
                         </a>
-                        <a href="https://youtube.com/@ef_ir1"  target="_blank" className="social_item social_youtube common_background">
+                        <a href="https://youtube.com/@ef_ir1"  target="_blank" className="social_item social_youtube">
                             <img src={youtube} alt="" className="social_img"/>
                         </a>
-                        <a href="https://vk.com/club217847616"  target="_blank" className="social_item common_background">
+                        <a href="https://vk.com/club217847616"  target="_blank" className="social_item">
                             <img src={vk} alt="" className="social_img"/>
                         </a>
-                        <a href="https://medium.com/@ef_ir1"  target="_blank" className="social_item common_background">
+                        <a href="https://medium.com/@ef_ir1"  target="_blank" className="social_item">
                             <img src={medium} alt="" className="social_img"/>
                         </a>
                     </ul>

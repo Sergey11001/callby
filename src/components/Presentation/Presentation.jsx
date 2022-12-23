@@ -44,12 +44,12 @@ const Presentation = () => {
                         direction="vertical"
                         pagination={{ clickable: true }}
                         height={600}
+                        mousewheel={true}
                         loop={true}
                         modules={[Autoplay, Mousewheel,Scrollbar,Pagination]}
                         autoplay={{ delay: 5000, disableOnInteraction:false, pauseOnMouseEnter:false}}
                         spaceBetween={10}
                         speed={600}
-
                     >
                         {
                             presentationImg.map((item,i) => (
