@@ -17,8 +17,7 @@ const TariffConstructor=()=>{
                             Собери свою подписку 🎓
                         </div>
                         <div className="generation_descript">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        </div>
+                            С помощью данной уникальной возможности, вы сможете собрать все нужные функции для пользования приложением. Просто выберите нужные вам пункты и наслаждайтесь работой. Ощутите свободу в простых действиях.                        </div>
                         <div className="selector">
                             <Selector />
                         </div>
@@ -36,7 +35,7 @@ const TariffConstructor=()=>{
                 </motion.div>
                 <div className="own_tariff_column">
                     <motion.div className={selectedItems.length ? "own_tariff": "own_tariff inactive_tariff"} initial={{x:100}} animate={{x:0}} transition={{ duration:0.3 }} >
-                        <BlockTariff blue price={price} title={'Ваш личный тариф'} descriptionList={!selectedItems.length ? ["Выберете правильный план для вашей работы!"]:selectedItems.map(item=>item.title)} long={selectedItems.length!==0} ownTariff/>
+                        <BlockTariff blue price={price} title={'Ваш личный тариф'} descriptionList={!selectedItems.length ? ["Выберите правильный план для вашей работы!"]:selectedItems.map(item=>item.title)} long={selectedItems.length!==0} ownTariff/>
                     </motion.div>
                 </div>
             </div>
