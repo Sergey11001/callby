@@ -22,8 +22,13 @@ const item = {
     hidden: { opacity: 0, x:100 },
     show: { opacity: 1, x:0 }
 }
-
 const Contacts = () => {
+
+    const [name, setName] = useState("")
+    const [mail, setMail] = useState("")
+    const [tel, setTel] = useState("")
+    const [message, setMessage] = useState("")
+
     const blurFromInput = (e) =>{
         if(e.target.value.trim()!==""){
             e.target.classList.add("filled_input")
@@ -32,6 +37,27 @@ const Contacts = () => {
             e.target.classList.remove("filled_input")
         }
     }
+    const sendForm = (e) => {
+        e.preventDefault()
+        const data = {
+            name:name,
+            mail:mail,
+            tel:tel,
+            message:message
+        }
+        setMessage("")
+        setName("")
+        setMail("")
+        setTel("")
+        fetch("https://formcarry.com/s/-iKm7cdvr",{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8'
+            },
+            body: JSON.stringify(data)
+        })
+    }
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -44,22 +70,22 @@ const Contacts = () => {
                         Свяжитесь с нами!
                     </div>
                     <div className="sub_title contacts_subtitle">
-                        Отправьте нам свое письмо
+                        Отправьте нам свое письмо!
                     </div>
                 </motion.div>
                 <div className="contacts_wrapper">
                     <motion.div className="form_block"  initial={{x:-100}} animate={{x:0}} transition={{ duration:0.6 }}>
-                        <form action="#" className="contact_form" >
+                        <form action="#" className="contact_form" onSubmit={(e)=>sendForm(e)}>
                             <div className="inputs_block_wrapper">
-                                <input type="text" className="contact_input common_background" placeholder="Имя" onBlur={(e)=>blurFromInput(e)}/>
-                                <input type="text" className="contact_input common_background" placeholder="E-mail" onBlur={(e)=>blurFromInput(e)}/>
+                                <input value={name} onChange={(e)=>setName(e.target.value)} type="text" className="contact_input common_background" placeholder="Имя" onBlur={(e)=>blurFromInput(e)}/>
+                                <input value={mail} onChange={(e)=>setMail(e.target.value)} type="text" className="contact_input common_background" placeholder="E-mail" onBlur={(e)=>blurFromInput(e)}/>
                             </div>
                             <div className="inputs_block_wrapper">
                                 <SelectorContacts />
-                                <input type="text" className="contact_input common_background" placeholder="Номер телефона" onBlur={(e)=>blurFromInput(e)}/>
+                                <input value={tel} onChange={(e)=>setTel(e.target.value)} type="text" className="contact_input common_background" placeholder="Номер телефона" onBlur={(e)=>blurFromInput(e)}/>
                             </div>
                             <div className="inputs_block_wrapper">
-                                <textarea className="textarea_contact common_background" placeholder="Сообщение" onBlur={(e)=>blurFromInput(e)}></textarea>
+                                <textarea value={message} onChange={(e)=>setMessage(e.target.value)} className="textarea_contact common_background" placeholder="Сообщение" onBlur={(e)=>blurFromInput(e)}></textarea>
                             </div>
                             <div className="btn_wrapper btn_wrapper_contacts">
                                 <button className="contact_btn btn">Отправить</button>
