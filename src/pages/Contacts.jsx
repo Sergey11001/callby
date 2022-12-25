@@ -1,14 +1,29 @@
 import SelectorContacts from "../components/SelectorContacts";
 import {Link} from "react-router-dom";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {motion} from "framer-motion";
 
 import contact1 from "../assets/contacts/1.svg"
 import contact2 from "../assets/contacts/2.svg"
 import contact3 from "../assets/contacts/3.svg"
 
-const Contacts = () => {
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        x:0,
+        transition: {
+            staggerChildren: 0.2
+        }
+    }
+}
 
+const item = {
+    hidden: { opacity: 0, x:100 },
+    show: { opacity: 1, x:0 }
+}
+
+const Contacts = () => {
     const blurFromInput = (e) =>{
         if(e.target.value.trim()!==""){
             e.target.classList.add("filled_input")
@@ -17,23 +32,6 @@ const Contacts = () => {
             e.target.classList.remove("filled_input")
         }
     }
-
-    const container = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            x:0,
-            transition: {
-                staggerChildren: 0.2
-            }
-        }
-    }
-
-    const item = {
-        hidden: { opacity: 0, x:100 },
-        show: { opacity: 1, x:0 }
-    }
-
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -46,12 +44,12 @@ const Contacts = () => {
                         Свяжитесь с нами!
                     </div>
                     <div className="sub_title contacts_subtitle">
-                        Отправьте нам свое письмо!
+                        Отправьте нам свое письмо
                     </div>
                 </motion.div>
                 <div className="contacts_wrapper">
                     <motion.div className="form_block"  initial={{x:-100}} animate={{x:0}} transition={{ duration:0.6 }}>
-                        <form action="#" className="contact_form">
+                        <form action="#" className="contact_form" >
                             <div className="inputs_block_wrapper">
                                 <input type="text" className="contact_input common_background" placeholder="Имя" onBlur={(e)=>blurFromInput(e)}/>
                                 <input type="text" className="contact_input common_background" placeholder="E-mail" onBlur={(e)=>blurFromInput(e)}/>

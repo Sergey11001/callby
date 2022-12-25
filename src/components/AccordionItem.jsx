@@ -1,8 +1,18 @@
 import {useState} from "react";
 
 
-const AccordionItem=({titleHead , titleItem})=>{
-    const [accordionOpen,setAccordionOpen]=useState(false)
+const AccordionItem=({titleHead , titleItem, indexOpenAccordion, setIndexOpenAccordion, index})=>{
+
+    const toggleAccordion = (index) => {
+        if(indexOpenAccordion===index){
+            console.log("Close")
+            setIndexOpenAccordion(-1)
+        }
+        else{
+            setIndexOpenAccordion(index)
+        }
+    }
+
     return(
         <>
             <div className="accordion_item">
@@ -10,11 +20,11 @@ const AccordionItem=({titleHead , titleItem})=>{
                     <div className="item_header_title">
                         {titleHead}
                     </div>
-                    <div className="btn_open_accordion" onClick={()=>setAccordionOpen(a=>!a)}>
-                        {accordionOpen ? "–":"+"}
+                    <div className="btn_open_accordion" onClick={()=>toggleAccordion(index)}>
+                        {indexOpenAccordion===index ? "–":"+"}
                     </div>
                 </div>
-                <div className={accordionOpen ? "accordion_item_body accordion_item_body_active":"accordion_item_body"}>
+                <div className={indexOpenAccordion===index ? "accordion_item_body accordion_item_body_active":"accordion_item_body"}>
                     <div className="item_title_body">
                         {titleItem}
                     </div>

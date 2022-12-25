@@ -1746,12 +1746,13 @@ a:active, a:focus { outline: none; }
             overflow: hidden;
             transition: all 0.3s ease;
             margin-bottom: 0;
+            line-height: 19px;
             .item_title_body{
               margin-bottom: 18px;
             }
           }
           .accordion_item_body_active{
-            max-height: 150px;
+            max-height: 120px;
             margin-bottom: 32px;
           }
         }
